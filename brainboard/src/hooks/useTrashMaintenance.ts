@@ -11,8 +11,9 @@ import type { useDriveSync } from '@/hooks/useDriveSync'
  * shortens the retention window (so "7 days" takes effect immediately, not
  * on next launch). Also owns hydrating the trash store from OPFS.
  *
- * Deletion goes Drive-first via deleteRemoteForBoard, which queues the
- * remote delete in the offline log if Drive is unreachable — so a sweep
+ * Deletion removes the local copy first (instant) and fires the Drive
+ * delete after, unawaited by the loop — deleteRemoteForBoard queues the
+ * remote delete in the offline log if Drive is unreachable, so a sweep
  * while offline still cleans up locally without orphaning the remote copy.
  */
 export function useTrashMaintenance(
@@ -45,10 +46,10 @@ export function useTrashMaintenance(
         const cutoff = Date.now() - retentionDays * 24 * 60 * 60 * 1000
         const expired = useLibraryStore.getState().boards.filter(b =>
           b.trashed && b.trashedAt && Date.parse(b.trashedAt) < cutoff)
-        for (const b of expired) {
-          await deleteRemoteForBoardRef.current(b.boardId)
+        await Promise.all(expired.map(async b => {
           await deleteBoardRef.current(b.boardId)
-        }
+          deleteRemoteForBoardRef.current(b.boardId)
+        }))
       } catch (err) {
         console.error('Trash retention sweep failed', err)
       } finally {

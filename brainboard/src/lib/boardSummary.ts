@@ -15,11 +15,11 @@ export function summaryOf(board: Board): BoardSummary {
   }
 }
 
-// The contents of one of the two parallel trashes (boards' vs templates'),
-// newest-trashed first — shared by the Trash view and the footer-link
-// counts in the Boards modal.
-export function trashedItemsOf(boards: BoardSummary[], kind: 'board' | 'template'): BoardSummary[] {
+// Everything in the trash — boards and templates together, newest-trashed
+// first — shared by the Trash view and the footer-link count in the Boards
+// modal.
+export function trashedItemsOf(boards: BoardSummary[]): BoardSummary[] {
   return boards
-    .filter(b => b.trashed && (kind === 'template' ? b.kind === 'template' : b.kind !== 'template'))
+    .filter(b => b.trashed)
     .sort((a, b) => (b.trashedAt ?? '').localeCompare(a.trashedAt ?? ''))
 }
