@@ -16,7 +16,7 @@ if (file_exists(__DIR__ . '/config.php')) {
 }
 
 $repo_owner = 'MinimalHumans';
-$repo_name = 'SCF_brainboard';
+$repo_name = 'scriptyard';
 
 $env = (isset($_GET['env']) && $_GET['env'] === 'dev') ? 'dev' : 'prod';
 
