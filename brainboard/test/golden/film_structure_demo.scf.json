@@ -12,7 +12,7 @@
         "uuid": "00000000-0000-4000-8000-000000000001",
         "values": {
           "name": "Film Structure Demo",
-          "external_id": "87du_bCLSKbNzfvyLpvsw",
+          "external_id": "B5GjTokuqQyvGBbvNt42q",
           "external_id_namespace": "scriptyard"
         }
       }
@@ -26,7 +26,7 @@
           "role": "protagonist",
           "age": "Mid 30's",
           "pronouns": "he/him",
-          "occupation": "Moon Base Commmander",
+          "occupation": "Moon Base Commander",
           "summary": "A mostly even tempered dude, in love with Nancy secretly.",
           "external_id": "sOU_bd6DIh4gvjQY_tKAS",
           "external_id_namespace": "scriptyard"
@@ -93,7 +93,7 @@
           "name": "The Setup",
           "act_number": 1,
           "function": "Meeting the crew and getting a sense of the location on the Moon Base.",
-          "dramatic_question": "How will they handle the desolation and lonliness they face?",
+          "dramatic_question": "How will they handle the desolation and loneliness they face?",
           "shift": "Alliances form and Jerry's left out to dry.",
           "external_id": "vV4zknMSLvZ6G2ZtZZdFb",
           "external_id_namespace": "scriptyard",
@@ -216,7 +216,7 @@
           "name": "The Confession",
           "sequence_number": 7,
           "goal": "Owen and Nancy want to know what happened, Jerry wants them to know he did it and why.",
-          "conflict": "Jerry thinks this will fix thing.",
+          "conflict": "Jerry thinks this will fix things.",
           "outcome": "It doesn't.",
           "external_id": "3fn5XswD1nBueB1Mm1yP9",
           "external_id_namespace": "scriptyard",
@@ -307,7 +307,7 @@
           "int_ext": "interior",
           "time_of_day": "night",
           "goal": "Introduce the tension.",
-          "conflict": "Jerry didn't like Nancy's interpretation of the Soap Opera character \"Debbie\", he felt it lakced \"gravitas\"",
+          "conflict": "Jerry didn't like Nancy's interpretation of the Soap Opera character \"Debbie\", he felt it lacked \"gravitas\"",
           "outcome": "Nancy slapped the shit out of Jerry.",
           "external_id": "dhhhpCxj9EVFcCUGM8co5",
           "external_id_namespace": "scriptyard"
@@ -323,7 +323,7 @@
           "time_of_day": "night",
           "goal": "Owen interrogates Jerry on what went down between him and Nancy.",
           "conflict": "Owen is in love with Nancy and is very protective of her.",
-          "outcome": "Jerry trash talks Nancy and Owen slaps the shot out of Jerry (for a second time).",
+          "outcome": "Jerry trash talks Nancy and Owen slaps the shit out of Jerry (for a second time).",
           "external_id": "9IinkaLKLcdO1MaGEtUIk",
           "external_id_namespace": "scriptyard"
         }
@@ -337,7 +337,7 @@
           "int_ext": "interior",
           "time_of_day": "morning",
           "goal": "Jerry needs to air his grievances with Owen and Nancy.",
-          "conflict": "Jerry is tired of being the punching bag due to his spciy opinions.",
+          "conflict": "Jerry is tired of being the punching bag due to his spicy opinions.",
           "outcome": "Owen and Nancy have had just about enough of Jerry's nonsense.",
           "external_id": "vuAKX-MiTjfAFJ5wtvn7b",
           "external_id_namespace": "scriptyard"
@@ -383,7 +383,7 @@
           "time_of_day": "night",
           "goal": "Jerry serves Laxative laced Lasagna to the crew, including himself.",
           "conflict": "Laxatives make you poo",
-          "outcome": "Everyone is running for the toilets, not know why.",
+          "outcome": "Everyone is running for the toilets, not knowing why.",
           "external_id": "n2ZfdMv694q88-IgfjDHN",
           "external_id_namespace": "scriptyard"
         }
@@ -411,7 +411,7 @@
           "scene_number": "12",
           "int_ext": "interior",
           "time_of_day": "day",
-          "goal": "Owen and Nancy decide they have had enough of Jerry. It's not longer tolerable, he needs to be dealt with.",
+          "goal": "Owen and Nancy decide they have had enough of Jerry. It's no longer tolerable, he needs to be dealt with.",
           "conflict": "How to get rid of Jerry?",
           "outcome": "They decide that the terms of their stay make it impossible to send him home, they will need to make a barrier and lock him in one part of the base until the contract is up and they go back to Earth.",
           "external_id": "4Nnz5nRbJ8Dr7E3GiigYB",
@@ -428,7 +428,7 @@
           "time_of_day": "night",
           "goal": "Owen and Nancy break the news to Jerry.",
           "conflict": "Jerry takes everything badly. How did he get this job in the first place? Aren't there psych evals for Moon Base operators?",
-          "outcome": "Jerry reluctantly agrees. But in a petty passive agressive move, he steals all the toilet paper and keeps it on his section of the base.",
+          "outcome": "Jerry reluctantly agrees. But in a petty passive-aggressive move, he steals all the toilet paper and keeps it in his section of the base.",
           "external_id": "TapO4cwqOJLIqzcrukZ61",
           "external_id_namespace": "scriptyard"
         }
@@ -443,7 +443,7 @@
           "time_of_day": "dawn",
           "goal": "Owen and Nancy need to deal with Jerry once and for all.",
           "conflict": "Jerry is resistant to any good solution.",
-          "outcome": "The ask Jerry to do some maintenance in the air lock, then they open the doors. Bye bye Jerry.",
+          "outcome": "They ask Jerry to do some maintenance in the air lock, then they open the doors. Bye bye Jerry.",
           "external_id": "X54Cb_KkWpINVNmhclnUO",
           "external_id_namespace": "scriptyard"
         }

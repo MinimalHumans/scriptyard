@@ -11,7 +11,7 @@ backdrops: 11
 ## Act 1 — The Setup
 
 - **Function:** Meeting the crew and getting a sense of the location on the Moon Base.
-- **Dramatic Question:** How will they handle the desolation and lonliness they face?
+- **Dramatic Question:** How will they handle the desolation and loneliness they face?
 - **Shift:** Alliances form and Jerry's left out to dry.
 - **Status:** Active
 
@@ -67,7 +67,7 @@ backdrops: 11
 - **INT/EXT:** INT.
 - **Time of Day:** Night
 - **Goal:** Introduce the tension.
-- **Conflict:** Jerry didn't like Nancy's interpretation of the Soap Opera character "Debbie", he felt it lakced "gravitas"
+- **Conflict:** Jerry didn't like Nancy's interpretation of the Soap Opera character "Debbie", he felt it lacked "gravitas"
 - **Outcome:** Nancy slapped the shit out of Jerry.
 
 **INT. MOON BASE - INFIRMARY - NIGHT** *(Scene)*
@@ -76,7 +76,7 @@ backdrops: 11
 - **Time of Day:** Night
 - **Goal:** Owen interrogates Jerry on what went down between him and Nancy.
 - **Conflict:** Owen is in love with Nancy and is very protective of her.
-- **Outcome:** Jerry trash talks Nancy and Owen slaps the shot out of Jerry (for a second time).
+- **Outcome:** Jerry trash talks Nancy and Owen slaps the shit out of Jerry (for a second time).
 
 ## Act 2 — The Confrontation
 
@@ -95,7 +95,7 @@ backdrops: 11
 - **INT/EXT:** INT.
 - **Time of Day:** Morning
 - **Goal:** Jerry needs to air his grievances with Owen and Nancy.
-- **Conflict:** Jerry is tired of being the punching bag due to his spciy opinions.
+- **Conflict:** Jerry is tired of being the punching bag due to his spicy opinions.
 - **Outcome:** Owen and Nancy have had just about enough of Jerry's nonsense.
 
 **INT. MOON BASE - COMMAND CHAMBER - DAY** *(Scene)*
@@ -132,14 +132,14 @@ backdrops: 11
 - **Time of Day:** Night
 - **Goal:** Jerry serves Laxative laced Lasagna to the crew, including himself.
 - **Conflict:** Laxatives make you poo
-- **Outcome:** Everyone is running for the toilets, not know why.
+- **Outcome:** Everyone is running for the toilets, not knowing why.
 
 ## Act 3 — Act Three : Resolution
 
 ### Sequence 1 — The Confession
 
 - **Goal:** Owen and Nancy want to know what happened, Jerry wants them to know he did it and why.
-- **Conflict:** Jerry thinks this will fix thing.
+- **Conflict:** Jerry thinks this will fix things.
 - **Outcome:** It doesn't.
 
 **INT. MOON BASE - ARCADE - MORNING** *(Scene)*
@@ -154,7 +154,7 @@ backdrops: 11
 
 - **INT/EXT:** INT.
 - **Time of Day:** Day
-- **Goal:** Owen and Nancy decide they have had enough of Jerry. It's not longer tolerable, he needs to be dealt with.
+- **Goal:** Owen and Nancy decide they have had enough of Jerry. It's no longer tolerable, he needs to be dealt with.
 - **Conflict:** How to get rid of Jerry?
 - **Outcome:** They decide that the terms of their stay make it impossible to send him home, they will need to make a barrier and lock him in one part of the base until the contract is up and they go back to Earth.
 
@@ -170,7 +170,7 @@ backdrops: 11
 - **Time of Day:** Night
 - **Goal:** Owen and Nancy break the news to Jerry.
 - **Conflict:** Jerry takes everything badly. How did he get this job in the first place? Aren't there psych evals for Moon Base operators?
-- **Outcome:** Jerry reluctantly agrees. But in a petty passive agressive move, he steals all the toilet paper and keeps it on his section of the base.
+- **Outcome:** Jerry reluctantly agrees. But in a petty passive-aggressive move, he steals all the toilet paper and keeps it in his section of the base.
 
 **INT. MOON BASE - MAIN AIRLOCK - DAWN** *(Scene)*
 
@@ -178,7 +178,7 @@ backdrops: 11
 - **Time of Day:** Dawn
 - **Goal:** Owen and Nancy need to deal with Jerry once and for all.
 - **Conflict:** Jerry is resistant to any good solution.
-- **Outcome:** The ask Jerry to do some maintenance in the air lock, then they open the doors. Bye bye Jerry.
+- **Outcome:** They ask Jerry to do some maintenance in the air lock, then they open the doors. Bye bye Jerry.
 - **Status:** Active
 
 # Entity Library
@@ -209,7 +209,7 @@ backdrops: 11
 
 - **Pronouns:** he/him
 - **Role:** Protagonist
-- **Occupation:** Moon Base Commmander
+- **Occupation:** Moon Base Commander
 - **Age:** Mid 30's
 - **Character Summary:** A mostly even tempered dude, in love with Nancy secretly.
 

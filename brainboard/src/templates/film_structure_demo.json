@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "boardId": "87du_bCLSKbNzfvyLpvsw",
+  "boardId": "B5GjTokuqQyvGBbvNt42q",
   "name": "Film Structure Demo",
-  "createdAt": "2026-08-11T15:44:32.192Z",
-  "updatedAt": "2026-09-23T14:15:19.698Z",
+  "createdAt": "2026-11-11T09:54:37.103Z",
+  "updatedAt": "2026-11-11T10:16:46.939Z",
   "viewport": {
-    "x": 1255.2157784568603,
-    "y": 1240.9705465164088,
-    "zoom": 0.6419043761778394
+    "x": -867.67758896075,
+    "y": -153.93813552807813,
+    "zoom": 0.28842622841029986
   },
   "cards": [
     {
@@ -100,7 +100,7 @@
       },
       "rotation": 0,
       "color": "sky",
-      "zIndex": 1038,
+      "zIndex": 1093,
       "noteRaw": "",
       "instanceNote": "",
       "isFlipped": false,
@@ -164,7 +164,7 @@
       },
       "rotation": 0,
       "color": "emerald",
-      "zIndex": 1058,
+      "zIndex": 1089,
       "noteRaw": "",
       "instanceNote": "",
       "isFlipped": false,
@@ -212,7 +212,7 @@
       },
       "rotation": 0,
       "color": "crimson",
-      "zIndex": 1061,
+      "zIndex": 1092,
       "noteRaw": "",
       "instanceNote": "",
       "isFlipped": false,
@@ -360,7 +360,7 @@
       "attributes": {
         "int_ext": "INT.",
         "time_of_day": "Night",
-        "conflict": "Jerry didn't like Nancy's interpretation of the Soap Opera character \"Debbie\", he felt it lakced \"gravitas\"",
+        "conflict": "Jerry didn't like Nancy's interpretation of the Soap Opera character \"Debbie\", he felt it lacked \"gravitas\"",
         "outcome": "Nancy slapped the shit out of Jerry.",
         "goal": "Introduce the tension."
       }
@@ -375,7 +375,7 @@
         "time_of_day": "Night",
         "goal": "Owen interrogates Jerry on what went down between him and Nancy.",
         "conflict": "Owen is in love with Nancy and is very protective of her.",
-        "outcome": "Jerry trash talks Nancy and Owen slaps the shot out of Jerry (for a second time)."
+        "outcome": "Jerry trash talks Nancy and Owen slaps the shit out of Jerry (for a second time)."
       }
     },
     {
@@ -387,7 +387,7 @@
         "int_ext": "INT.",
         "time_of_day": "Morning",
         "goal": "Jerry needs to air his grievances with Owen and Nancy.",
-        "conflict": "Jerry is tired of being the punching bag due to his spciy opinions.",
+        "conflict": "Jerry is tired of being the punching bag due to his spicy opinions.",
         "outcome": "Owen and Nancy have had just about enough of Jerry's nonsense."
       }
     },
@@ -427,7 +427,7 @@
         "time_of_day": "Night",
         "goal": "Jerry serves Laxative laced Lasagna to the crew, including himself.",
         "conflict": "Laxatives make you poo",
-        "outcome": "Everyone is running for the toilets, not know why."
+        "outcome": "Everyone is running for the toilets, not knowing why."
       }
     },
     {
@@ -451,7 +451,7 @@
       "attributes": {
         "int_ext": "INT.",
         "time_of_day": "Day",
-        "goal": "Owen and Nancy decide they have had enough of Jerry. It's not longer tolerable, he needs to be dealt with.",
+        "goal": "Owen and Nancy decide they have had enough of Jerry. It's no longer tolerable, he needs to be dealt with.",
         "conflict": "How to get rid of Jerry?",
         "outcome": "They decide that the terms of their stay make it impossible to send him home, they will need to make a barrier and lock him in one part of the base until the contract is up and they go back to Earth."
       }
@@ -466,7 +466,7 @@
         "time_of_day": "Night",
         "goal": "Owen and Nancy break the news to Jerry.",
         "conflict": "Jerry takes everything badly. How did he get this job in the first place? Aren't there psych evals for Moon Base operators?",
-        "outcome": "Jerry reluctantly agrees. But in a petty passive agressive move, he steals all the toilet paper and keeps it on his section of the base."
+        "outcome": "Jerry reluctantly agrees. But in a petty passive-aggressive move, he steals all the toilet paper and keeps it in his section of the base."
       }
     },
     {
@@ -479,7 +479,7 @@
         "time_of_day": "Dawn",
         "goal": "Owen and Nancy need to deal with Jerry once and for all.",
         "conflict": "Jerry is resistant to any good solution.",
-        "outcome": "The ask Jerry to do some maintenance in the air lock, then they open the doors. Bye bye Jerry.",
+        "outcome": "They ask Jerry to do some maintenance in the air lock, then they open the doors. Bye bye Jerry.",
         "status": "Active"
       }
     },
@@ -491,7 +491,7 @@
       "attributes": {
         "pronouns": "he/him",
         "role": "Protagonist",
-        "occupation": "Moon Base Commmander",
+        "occupation": "Moon Base Commander",
         "age": "Mid 30's",
         "summary": "A mostly even tempered dude, in love with Nancy secretly."
       }
@@ -553,7 +553,7 @@
       "zIndex": 100,
       "attributes": {
         "function": "Meeting the crew and getting a sense of the location on the Moon Base.",
-        "dramatic_question": "How will they handle the desolation and lonliness they face?",
+        "dramatic_question": "How will they handle the desolation and loneliness they face?",
         "shift": "Alliances form and Jerry's left out to dry.",
         "status": "Active"
       }
@@ -739,7 +739,7 @@
       "zIndex": 150,
       "attributes": {
         "goal": "Owen and Nancy want to know what happened, Jerry wants them to know he did it and why.",
-        "conflict": "Jerry thinks this will fix thing.",
+        "conflict": "Jerry thinks this will fix things.",
         "outcome": "It doesn't."
       }
     },
