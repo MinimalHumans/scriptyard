@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<FinalDraft DocumentType="Script" Template="No" Version="6">
+  <Content>
+    <Paragraph Type="New Act">
+      <Text>ACT — THE SETUP</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Function: Meeting the crew and getting a sense of the location on the Moon Base.]</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Dramatic Question: How will they handle the desolation and lonliness they face?]</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Shift: Alliances form and Jerry&apos;s left out to dry.]</Text>
+    </Paragraph>
+    <Paragraph Type="General">
+      <Text>SEQUENCE: WELCOME TO THE MOON BASE</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Goal: Setting up the Moon Base Location and the characters living there.]</Text>
+    </Paragraph>
+    <Paragraph Type="Scene Heading">
+      <SceneProperties Length="0" Page="0" Title="EXT.  MOON BASE - DAY" Synopsis="Show the setting of the story."/>
+      <Text>EXT.  MOON BASE - DAY</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Goal: Show the setting of the story.]</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Outcome: We see that we are on a desolate moon base.]</Text>
+    </Paragraph>
+    <Paragraph Type="Scene Heading">
+      <SceneProperties Length="0" Page="0" Title="INT. MOON BASE - DAY" Synopsis="Here we meet the three occupants of the Moon Base."/>
+      <Text>INT. MOON BASE - DAY</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Goal: Here we meet the three occupants of the Moon Base.]</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Conflict: We meet the small crew and try to work out what the situation is.]</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Outcome: We see that they are pretty bored.]</Text>
+    </Paragraph>
+    <Paragraph Type="General">
+      <Text>SEQUENCE: WHAT&apos;S WRONG ON THE MOON BASE?</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Goal: We&apos;ve established the Moon Base, but what&apos;s the situation?]</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Conflict: Not much to do here.]</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Outcome: The crew is bored and a bit lonely.]</Text>
+    </Paragraph>
+    <Paragraph Type="Scene Heading">
+      <SceneProperties Length="0" Page="0" Title="INT. MOON BASE  - DAY" Synopsis="Find out why they are so bored."/>
+      <Text>INT. MOON BASE  - DAY</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Goal: Find out why they are so bored.]</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Conflict: The communication with Earth has been down for 5 days and they&apos;re getting behind on their favorite Soap Opera.]</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Outcome: They are constructing costumes to enact their own version of the story.]</Text>
+    </Paragraph>
+    <Paragraph Type="General">
+      <Text>SEQUENCE: THE PERFORMANCE</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Goal: The three crew members need to perform a play for themselves in order to pass the time.]</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Conflict: It&apos;s hard and in the stress of the moment tempers flare as well as some unspoken passions.]</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Outcome: One of them is wounded.]</Text>
+    </Paragraph>
+    <Paragraph Type="Scene Heading">
+      <SceneProperties Length="0" Page="0" Title="INT. MOON BASE - AUDITORIUM - NIGHT" Synopsis="Three crew mates must find a way to perform their interpretation of their favorite soap opera, two at a time for the third to watch,"/>
+      <Text>INT. MOON BASE - AUDITORIUM - NIGHT</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Goal: Three crew mates must find a way to perform their interpretation of their favorite soap opera, two at a time for the third to watch,]</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Conflict: This is logistically difficult.]</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Outcome: They do a poor job of it.]</Text>
+    </Paragraph>
+    <Paragraph Type="Scene Heading">
+      <SceneProperties Length="0" Page="0" Title="INT. MOON BASE - BACKSTAGE - NIGHT" Synopsis="Introduce the tension."/>
+      <Text>INT. MOON BASE - BACKSTAGE - NIGHT</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Goal: Introduce the tension.]</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Conflict: Jerry didn&apos;t like Nancy&apos;s interpretation of the Soap Opera character &quot;Debbie&quot;, he felt it lakced &quot;gravitas&quot;]</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Outcome: Nancy slapped the shit out of Jerry.]</Text>
+    </Paragraph>
+    <Paragraph Type="Scene Heading">
+      <SceneProperties Length="0" Page="0" Title="INT. MOON BASE - INFIRMARY - NIGHT" Synopsis="Owen interrogates Jerry on what went down between him and Nancy."/>
+      <Text>INT. MOON BASE - INFIRMARY - NIGHT</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Goal: Owen interrogates Jerry on what went down between him and Nancy.]</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Conflict: Owen is in love with Nancy and is very protective of her.]</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Outcome: Jerry trash talks Nancy and Owen slaps the shot out of Jerry (for a second time).]</Text>
+    </Paragraph>
+    <Paragraph Type="New Act">
+      <Text>ACT — THE CONFRONTATION</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Function: Jerry has had enough of being slapped.]</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Dramatic Question: What will he do about it?]</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Shift: Jerry takes control of a situation that he was previously powerless in.]</Text>
+    </Paragraph>
+    <Paragraph Type="General">
+      <Text>SEQUENCE: JERRY FIGHTS BACK</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Goal: Jerry is tired of being bullied and wants it to stop.]</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Conflict: Owen and Nancy react to Jerry for a reason, he&apos;s kind of a jerk.]</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Outcome: Jerry makes everything worse.]</Text>
+    </Paragraph>
+    <Paragraph Type="Scene Heading">
+      <SceneProperties Length="0" Page="0" Title="INT. MOON BASE - CAFETERIA - MORNING" Synopsis="Jerry needs to air his grievances with Owen and Nancy."/>
+      <Text>INT. MOON BASE - CAFETERIA - MORNING</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Goal: Jerry needs to air his grievances with Owen and Nancy.]</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Conflict: Jerry is tired of being the punching bag due to his spciy opinions.]</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Outcome: Owen and Nancy have had just about enough of Jerry&apos;s nonsense.]</Text>
+    </Paragraph>
+    <Paragraph Type="Scene Heading">
+      <SceneProperties Length="0" Page="0" Title="INT. MOON BASE - COMMAND CHAMBER - DAY" Synopsis="Owen and Nancy need to deal with the issues with Jerry."/>
+      <Text>INT. MOON BASE - COMMAND CHAMBER - DAY</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Goal: Owen and Nancy need to deal with the issues with Jerry.]</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Conflict: Jerry is a jerk and is tired of being bullied.]</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Outcome: Jerry&apos;s approach at communication fails and Owen and Nancy decide to present a solution, to spend some time away from Jerry.]</Text>
+    </Paragraph>
+    <Paragraph Type="General">
+      <Text>SEQUENCE: INTERVENTION WITH JERRY</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Goal: Owen and Nancy need their space from Jerry and they want to let him know diplomatically.]</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Conflict: Jerry&apos;s not having it.]</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Outcome: Rather than a solution, things are even worse. Jerry feels like the victim, which he is, but he&apos;s also just so damn hard to deal with.]</Text>
+    </Paragraph>
+    <Paragraph Type="Scene Heading">
+      <SceneProperties Length="0" Page="0" Title="INT. MOON BASE - KITCHEN - NIGHT" Synopsis="Jerry&apos;s misguided sense of justice allows him to feel that putting laxative in the Lasagna is a good way to resolve the conflict."/>
+      <Text>INT. MOON BASE - KITCHEN - NIGHT</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Goal: Jerry&apos;s misguided sense of justice allows him to feel that putting laxative in the Lasagna is a good way to resolve the conflict.]</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Conflict: Jerry&apos;s ideas are nearly always making things worse.]</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Outcome: Things get worse. Like, a lot worse.]</Text>
+    </Paragraph>
+    <Paragraph Type="General">
+      <Text>SEQUENCE: THE LASAGNA</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Goal: Jerry puts laxative in the Lasagna, including his own.]</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Conflict: Laxative is a bad tool for conflict resolution.]</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Outcome: Every toilet is occupied by a pissed off individual.]</Text>
+    </Paragraph>
+    <Paragraph Type="Scene Heading">
+      <SceneProperties Length="0" Page="0" Title="INT. MOON BASE - CAFETERIA - NIGHT" Synopsis="Jerry serves Laxative laced Lasagna to the crew, including himself."/>
+      <Text>INT. MOON BASE - CAFETERIA - NIGHT</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Goal: Jerry serves Laxative laced Lasagna to the crew, including himself.]</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Conflict: Laxatives make you poo]</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Outcome: Everyone is running for the toilets, not know why.]</Text>
+    </Paragraph>
+    <Paragraph Type="New Act">
+      <Text>ACT — ACT THREE : RESOLUTION</Text>
+    </Paragraph>
+    <Paragraph Type="General">
+      <Text>SEQUENCE: THE CONFESSION</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Goal: Owen and Nancy want to know what happened, Jerry wants them to know he did it and why.]</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Conflict: Jerry thinks this will fix thing.]</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Outcome: It doesn&apos;t.]</Text>
+    </Paragraph>
+    <Paragraph Type="Scene Heading">
+      <SceneProperties Length="0" Page="0" Title="INT. MOON BASE - ARCADE - MORNING" Synopsis="Jerry invites Owen and Nancy to the arcade in the Moon Base to explain what he did."/>
+      <Text>INT. MOON BASE - ARCADE - MORNING</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Goal: Jerry invites Owen and Nancy to the arcade in the Moon Base to explain what he did.]</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Conflict: Jerry thinks this will help things, but Jerry is an idiot.]</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Outcome: Owen and Nancy are stunned by the idiocy of Jerry. The loud atmosphere helped nothing.]</Text>
+    </Paragraph>
+    <Paragraph Type="Scene Heading">
+      <SceneProperties Length="0" Page="0" Title="INT. MOON BASE - COMMAND CHAMBER - DAY" Synopsis="Owen and Nancy decide they have had enough of Jerry. It&apos;s not longer tolerable, he needs to be dealt with."/>
+      <Text>INT. MOON BASE - COMMAND CHAMBER - DAY</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Goal: Owen and Nancy decide they have had enough of Jerry. It&apos;s not longer tolerable, he needs to be dealt with.]</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Conflict: How to get rid of Jerry?]</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Outcome: They decide that the terms of their stay make it impossible to send him home, they will need to make a barrier and lock him in one part of the base until the contract is up and they go back to Earth.]</Text>
+    </Paragraph>
+    <Paragraph Type="General">
+      <Text>SEQUENCE: THE QUARANTINE</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Goal: Get Jerry to agree to terms of avoidance. That he stays away from Owen and Nancy.]</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Conflict: Jerry is difficult.]</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Outcome: Jerry reluctantly agrees. But it doesn&apos;t end well.]</Text>
+    </Paragraph>
+    <Paragraph Type="Scene Heading">
+      <SceneProperties Length="0" Page="0" Title="INT. MOON BASE - CAFETERIA - NIGHT" Synopsis="Owen and Nancy break the news to Jerry."/>
+      <Text>INT. MOON BASE - CAFETERIA - NIGHT</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Goal: Owen and Nancy break the news to Jerry.]</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Conflict: Jerry takes everything badly. How did he get this job in the first place? Aren&apos;t there psych evals for Moon Base operators?]</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Outcome: Jerry reluctantly agrees. But in a petty passive agressive move, he steals all the toilet paper and keeps it on his section of the base.]</Text>
+    </Paragraph>
+    <Paragraph Type="Scene Heading">
+      <SceneProperties Length="0" Page="0" Title="INT. MOON BASE - MAIN AIRLOCK - DAWN" Synopsis="Owen and Nancy need to deal with Jerry once and for all."/>
+      <Text>INT. MOON BASE - MAIN AIRLOCK - DAWN</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Goal: Owen and Nancy need to deal with Jerry once and for all.]</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Conflict: Jerry is resistant to any good solution.]</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Outcome: The ask Jerry to do some maintenance in the air lock, then they open the doors. Bye bye Jerry.]</Text>
+    </Paragraph>
+    <Paragraph Type="General">
+      <Text>LOOSE NOTES</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Location: Moon Base — Type: Int/Ext · Time Period: 2245 · Mood / Atmosphere: Desolate · Setting Description: It&apos;s a functional building in a desolate place. It&apos;s a little dated feeling even in the future.]</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Character: Owen Jenkins — Pronouns: he/him · Role: Protagonist · Occupation: Moon Base Commmander · Age: Mid 30&apos;s · Character Summary: A mostly even tempered dude, in love with Nancy secretly.]</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Character: Nancy Flerkins — Pronouns: she/her · Role: Protagonist · Occupation: Moon Base Science Officer · Age: Mid 40&apos;s · Character Summary: A competent and strong person. Knows that Owen has feelings for her but doesn&apos;t reciprocate them.]</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Character: Jerry Perkins — Pronouns: he/him · Role: Antagonist · Occupation: Moon Base Maintenance · Age: Mid 30&apos;s · Character Summary: A truly irritating person. Can&apos;t read a room and always makes the wrong choice.]</Text>
+    </Paragraph>
+  </Content>
+  <TitlePage>
+    <Content>
+    <Paragraph Type="Action" Alignment="Center">
+      <Text>Film Structure Demo</Text>
+    </Paragraph>
+    </Content>
+  </TitlePage>
+</FinalDraft>

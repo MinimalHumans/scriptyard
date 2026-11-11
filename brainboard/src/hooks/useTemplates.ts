@@ -40,6 +40,15 @@ function filenameToTitle(path: string): string {
     .replace(/\b\w/g, c => c.toUpperCase())
 }
 
+// Template ids shown at the top of the list, in this order. Everything else
+// follows alphabetically by filename.
+const PINNED_FIRST = ['film-structure-demo']
+
+function pinnedRank(id: string): number {
+  const i = PINNED_FIRST.indexOf(id)
+  return i === -1 ? PINNED_FIRST.length : i
+}
+
 export function useTemplates(): TemplateEntry[] {
   return Object.entries(templateModules).map(([path, mod]) => {
     const board = mod.default
@@ -50,5 +59,5 @@ export function useTemplates(): TemplateEntry[] {
       cardCount:    board.cards?.length ?? 0,
       backdropCount: board.backdrops?.length ?? 0,
     }
-  })
+  }).sort((a, b) => pinnedRank(a.id) - pinnedRank(b.id))
 }

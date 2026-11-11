@@ -1,0 +1,786 @@
+{
+  "schemaVersion": 1,
+  "boardId": "87du_bCLSKbNzfvyLpvsw",
+  "name": "Film Structure Demo",
+  "createdAt": "2026-08-11T15:44:32.192Z",
+  "updatedAt": "2026-09-23T14:15:19.698Z",
+  "viewport": {
+    "x": 1255.2157784568603,
+    "y": 1240.9705465164088,
+    "zoom": 0.6419043761778394
+  },
+  "cards": [
+    {
+      "id": "5kEHzZ0rURhU1A97iUPND",
+      "entityId": "cDie09w9GM93zdb4YF682",
+      "type": "Scene",
+      "position": {
+        "x": 1996.8637035487968,
+        "y": 2317.8718686075754
+      },
+      "rotation": 0,
+      "color": "sky",
+      "zIndex": 1032,
+      "noteRaw": "",
+      "instanceNote": "",
+      "isFlipped": false,
+      "title": "INT. MOON BASE - DAY"
+    },
+    {
+      "id": "a-B_KZRDYb1Ul6EK9i_ob",
+      "entityId": "IaLSYjF6GI0fR79CN92ce",
+      "type": "Scene",
+      "position": {
+        "x": 2565.6064658669998,
+        "y": 2343.805621978699
+      },
+      "rotation": 0,
+      "color": "sky",
+      "zIndex": 1020,
+      "noteRaw": "",
+      "instanceNote": "",
+      "isFlipped": false,
+      "title": "INT. MOON BASE  - DAY"
+    },
+    {
+      "id": "TKDSW-GDgp3gAJk-lJ5jJ",
+      "entityId": "RGyY2dEdR-5ntzP_66YHp",
+      "type": "Scene",
+      "position": {
+        "x": 1750.3049884428583,
+        "y": 2845.2805003671615
+      },
+      "rotation": 0,
+      "color": "sky",
+      "zIndex": 1024,
+      "noteRaw": "",
+      "instanceNote": "",
+      "isFlipped": false,
+      "title": "INT. MOON BASE - AUDITORIUM - NIGHT"
+    },
+    {
+      "id": "cSAn0CjW6bP5tXNMIDtlC",
+      "entityId": "DoTGEfDG6_LDyzBQpcIQS",
+      "type": "Scene",
+      "position": {
+        "x": 1618.6587504461017,
+        "y": 2256.1852056565376
+      },
+      "rotation": 0,
+      "color": "sky",
+      "zIndex": 1031,
+      "noteRaw": "",
+      "instanceNote": "",
+      "isFlipped": false,
+      "title": "EXT.  MOON BASE - DAY"
+    },
+    {
+      "id": "FCSxZeDeqUXj5uxW_e3P-",
+      "entityId": "dhhhpCxj9EVFcCUGM8co5",
+      "type": "Scene",
+      "position": {
+        "x": 2096.7757629915022,
+        "y": 2847.4349987073715
+      },
+      "rotation": 0,
+      "color": "sky",
+      "zIndex": 1039,
+      "noteRaw": "",
+      "instanceNote": "",
+      "isFlipped": false,
+      "title": "INT. MOON BASE - BACKSTAGE - NIGHT"
+    },
+    {
+      "id": "i7MugDEfLEZbokt13VPwU",
+      "entityId": "9IinkaLKLcdO1MaGEtUIk",
+      "type": "Scene",
+      "position": {
+        "x": 2453.6443639570266,
+        "y": 2850.00068519227
+      },
+      "rotation": 0,
+      "color": "sky",
+      "zIndex": 1038,
+      "noteRaw": "",
+      "instanceNote": "",
+      "isFlipped": false,
+      "title": "INT. MOON BASE - INFIRMARY - NIGHT"
+    },
+    {
+      "id": "cx_WR75fZYWBK9SHxyvOq",
+      "entityId": "vuAKX-MiTjfAFJ5wtvn7b",
+      "type": "Scene",
+      "position": {
+        "x": 3420.5291034670654,
+        "y": 2289.1545288959974
+      },
+      "rotation": 0,
+      "color": "emerald",
+      "zIndex": 1043,
+      "noteRaw": "",
+      "instanceNote": "",
+      "isFlipped": false,
+      "title": "INT. MOON BASE - CAFETERIA - MORNING"
+    },
+    {
+      "id": "IrCCkqQ7AstSlJYeifhBs",
+      "entityId": "5ZYbO1H1HQkmkuDoGt5Wa",
+      "type": "Scene",
+      "position": {
+        "x": 3413.86235542019,
+        "y": 2597.154528895998
+      },
+      "rotation": 0,
+      "color": "emerald",
+      "zIndex": 1055,
+      "noteRaw": "",
+      "instanceNote": "",
+      "isFlipped": false,
+      "title": "INT. MOON BASE - COMMAND CHAMBER - DAY"
+    },
+    {
+      "id": "-Yvj_zLIqgo_CqZ7v10Ce",
+      "entityId": "KrFHyWh2B1NEW7mgWII45",
+      "type": "Scene",
+      "position": {
+        "x": 4001.8516988250167,
+        "y": 2341.4161690890555
+      },
+      "rotation": 0,
+      "color": "emerald",
+      "zIndex": 1049,
+      "noteRaw": "",
+      "instanceNote": "",
+      "isFlipped": false,
+      "title": "INT. MOON BASE - KITCHEN - NIGHT"
+    },
+    {
+      "id": "O1xIPYpKJu-eJYo8ZMpp0",
+      "entityId": "n2ZfdMv694q88-IgfjDHN",
+      "type": "Scene",
+      "position": {
+        "x": 4001.495143023559,
+        "y": 2909.2999562800437
+      },
+      "rotation": 0,
+      "color": "emerald",
+      "zIndex": 1058,
+      "noteRaw": "",
+      "instanceNote": "",
+      "isFlipped": false,
+      "title": "INT. MOON BASE - CAFETERIA - NIGHT"
+    },
+    {
+      "id": "5bMhy7nWuy55VkpG3mi7y",
+      "entityId": "rZjnzaT3q6Z9AQ9w_p-UE",
+      "type": "Scene",
+      "position": {
+        "x": 4688.295599701739,
+        "y": 2248.8627408583448
+      },
+      "rotation": 0,
+      "color": "crimson",
+      "zIndex": 1054,
+      "noteRaw": "",
+      "instanceNote": "",
+      "isFlipped": false,
+      "title": "INT. MOON BASE - ARCADE - MORNING"
+    },
+    {
+      "id": "lvN7xteraYhKHPGug2B3X",
+      "entityId": "4Nnz5nRbJ8Dr7E3GiigYB",
+      "type": "Scene",
+      "position": {
+        "x": 4690.207403760345,
+        "y": 2572.298418569591
+      },
+      "rotation": 0,
+      "color": "crimson",
+      "zIndex": 1057,
+      "noteRaw": "",
+      "instanceNote": "",
+      "isFlipped": false,
+      "title": "INT. MOON BASE - COMMAND CHAMBER - DAY"
+    },
+    {
+      "id": "UtGKQrkvybCmhJk406H4D",
+      "entityId": "TapO4cwqOJLIqzcrukZ61",
+      "type": "Scene",
+      "position": {
+        "x": 5345.495143023561,
+        "y": 2296.6332082331683
+      },
+      "rotation": 0,
+      "color": "crimson",
+      "zIndex": 1061,
+      "noteRaw": "",
+      "instanceNote": "",
+      "isFlipped": false,
+      "title": "INT. MOON BASE - CAFETERIA - NIGHT"
+    },
+    {
+      "id": "zfVtNLco0lGLiIBEXH0Dg",
+      "entityId": "X54Cb_KkWpINVNmhclnUO",
+      "type": "Scene",
+      "position": {
+        "x": 5353.73949790252,
+        "y": 2632.2555719235743
+      },
+      "rotation": 0,
+      "color": "crimson",
+      "zIndex": 1065,
+      "noteRaw": "",
+      "instanceNote": "",
+      "isFlipped": false,
+      "title": "INT. MOON BASE - MAIN AIRLOCK - DAWN"
+    },
+    {
+      "id": "-aCt1opwIIWErlqudRSKb",
+      "entityId": "sOU_bd6DIh4gvjQY_tKAS",
+      "type": "Character",
+      "position": {
+        "x": 4795.10986992343,
+        "y": 1102.7059461870913
+      },
+      "rotation": 0,
+      "color": "amber",
+      "zIndex": 1073,
+      "noteRaw": "",
+      "instanceNote": "",
+      "isFlipped": false,
+      "title": "Owen Jenkins"
+    },
+    {
+      "id": "xrII0nqAWLa0MZLgOgT4s",
+      "entityId": "OL5Vaz9ZJ1sdIQZPZXF1K",
+      "type": "Character",
+      "position": {
+        "x": 4988.369703514629,
+        "y": 1403.5104108485832
+      },
+      "rotation": 0,
+      "color": "amber",
+      "zIndex": 1082,
+      "noteRaw": "",
+      "instanceNote": "",
+      "isFlipped": false,
+      "title": "Jerry Perkins"
+    },
+    {
+      "id": "3ezWKHndXwh11-XlBiypU",
+      "entityId": "Z-E1b0roLHEi1h-GYlCXx",
+      "type": "Character",
+      "position": {
+        "x": 5200.958330211909,
+        "y": 1105.7544916767822
+      },
+      "rotation": 0,
+      "color": "amber",
+      "zIndex": 1081,
+      "noteRaw": "",
+      "instanceNote": "",
+      "isFlipped": false,
+      "title": "Nancy Flerkins"
+    },
+    {
+      "id": "Uslm7azxr8S0ONqx4gQqb",
+      "entityId": "vW_5Te5O7KXZY_ItGbLOB",
+      "type": "Location",
+      "position": {
+        "x": 5024.235827025639,
+        "y": 514.1803431903655
+      },
+      "rotation": 0,
+      "color": "sage",
+      "zIndex": 1086,
+      "noteRaw": "",
+      "instanceNote": "",
+      "isFlipped": false,
+      "title": "Moon Base"
+    }
+  ],
+  "entities": [
+    {
+      "id": "cDie09w9GM93zdb4YF682",
+      "type": "Scene",
+      "title": "INT. MOON BASE - DAY",
+      "noteRaw": "",
+      "attributes": {
+        "int_ext": "INT.",
+        "time_of_day": "Day",
+        "goal": "Here we meet the three occupants of the Moon Base.",
+        "conflict": "We meet the small crew and try to work out what the situation is.",
+        "outcome": "We see that they are pretty bored."
+      }
+    },
+    {
+      "id": "IaLSYjF6GI0fR79CN92ce",
+      "type": "Scene",
+      "title": "INT. MOON BASE  - DAY",
+      "noteRaw": "",
+      "attributes": {
+        "int_ext": "INT.",
+        "time_of_day": "Day",
+        "goal": "Find out why they are so bored.",
+        "conflict": "The communication with Earth has been down for 5 days and they're getting behind on their favorite Soap Opera.",
+        "outcome": "They are constructing costumes to enact their own version of the story. "
+      }
+    },
+    {
+      "id": "RGyY2dEdR-5ntzP_66YHp",
+      "type": "Scene",
+      "title": "INT. MOON BASE - AUDITORIUM - NIGHT",
+      "noteRaw": "",
+      "attributes": {
+        "int_ext": "INT.",
+        "time_of_day": "Night",
+        "goal": "Three crew mates must find a way to perform their interpretation of their favorite soap opera, two at a time for the third to watch,",
+        "conflict": "This is logistically difficult.",
+        "outcome": "They do a poor job of it."
+      }
+    },
+    {
+      "id": "DoTGEfDG6_LDyzBQpcIQS",
+      "type": "Scene",
+      "title": "EXT.  MOON BASE - DAY",
+      "noteRaw": "",
+      "attributes": {
+        "int_ext": "EXT.",
+        "time_of_day": "Day",
+        "goal": "Show the setting of the story.",
+        "outcome": "We see that we are on a desolate moon base.",
+        "conflict": ""
+      }
+    },
+    {
+      "id": "dhhhpCxj9EVFcCUGM8co5",
+      "type": "Scene",
+      "title": "INT. MOON BASE - BACKSTAGE - NIGHT",
+      "noteRaw": "",
+      "attributes": {
+        "int_ext": "INT.",
+        "time_of_day": "Night",
+        "conflict": "Jerry didn't like Nancy's interpretation of the Soap Opera character \"Debbie\", he felt it lakced \"gravitas\"",
+        "outcome": "Nancy slapped the shit out of Jerry.",
+        "goal": "Introduce the tension."
+      }
+    },
+    {
+      "id": "9IinkaLKLcdO1MaGEtUIk",
+      "type": "Scene",
+      "title": "INT. MOON BASE - INFIRMARY - NIGHT",
+      "noteRaw": "",
+      "attributes": {
+        "int_ext": "INT.",
+        "time_of_day": "Night",
+        "goal": "Owen interrogates Jerry on what went down between him and Nancy.",
+        "conflict": "Owen is in love with Nancy and is very protective of her.",
+        "outcome": "Jerry trash talks Nancy and Owen slaps the shot out of Jerry (for a second time)."
+      }
+    },
+    {
+      "id": "vuAKX-MiTjfAFJ5wtvn7b",
+      "type": "Scene",
+      "title": "INT. MOON BASE - CAFETERIA - MORNING",
+      "noteRaw": "",
+      "attributes": {
+        "int_ext": "INT.",
+        "time_of_day": "Morning",
+        "goal": "Jerry needs to air his grievances with Owen and Nancy.",
+        "conflict": "Jerry is tired of being the punching bag due to his spciy opinions.",
+        "outcome": "Owen and Nancy have had just about enough of Jerry's nonsense."
+      }
+    },
+    {
+      "id": "5ZYbO1H1HQkmkuDoGt5Wa",
+      "type": "Scene",
+      "title": "INT. MOON BASE - COMMAND CHAMBER - DAY",
+      "noteRaw": "",
+      "attributes": {
+        "int_ext": "INT.",
+        "time_of_day": "Day",
+        "goal": "Owen and Nancy need to deal with the issues with Jerry.",
+        "conflict": "Jerry is a jerk and is tired of being bullied.",
+        "outcome": "Jerry's approach at communication fails and Owen and Nancy decide to present a solution, to spend some time away from Jerry."
+      }
+    },
+    {
+      "id": "KrFHyWh2B1NEW7mgWII45",
+      "type": "Scene",
+      "title": "INT. MOON BASE - KITCHEN - NIGHT",
+      "noteRaw": "",
+      "attributes": {
+        "goal": "Jerry's misguided sense of justice allows him to feel that putting laxative in the Lasagna is a good way to resolve the conflict.",
+        "conflict": "Jerry's ideas are nearly always making things worse.",
+        "outcome": "Things get worse. Like, a lot worse.",
+        "int_ext": "INT.",
+        "time_of_day": "Night"
+      }
+    },
+    {
+      "id": "n2ZfdMv694q88-IgfjDHN",
+      "type": "Scene",
+      "title": "INT. MOON BASE - CAFETERIA - NIGHT",
+      "noteRaw": "",
+      "attributes": {
+        "int_ext": "INT.",
+        "time_of_day": "Night",
+        "goal": "Jerry serves Laxative laced Lasagna to the crew, including himself.",
+        "conflict": "Laxatives make you poo",
+        "outcome": "Everyone is running for the toilets, not know why."
+      }
+    },
+    {
+      "id": "rZjnzaT3q6Z9AQ9w_p-UE",
+      "type": "Scene",
+      "title": "INT. MOON BASE - ARCADE - MORNING",
+      "noteRaw": "",
+      "attributes": {
+        "int_ext": "INT.",
+        "time_of_day": "Morning",
+        "goal": "Jerry invites Owen and Nancy to the arcade in the Moon Base to explain what he did.",
+        "conflict": "Jerry thinks this will help things, but Jerry is an idiot.",
+        "outcome": "Owen and Nancy are stunned by the idiocy of Jerry. The loud atmosphere helped nothing."
+      }
+    },
+    {
+      "id": "4Nnz5nRbJ8Dr7E3GiigYB",
+      "type": "Scene",
+      "title": "INT. MOON BASE - COMMAND CHAMBER - DAY",
+      "noteRaw": "",
+      "attributes": {
+        "int_ext": "INT.",
+        "time_of_day": "Day",
+        "goal": "Owen and Nancy decide they have had enough of Jerry. It's not longer tolerable, he needs to be dealt with.",
+        "conflict": "How to get rid of Jerry?",
+        "outcome": "They decide that the terms of their stay make it impossible to send him home, they will need to make a barrier and lock him in one part of the base until the contract is up and they go back to Earth."
+      }
+    },
+    {
+      "id": "TapO4cwqOJLIqzcrukZ61",
+      "type": "Scene",
+      "title": "INT. MOON BASE - CAFETERIA - NIGHT",
+      "noteRaw": "",
+      "attributes": {
+        "int_ext": "INT.",
+        "time_of_day": "Night",
+        "goal": "Owen and Nancy break the news to Jerry.",
+        "conflict": "Jerry takes everything badly. How did he get this job in the first place? Aren't there psych evals for Moon Base operators?",
+        "outcome": "Jerry reluctantly agrees. But in a petty passive agressive move, he steals all the toilet paper and keeps it on his section of the base."
+      }
+    },
+    {
+      "id": "X54Cb_KkWpINVNmhclnUO",
+      "type": "Scene",
+      "title": "INT. MOON BASE - MAIN AIRLOCK - DAWN",
+      "noteRaw": "",
+      "attributes": {
+        "int_ext": "INT.",
+        "time_of_day": "Dawn",
+        "goal": "Owen and Nancy need to deal with Jerry once and for all.",
+        "conflict": "Jerry is resistant to any good solution.",
+        "outcome": "The ask Jerry to do some maintenance in the air lock, then they open the doors. Bye bye Jerry.",
+        "status": "Active"
+      }
+    },
+    {
+      "id": "sOU_bd6DIh4gvjQY_tKAS",
+      "type": "Character",
+      "title": "Owen Jenkins",
+      "noteRaw": "",
+      "attributes": {
+        "pronouns": "he/him",
+        "role": "Protagonist",
+        "occupation": "Moon Base Commmander",
+        "age": "Mid 30's",
+        "summary": "A mostly even tempered dude, in love with Nancy secretly."
+      }
+    },
+    {
+      "id": "OL5Vaz9ZJ1sdIQZPZXF1K",
+      "type": "Character",
+      "title": "Jerry Perkins",
+      "noteRaw": "",
+      "attributes": {
+        "pronouns": "he/him",
+        "role": "Antagonist",
+        "occupation": "Moon Base Maintenance",
+        "age": "Mid 30's",
+        "summary": "A truly irritating person. Can't read a room and always makes the wrong choice."
+      }
+    },
+    {
+      "id": "Z-E1b0roLHEi1h-GYlCXx",
+      "type": "Character",
+      "title": "Nancy Flerkins",
+      "noteRaw": "",
+      "attributes": {
+        "pronouns": "she/her",
+        "role": "Protagonist",
+        "occupation": "Moon Base Science Officer",
+        "age": "Mid 40's",
+        "summary": "A competent and strong person. Knows that Owen has feelings for her but doesn't reciprocate them. "
+      }
+    },
+    {
+      "id": "vW_5Te5O7KXZY_ItGbLOB",
+      "type": "Location",
+      "title": "Moon Base",
+      "noteRaw": "",
+      "attributes": {
+        "type": "Int/Ext",
+        "period": "2245",
+        "mood": "Desolate",
+        "description": "It's a functional building in a desolate place. It's a little dated feeling even in the future."
+      }
+    }
+  ],
+  "backdrops": [
+    {
+      "note": "",
+      "id": "vV4zknMSLvZ6G2ZtZZdFb",
+      "type": "Act",
+      "title": "The Setup",
+      "position": {
+        "x": 1526.780587273122,
+        "y": 1958.3771758790297
+      },
+      "size": {
+        "width": 1631.532345836697,
+        "height": 1291.166310443216
+      },
+      "color": "slate",
+      "zIndex": 100,
+      "attributes": {
+        "function": "Meeting the crew and getting a sense of the location on the Moon Base.",
+        "dramatic_question": "How will they handle the desolation and lonliness they face?",
+        "shift": "Alliances form and Jerry's left out to dry.",
+        "status": "Active"
+      }
+    },
+    {
+      "note": "",
+      "id": "qRgQmQLwqjMb-Oi5BAh1E",
+      "type": "Act",
+      "title": "The Confrontation",
+      "position": {
+        "x": 3233.3760335784173,
+        "y": 1949.096996856473
+      },
+      "size": {
+        "width": 1203.8558112632586,
+        "height": 1292.021154177296
+      },
+      "color": "sage",
+      "zIndex": 100,
+      "attributes": {
+        "function": "Jerry has had enough of being slapped.",
+        "dramatic_question": "What will he do about it?",
+        "shift": "Jerry takes control of a situation that he was previously powerless in."
+      }
+    },
+    {
+      "note": "",
+      "id": "-y5loNXU6XTv7Q1LaUBYV",
+      "type": "Act",
+      "title": "Act Three : Resolution",
+      "position": {
+        "x": 4498.0270206863015,
+        "y": 1950.6306340565595
+      },
+      "size": {
+        "width": 1438.8651902994516,
+        "height": 1311.2598501209764
+      },
+      "color": "crimson",
+      "zIndex": 100,
+      "attributes": {
+        "function": ""
+      }
+    },
+    {
+      "note": "",
+      "id": "LCLDeSPKnPWbIymEnfikI",
+      "type": "Sequence",
+      "title": "Welcome to the Moon Base",
+      "position": {
+        "x": 1578.1362759146,
+        "y": 2128.6450396831515
+      },
+      "size": {
+        "width": 775.9656028544464,
+        "height": 446.9347302677656
+      },
+      "color": "sky",
+      "zIndex": 150,
+      "attributes": {
+        "goal": "Setting up the Moon Base Location and the characters living there."
+      }
+    },
+    {
+      "note": "",
+      "id": "ft9SRGLNPyXOBJ1wC10d-",
+      "type": "Sequence",
+      "title": "What's wrong on the Moon Base?",
+      "position": {
+        "x": 2382.235996204887,
+        "y": 2141.950709443397
+      },
+      "size": {
+        "width": 705.1565754101439,
+        "height": 494.26100765165137
+      },
+      "color": "sky",
+      "zIndex": 150,
+      "attributes": {
+        "goal": "We've established the Moon Base, but what's the situation?",
+        "conflict": "Not much to do here.",
+        "outcome": "The crew is bored and a bit lonely."
+      }
+    },
+    {
+      "note": "",
+      "id": "r2B0Nw_KcDUc9kz1sZRAS",
+      "type": "Sequence",
+      "title": "The Performance",
+      "position": {
+        "x": 1710.5691646705536,
+        "y": 2668.109615944923
+      },
+      "size": {
+        "width": 1137.7649997523276,
+        "height": 505.4116492683379
+      },
+      "color": "sky",
+      "zIndex": 150,
+      "attributes": {
+        "goal": "The three crew members need to perform a play for themselves in order to pass the time.",
+        "conflict": "It's hard and in the stress of the moment tempers flare as well as some unspoken passions.",
+        "outcome": "One of them is wounded."
+      }
+    },
+    {
+      "note": "",
+      "id": "dGvLjsUrfEyxzZFzaNQcx",
+      "type": "Sequence",
+      "title": "Jerry Fights Back",
+      "position": {
+        "x": 3282.529103467065,
+        "y": 2124.4878418842786
+      },
+      "size": {
+        "width": 592.0000610351567,
+        "height": 839.3334045410166
+      },
+      "color": "emerald",
+      "zIndex": 150,
+      "attributes": {
+        "goal": "Jerry is tired of being bullied and wants it to stop.",
+        "conflict": "Owen and Nancy react to Jerry for a reason, he's kind of a jerk.",
+        "outcome": "Jerry makes everything worse."
+      }
+    },
+    {
+      "note": "",
+      "id": "a9v-xuElPg9w6E0Xe3l1f",
+      "type": "Sequence",
+      "title": "Intervention with Jerry",
+      "position": {
+        "x": 3941.8516988250167,
+        "y": 2143.416169089055
+      },
+      "size": {
+        "width": 432.7538899042246,
+        "height": 519.4824246427927
+      },
+      "color": "emerald",
+      "zIndex": 150,
+      "attributes": {
+        "goal": "Owen and Nancy need their space from Jerry and they want to let him know diplomatically.",
+        "conflict": "Jerry's not having it.",
+        "outcome": "Rather than a solution, things are even worse. Jerry feels like the victim, which he is, but he's also just so damn hard to deal with."
+      }
+    },
+    {
+      "note": "",
+      "id": "v2Tx3G4o-QqcTzjvxW8vF",
+      "type": "Sequence",
+      "title": "The Lasagna",
+      "position": {
+        "x": 3935.66605757009,
+        "y": 2727.900222357128
+      },
+      "size": {
+        "width": 459.48200687351164,
+        "height": 464.454725514398
+      },
+      "color": "emerald",
+      "zIndex": 150,
+      "attributes": {
+        "goal": "Jerry puts laxative in the Lasagna, including his own.",
+        "conflict": "Laxative is a bad tool for conflict resolution.",
+        "outcome": "Every toilet is occupied by a pissed off individual."
+      }
+    },
+    {
+      "note": "",
+      "id": "3fn5XswD1nBueB1Mm1yP9",
+      "type": "Sequence",
+      "title": "The Confession",
+      "position": {
+        "x": 4562.223794459334,
+        "y": 2086.299445955548
+      },
+      "size": {
+        "width": 625.2985089859372,
+        "height": 988.7146979150657
+      },
+      "color": "crimson",
+      "zIndex": 150,
+      "attributes": {
+        "goal": "Owen and Nancy want to know what happened, Jerry wants them to know he did it and why.",
+        "conflict": "Jerry thinks this will fix thing.",
+        "outcome": "It doesn't."
+      }
+    },
+    {
+      "note": "",
+      "id": "H29kigcL9x0WaPKygmNBJ",
+      "type": "Sequence",
+      "title": "The Quarantine",
+      "position": {
+        "x": 5256.406123879083,
+        "y": 2090.9221979001363
+      },
+      "size": {
+        "width": 626.6666870117197,
+        "height": 986.6667480468759
+      },
+      "color": "crimson",
+      "zIndex": 150,
+      "attributes": {
+        "goal": "Get Jerry to agree to terms of avoidance. That he stays away from Owen and Nancy.",
+        "conflict": "Jerry is difficult.",
+        "outcome": "Jerry reluctantly agrees. But it doesn't end well. "
+      }
+    },
+    {
+      "note": "",
+      "id": "DXZgGXVfsTC9q5fA8Z33s",
+      "type": "Custom",
+      "title": "Characters",
+      "position": {
+        "x": 4721.977143178432,
+        "y": 988.926937456663
+      },
+      "size": {
+        "width": 885.77543312983,
+        "height": 733.3173137410162
+      },
+      "color": "amber",
+      "zIndex": 50,
+      "attributes": {}
+    }
+  ],
+  "projectInfo": {}
+}
