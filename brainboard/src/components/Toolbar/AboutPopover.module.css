@@ -321,3 +321,8 @@
   white-space:      pre-wrap;
   overflow-wrap:    anywhere;
 }
+
+/* A package's own notice about what it bundles, under its attribution row. */
+.notice {
+  margin-top: var(--space-1);
+}

@@ -1,0 +1,158 @@
+{
+  "schemaVersion": "2.25",
+  "meta": {
+    "schema_version": "2.25",
+    "editor_version": "Scriptyard test",
+    "updated_at": "2026-01-02T12:00:00.000Z"
+  },
+  "tables": {
+    "project": [
+      {
+        "id": 1,
+        "uuid": "00000000-0000-4000-8000-000000000001",
+        "values": {
+          "name": "Three Act Structure",
+          "external_id": "RnbiDyk7ufkYtMMFDW2JX",
+          "external_id_namespace": "scriptyard"
+        }
+      }
+    ],
+    "act": [
+      {
+        "id": 1,
+        "uuid": "00000000-0000-4000-8000-000000000002",
+        "values": {
+          "name": "Act One : Setup",
+          "act_number": 1,
+          "summary": "This act introduces the world, main characters, and central conflict. You establish what “normal life” looks like before things change, and then disrupt it with an inciting incident that forces the protagonist to act. By the end of Act 1, the main character makes a key decision that propels them into the story’s core journey—crossing a point of no return.",
+          "external_id": "vV4zknMSLvZ6G2ZtZZdFb",
+          "external_id_namespace": "scriptyard"
+        }
+      },
+      {
+        "id": 2,
+        "uuid": "00000000-0000-4000-8000-000000000005",
+        "values": {
+          "name": "Act Two : Confrontation",
+          "act_number": 2,
+          "summary": "This is the longest section, where the protagonist faces escalating challenges, obstacles, and opposition. They pursue their goal but encounter setbacks, learn new information, and often struggle internally as well as externally. A midpoint usually shifts the story in a meaningful way, and by the end of Act 2, things reach a low point where the protagonist feels defeated or lost.",
+          "external_id": "qRgQmQLwqjMb-Oi5BAh1E",
+          "external_id_namespace": "scriptyard"
+        }
+      },
+      {
+        "id": 3,
+        "uuid": "00000000-0000-4000-8000-000000000008",
+        "values": {
+          "name": "Act Three : Resolution",
+          "act_number": 3,
+          "summary": "In the final act, the protagonist regroups and confronts the central conflict head-on. This leads to the climax—the decisive moment where the main tension is resolved. Afterward, the story wraps up with falling action and a new normal, showing how the events have changed the character or the world around them.",
+          "external_id": "-y5loNXU6XTv7Q1LaUBYV",
+          "external_id_namespace": "scriptyard"
+        }
+      }
+    ]
+  },
+  "titlePage": [
+    {
+      "key": "Title",
+      "value": "Three Act Structure"
+    }
+  ],
+  "lines": [
+    {
+      "uuid": "00000000-0000-4000-8000-000000000003",
+      "lineType": "section",
+      "content": "# Act One : Setup",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": {
+        "section": {
+          "depth": 1,
+          "text": "Act One : Setup"
+        },
+        "structureRef": {
+          "kind": "act",
+          "uuid": "00000000-0000-4000-8000-000000000002"
+        }
+      }
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000004",
+      "lineType": "blank",
+      "content": "",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": null
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000006",
+      "lineType": "section",
+      "content": "# Act Two : Confrontation",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": {
+        "section": {
+          "depth": 1,
+          "text": "Act Two : Confrontation"
+        },
+        "structureRef": {
+          "kind": "act",
+          "uuid": "00000000-0000-4000-8000-000000000005"
+        }
+      }
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000007",
+      "lineType": "blank",
+      "content": "",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": null
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000009",
+      "lineType": "section",
+      "content": "# Act Three : Resolution",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": {
+        "section": {
+          "depth": 1,
+          "text": "Act Three : Resolution"
+        },
+        "structureRef": {
+          "kind": "act",
+          "uuid": "00000000-0000-4000-8000-000000000008"
+        }
+      }
+    }
+  ],
+  "report": {
+    "rows": {
+      "project": 1,
+      "act": 3
+    },
+    "lines": 5,
+    "items": [
+      {
+        "kind": "changed",
+        "subject": "Act \"Act One : Setup\"",
+        "where": null,
+        "detail": "It holds no scenes, so it is exported without a starting scene."
+      },
+      {
+        "kind": "changed",
+        "subject": "Act \"Act Two : Confrontation\"",
+        "where": null,
+        "detail": "It holds no scenes, so it is exported without a starting scene."
+      },
+      {
+        "kind": "changed",
+        "subject": "Act \"Act Three : Resolution\"",
+        "where": null,
+        "detail": "It holds no scenes, so it is exported without a starting scene."
+      }
+    ]
+  }
+}

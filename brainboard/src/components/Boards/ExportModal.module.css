@@ -191,3 +191,141 @@
   flex-shrink:      0;
   white-space:      nowrap;
 }
+
+.option:disabled {
+  cursor:  default;
+  opacity: 0.6;
+}
+
+/* ── Export report ────────────────────────────────────────────────────── */
+
+.reportSummary {
+  font-family: var(--font-ui);
+  font-size:   var(--text-xs);
+  color:       var(--color-text-muted);
+  line-height: var(--leading-snug);
+}
+
+.reportGroups {
+  display:        flex;
+  flex-direction: column;
+  gap:            var(--space-1);
+  max-height:     50vh;
+  overflow-y:     auto;
+}
+
+.reportGroup {
+  background-color: var(--color-surface-raised);
+  border:           1px solid var(--color-border);
+  border-radius:    var(--radius-md);
+}
+
+.reportGroupTitle {
+  display:         flex;
+  align-items:     center;
+  justify-content: space-between;
+  gap:             var(--space-3);
+  padding:         var(--space-3);
+  font-family:     var(--font-ui);
+  font-size:       var(--text-sm);
+  font-weight:     var(--weight-medium);
+  color:           var(--color-text-primary);
+  cursor:          pointer;
+  list-style:      none;
+}
+.reportGroupTitle::-webkit-details-marker { display: none; }
+.reportGroupTitle:hover { background-color: var(--color-surface-hover); }
+
+.reportCount {
+  font-family:      var(--font-mono);
+  font-size:        var(--text-xs);
+  color:            var(--color-text-muted);
+  background-color: var(--color-surface-overlay);
+  border:           1px solid var(--color-border-strong);
+  border-radius:    var(--radius-xs);
+  padding:          1px var(--space-1);
+  flex-shrink:      0;
+}
+
+.reportNote {
+  margin:      0;
+  padding:     0 var(--space-3) var(--space-2);
+  font-family: var(--font-ui);
+  font-size:   var(--text-xs);
+  color:       var(--color-text-muted);
+  line-height: var(--leading-snug);
+}
+
+.reportList {
+  display:        flex;
+  flex-direction: column;
+  gap:            var(--space-2);
+  margin:         0;
+  padding:        var(--space-2) var(--space-3) var(--space-3);
+  border-top:     1px solid var(--color-border);
+  list-style:     none;
+}
+
+.reportItem {
+  display:        flex;
+  flex-direction: column;
+  gap:            2px;
+  font-family:    var(--font-ui);
+  line-height:    var(--leading-snug);
+}
+
+.reportSubject {
+  font-size:   var(--text-xs);
+  font-weight: var(--weight-medium);
+  color:       var(--color-text-primary);
+  overflow-wrap: anywhere;
+}
+
+.reportWhere {
+  font-weight: var(--weight-regular, 400);
+  color:       var(--color-text-secondary);
+}
+
+.reportDetail {
+  font-size: var(--text-xs);
+  color:     var(--color-text-muted);
+}
+
+.reportActions {
+  display:         flex;
+  justify-content: flex-end;
+  gap:             var(--space-2);
+  margin-top:      var(--space-3);
+}
+
+.primaryBtn,
+.secondaryBtn {
+  height:        32px;
+  padding:       0 var(--space-4);
+  border-radius: var(--radius-sm);
+  font-family:   var(--font-ui);
+  font-size:     var(--text-sm);
+  font-weight:   var(--weight-medium);
+  cursor:        pointer;
+  border:        1px solid transparent;
+  transition:    background-color var(--duration-fast) var(--easing-out),
+                 color            var(--duration-fast) var(--easing-out),
+                 border-color     var(--duration-fast) var(--easing-out);
+}
+
+.primaryBtn {
+  color:            var(--color-text-on-accent);
+  background-color: var(--color-accent);
+  border-color:     var(--color-accent);
+}
+.primaryBtn:hover {
+  background-color: var(--color-accent-hover);
+  border-color:     var(--color-accent-hover);
+}
+
+.secondaryBtn {
+  color:        var(--color-text-primary);
+  background:   transparent;
+  border-color: var(--color-border-strong);
+}
+.secondaryBtn:hover { background-color: var(--color-surface-hover); }

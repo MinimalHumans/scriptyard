@@ -33,6 +33,47 @@ const findLicenseFile = (dir) => {
   return hit ? join(dir, hit) : null
 }
 
+/*
+ * Some packages ship no LICENSE file and instead carry their terms in a
+ * preserved comment at the top of the code they bundle. @sqlite.org/sqlite-wasm
+ * is one: the package itself is Apache-2.0, but what it wraps is SQLite
+ * (public domain) and Emscripten's runtime (MIT/NCSA), and that banner is
+ * where it says so. It is reproduced as written rather than paraphrased.
+ */
+const entryFile = (dir, meta) => {
+  const root = meta.exports?.['.']
+  const rel = (typeof root === 'string' ? root : root?.import ?? root?.default)
+    ?? meta.module ?? meta.main
+  const file = rel ? join(dir, rel) : null
+  return file && existsSync(file) ? file : null
+}
+
+const embeddedNotice = (dir, meta) => {
+  const file = entryFile(dir, meta)
+  if (!file) return null
+  // Banners sit at the top; no need to scan megabytes of bundled code.
+  const head = readFileSync(file, 'utf8').slice(0, 16_384)
+  for (const [, comment] of head.matchAll(/\/\*\s*@preserve([\s\S]*?)\*\//g)) {
+    if (!/licen[cs]e/i.test(comment)) continue
+    const lines = comment.split('\n').map((l) => l.replace(/^\s*\*{1,2} ?/, '').trimEnd())
+    while (lines.length && !lines[0].trim()) lines.shift()
+    while (lines.length && !lines[lines.length - 1].trim()) lines.pop()
+    // The banner is hard-wrapped for a source file. Rejoin each paragraph so
+    // it wraps to the popover instead; the words are untouched. A line that
+    // opens a list item ("1)", "*") starts a paragraph of its own.
+    const paragraphs = []
+    for (const l of lines) {
+      const text = l.trim()
+      const prev = paragraphs[paragraphs.length - 1]
+      if (!text) { if (prev) paragraphs.push('') }
+      else if (prev && !/^(\d+\)|\*)\s/.test(text)) paragraphs[paragraphs.length - 1] = `${prev} ${text}`
+      else paragraphs.push(text)
+    }
+    return paragraphs.join('\n')
+  }
+  return null
+}
+
 const extractCopyright = (text, fallbackAuthor) => {
   if (text) {
     // Every line that looks like a copyright statement — some packages
@@ -103,6 +144,8 @@ for (const [path, entry] of Object.entries(lock.packages)) {
     copyright: extractCopyright(licText, author),
     url: repoUrl(meta, name),
     direct: direct.has(name),
+    // Omitted from the output when absent.
+    notice: licText ? undefined : embeddedNotice(dir, meta) ?? undefined,
   })
 }
 
@@ -118,6 +161,37 @@ const MIT_BODY = `Permission is hereby granted, free of charge, to any person ob
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.`
+
+/*
+ * Every licence the generator knows how to reproduce. A dependency under any
+ * other licence stops the run: emitting a package with no licence text to go
+ * with it would ship an attribution that does not meet its own terms.
+ *
+ * The Apache text is kept beside this script because Apache-licensed packages
+ * do not reliably ship it (sqlite-wasm does not).
+ */
+const LICENSES = {
+  'MIT': {
+    name: 'MIT License',
+    text: () => MIT_BODY,
+  },
+  'OFL-1.1': {
+    name: 'SIL Open Font License 1.1',
+    text: () => oflText ?? '',
+  },
+  'Apache-2.0': {
+    name: 'Apache License 2.0',
+    text: () => readFileSync(join(ROOT, 'scripts/license-texts/Apache-2.0.txt'), 'utf8')
+      .replace(/\r\n/g, '\n').trim(),
+  },
+}
+
+const unsupported = [...new Set(packages.map((p) => p.license))].filter((id) => !LICENSES[id])
+if (unsupported.length) {
+  console.error(`✗ no licence text for: ${unsupported.join(', ')} — add it to LICENSES in this script`)
+  process.exit(1)
+}
+const usedLicenses = Object.keys(LICENSES).filter((id) => packages.some((p) => p.license === id))
 
 const banner = `/*
  * licenses.ts — GENERATED FILE, DO NOT EDIT BY HAND.
@@ -149,6 +223,11 @@ export interface ThirdPartyPackage {
   url:       string
   /** true for packages listed in our own package.json dependencies. */
   direct:    boolean
+  /**
+   * The package's own statement of the terms of what it bundles, verbatim,
+   * for packages that carry one in their code instead of a LICENSE file.
+   */
+  notice?:   string
 }
 
 export const THIRD_PARTY: ThirdPartyPackage[] = ${JSON.stringify(packages, null, 2)
@@ -156,17 +235,15 @@ export const THIRD_PARTY: ThirdPartyPackage[] = ${JSON.stringify(packages, null,
 
 /**
  * License bodies, stored once and paired with each package's own copyright
- * line at render time. Both MIT and OFL-1.1 require the notice and the
+ * line at render time. Each of these licenses requires the notice and the
  * license text to travel with the distributed work.
  */
 export const LICENSE_TEXTS: Record<LicenseId, string> = {
-  'MIT': ${JSON.stringify(MIT_BODY)},
-  'OFL-1.1': ${JSON.stringify(oflText ?? '')},
+${usedLicenses.map((id) => `  '${id}': ${JSON.stringify(LICENSES[id].text())},`).join('\n')}
 }
 
 export const LICENSE_NAMES: Record<LicenseId, string> = {
-  'MIT': 'MIT License',
-  'OFL-1.1': 'SIL Open Font License 1.1',
+${usedLicenses.map((id) => `  '${id}': '${LICENSES[id].name}',`).join('\n')}
 }
 `
 

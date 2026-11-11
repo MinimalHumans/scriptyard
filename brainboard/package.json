@@ -7,12 +7,14 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
+    "test": "vitest run",
     "licenses": "node scripts/gen-licenses.mjs",
     "preview": "vite preview"
   },
   "dependencies": {
     "@fontsource-variable/fraunces": "^5.2.9",
     "@fontsource-variable/inter": "^5.2.8",
+    "@sqlite.org/sqlite-wasm": "^3.54.1-build1",
     "marked": "^18.0.2",
     "nanoid": "^5.1.9",
     "react": "^19.2.5",
@@ -33,6 +35,7 @@
     "globals": "^17.5.0",
     "typescript": "~6.0.2",
     "typescript-eslint": "^8.58.2",
-    "vite": "^8.0.9"
+    "vite": "^8.0.9",
+    "vitest": "^4.1.12"
   }
 }

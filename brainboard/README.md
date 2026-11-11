@@ -56,6 +56,7 @@ Draw backdrops by right-clicking the canvas, or use the Tab menu. Moving a backd
 - **Outline (`.md`)** — Markdown outline derived from the spatial structure of your board; live-updating while the modal is open
 - **Fountain (`.fountain`)** — screenplay skeleton for Highland, Slugline, Final Draft, or any Fountain-aware tool; structural data emitted as boneyard blocks and action lines
 - **Final Draft (`.fdx`)** — screenplay skeleton for Final Draft 10+; scene headings carry title/synopsis metadata for the navigator panel
+- **SCF (`.scf`)** — Story Context Framework file; acts, sequences, scenes, beats, cast and links as structured data, with a report of anything written as script lines instead
 
 ### Templates
 Save any board as a reusable template, or load one of the built-in templates. Templates can be loaded as a new board or merged into the current one.

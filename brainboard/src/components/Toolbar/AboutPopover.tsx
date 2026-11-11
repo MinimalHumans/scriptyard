@@ -245,7 +245,7 @@ export function AboutPopover({ anchorRef, onClose }: AboutPopoverProps) {
       <div className={styles.divider} />
 
       {/* ── Open source attribution ──────────────────────────────────────────
-          MIT and the SIL OFL both require the copyright notice *and* the
+          MIT, Apache 2.0 and the SIL OFL all require the copyright notice *and* the
           licence text to be distributed with the work, so the full texts live
           here rather than just a list of names. Collapsed by default to keep
           the popover at its usual size. */}
@@ -332,6 +332,9 @@ function PackageRow({ pkg }: { pkg: ThirdPartyPackage }) {
         </span>
       </div>
       <p className={styles.copyright}>{pkg.copyright}</p>
+      {/* A package that bundles other people's code under other terms says
+          so in its own words; those go with it. */}
+      {pkg.notice && <pre className={`${styles.legal} ${styles.notice}`}>{pkg.notice}</pre>}
     </li>
   )
 }

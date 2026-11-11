@@ -1,0 +1,329 @@
+{
+  "schemaVersion": "2.25",
+  "meta": {
+    "schema_version": "2.25",
+    "editor_version": "Scriptyard test",
+    "updated_at": "2026-01-02T12:00:00.000Z"
+  },
+  "tables": {
+    "project": [
+      {
+        "id": 1,
+        "uuid": "00000000-0000-4000-8000-000000000001",
+        "values": {
+          "name": "Seven Act Structure",
+          "external_id": "ty4Pe5IdVS-SrQUHXzix1",
+          "external_id_namespace": "scriptyard"
+        }
+      }
+    ],
+    "act": [
+      {
+        "id": 1,
+        "uuid": "00000000-0000-4000-8000-000000000002",
+        "values": {
+          "name": "Act Seven : Climax & Resolution",
+          "act_number": 1,
+          "summary": "The protagonist makes a final push to resolve the conflict, leading to the climax. Afterward, the story concludes with a resolution that shows the outcome and lasting impact of the journey.",
+          "external_id": "GnXSWayc2-wX8Da30PUlv",
+          "external_id_namespace": "scriptyard"
+        }
+      },
+      {
+        "id": 2,
+        "uuid": "00000000-0000-4000-8000-000000000005",
+        "values": {
+          "name": "Act One : The Hook",
+          "act_number": 2,
+          "function": "Narrative purpose of this act...",
+          "dramatic_question": "The Question this act proposes...",
+          "shift": "What changes by the end...",
+          "summary": "This opening act grabs attention and introduces the protagonist in their normal world. It sets tone and genre while hinting at the central conflict to come.",
+          "external_id": "vV4zknMSLvZ6G2ZtZZdFb",
+          "external_id_namespace": "scriptyard"
+        }
+      },
+      {
+        "id": 3,
+        "uuid": "00000000-0000-4000-8000-000000000008",
+        "values": {
+          "name": "Act Two : The Inciting Incident",
+          "act_number": 3,
+          "summary": "A key event disrupts the protagonist’s life and presents a problem or opportunity. This is where the main story truly begins to take shape.",
+          "external_id": "moCTQgIycQyzX0lKLukMV",
+          "external_id_namespace": "scriptyard"
+        }
+      },
+      {
+        "id": 4,
+        "uuid": "00000000-0000-4000-8000-000000000011",
+        "values": {
+          "name": "Act Three : The First Plot Point",
+          "act_number": 4,
+          "summary": "The protagonist makes a decisive choice that commits them to the journey. They leave their comfort zone, and the stakes become clear.",
+          "external_id": "6PsDmux3rvZtARq-o9GdM",
+          "external_id_namespace": "scriptyard"
+        }
+      },
+      {
+        "id": 5,
+        "uuid": "00000000-0000-4000-8000-000000000014",
+        "values": {
+          "name": "Act Four : Rising Action",
+          "act_number": 5,
+          "summary": "The protagonist actively pursues their goal, encountering obstacles, allies, and enemies. Tension builds steadily as complications arise.",
+          "external_id": "uRQ114UF0kSx74tkbVO0D",
+          "external_id_namespace": "scriptyard"
+        }
+      },
+      {
+        "id": 6,
+        "uuid": "00000000-0000-4000-8000-000000000017",
+        "values": {
+          "name": "Act Five : Midpoint",
+          "act_number": 6,
+          "summary": "A major turning point shifts the story—often a revelation, reversal, or significant success/failure. It raises the stakes and changes the protagonist’s approach.",
+          "external_id": "DQN4rkipFIyJZEzJDxDyD",
+          "external_id_namespace": "scriptyard"
+        }
+      },
+      {
+        "id": 7,
+        "uuid": "00000000-0000-4000-8000-000000000020",
+        "values": {
+          "name": "Act Six : Crisis (or Low Point)",
+          "act_number": 7,
+          "summary": "Everything seems to fall apart. The protagonist faces their greatest setback or internal conflict, often questioning their ability to succeed.",
+          "external_id": "h1qrtxZQt98sLtq9UlHmg",
+          "external_id_namespace": "scriptyard"
+        }
+      }
+    ]
+  },
+  "titlePage": [
+    {
+      "key": "Title",
+      "value": "Seven Act Structure"
+    }
+  ],
+  "lines": [
+    {
+      "uuid": "00000000-0000-4000-8000-000000000003",
+      "lineType": "section",
+      "content": "# Act Seven : Climax & Resolution",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": {
+        "section": {
+          "depth": 1,
+          "text": "Act Seven : Climax & Resolution"
+        },
+        "structureRef": {
+          "kind": "act",
+          "uuid": "00000000-0000-4000-8000-000000000002"
+        }
+      }
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000004",
+      "lineType": "blank",
+      "content": "",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": null
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000006",
+      "lineType": "section",
+      "content": "# Act One : The Hook",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": {
+        "section": {
+          "depth": 1,
+          "text": "Act One : The Hook"
+        },
+        "structureRef": {
+          "kind": "act",
+          "uuid": "00000000-0000-4000-8000-000000000005"
+        }
+      }
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000007",
+      "lineType": "blank",
+      "content": "",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": null
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000009",
+      "lineType": "section",
+      "content": "# Act Two : The Inciting Incident",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": {
+        "section": {
+          "depth": 1,
+          "text": "Act Two : The Inciting Incident"
+        },
+        "structureRef": {
+          "kind": "act",
+          "uuid": "00000000-0000-4000-8000-000000000008"
+        }
+      }
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000010",
+      "lineType": "blank",
+      "content": "",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": null
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000012",
+      "lineType": "section",
+      "content": "# Act Three : The First Plot Point",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": {
+        "section": {
+          "depth": 1,
+          "text": "Act Three : The First Plot Point"
+        },
+        "structureRef": {
+          "kind": "act",
+          "uuid": "00000000-0000-4000-8000-000000000011"
+        }
+      }
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000013",
+      "lineType": "blank",
+      "content": "",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": null
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000015",
+      "lineType": "section",
+      "content": "# Act Four : Rising Action",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": {
+        "section": {
+          "depth": 1,
+          "text": "Act Four : Rising Action"
+        },
+        "structureRef": {
+          "kind": "act",
+          "uuid": "00000000-0000-4000-8000-000000000014"
+        }
+      }
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000016",
+      "lineType": "blank",
+      "content": "",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": null
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000018",
+      "lineType": "section",
+      "content": "# Act Five : Midpoint",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": {
+        "section": {
+          "depth": 1,
+          "text": "Act Five : Midpoint"
+        },
+        "structureRef": {
+          "kind": "act",
+          "uuid": "00000000-0000-4000-8000-000000000017"
+        }
+      }
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000019",
+      "lineType": "blank",
+      "content": "",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": null
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000021",
+      "lineType": "section",
+      "content": "# Act Six : Crisis (or Low Point)",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": {
+        "section": {
+          "depth": 1,
+          "text": "Act Six : Crisis (or Low Point)"
+        },
+        "structureRef": {
+          "kind": "act",
+          "uuid": "00000000-0000-4000-8000-000000000020"
+        }
+      }
+    }
+  ],
+  "report": {
+    "rows": {
+      "project": 1,
+      "act": 7
+    },
+    "lines": 13,
+    "items": [
+      {
+        "kind": "changed",
+        "subject": "Act \"Act Seven : Climax & Resolution\"",
+        "where": null,
+        "detail": "It holds no scenes, so it is exported without a starting scene."
+      },
+      {
+        "kind": "changed",
+        "subject": "Act \"Act One : The Hook\"",
+        "where": null,
+        "detail": "It holds no scenes, so it is exported without a starting scene."
+      },
+      {
+        "kind": "changed",
+        "subject": "Act \"Act Two : The Inciting Incident\"",
+        "where": null,
+        "detail": "It holds no scenes, so it is exported without a starting scene."
+      },
+      {
+        "kind": "changed",
+        "subject": "Act \"Act Three : The First Plot Point\"",
+        "where": null,
+        "detail": "It holds no scenes, so it is exported without a starting scene."
+      },
+      {
+        "kind": "changed",
+        "subject": "Act \"Act Four : Rising Action\"",
+        "where": null,
+        "detail": "It holds no scenes, so it is exported without a starting scene."
+      },
+      {
+        "kind": "changed",
+        "subject": "Act \"Act Five : Midpoint\"",
+        "where": null,
+        "detail": "It holds no scenes, so it is exported without a starting scene."
+      },
+      {
+        "kind": "changed",
+        "subject": "Act \"Act Six : Crisis (or Low Point)\"",
+        "where": null,
+        "detail": "It holds no scenes, so it is exported without a starting scene."
+      }
+    ]
+  }
+}

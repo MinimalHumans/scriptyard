@@ -263,16 +263,17 @@ function locationTypeToIntExt(locType: string | undefined): string | null {
  *
  * Priority order:
  * 1. Title already looks like a slugline → use it verbatim (uppercased).
- * 2. Use `int_ext` / `time_of_day` backdrop attributes + nearest contained
- *    Location card for the location name.
+ * 2. Use `int_ext` / `time_of_day` backdrop attributes + the scene's Location
+ *    for the location name.
  * 3. Fallback: use the backdrop title uppercased, optionally prefixed with
  *    the int_ext attribute.
+ *
+ * `locEntity` is the scene's Location, chosen by the caller (see walkBoard):
+ * a scene has one, and every export has to agree on which.
  */
 export function assembleSceneHeadingFromBackdrop(
-  bd:         Backdrop,
-  cards:      Card[],
-  entities:   Map<string, Entity>,
-  cardParent: Map<string, string | null>,
+  bd:        Backdrop,
+  locEntity: Entity | undefined,
 ): SceneHeadingParts {
   const title = bd.title.trim()
 
@@ -286,9 +287,6 @@ export function assembleSceneHeadingFromBackdrop(
   const timeAttr   = (bd.attributes['time_of_day'] as string | undefined)?.trim()
   const time       = normaliseTime(timeAttr)
 
-  // Find the first Location card spatially contained by this backdrop
-  const locCard   = cards.find(c => c.type === 'Location' && cardParent.get(c.id) === bd.id)
-  const locEntity = locCard ? entities.get(locCard.entityId) : undefined
   const locName   = locEntity?.title?.trim().toUpperCase() ?? null
 
   if (locName) {
@@ -312,16 +310,16 @@ export function assembleSceneHeadingFromBackdrop(
  *
  * Priority order:
  * 1. Entity title already looks like a slugline → verbatim.
- * 2. Entity `int_ext` / `time_of_day` attributes + sibling Location card in
- *    the same parent backdrop.
+ * 2. Entity `int_ext` / `time_of_day` attributes + the scene's Location.
  * 3. Fallback: title uppercased, optionally prefixed with int_ext.
+ *
+ * `sibLocEntity` is the scene's Location, chosen by the caller (see
+ * walkBoard): a Location card sharing the Scene card's parent backdrop.
  */
 export function assembleSceneHeadingFromCard(
-  card:       Card,
-  entity:     Entity | undefined,
-  cards:      Card[],
-  entities:   Map<string, Entity>,
-  cardParent: Map<string, string | null>,
+  card:         Card,
+  entity:       Entity | undefined,
+  sibLocEntity: Entity | undefined,
 ): SceneHeadingParts {
   const title = (entity?.title ?? card.title).trim()
 
@@ -335,12 +333,6 @@ export function assembleSceneHeadingFromCard(
   const timeAttr   = (entity?.attributes?.['time_of_day'] as string | undefined)?.trim()
   const time       = normaliseTime(timeAttr)
 
-  // Look for sibling Location cards in the same parent backdrop
-  const parentId     = cardParent.get(card.id) ?? null
-  const sibLocCard   = parentId
-    ? cards.find(c => c.type === 'Location' && c.id !== card.id && cardParent.get(c.id) === parentId)
-    : undefined
-  const sibLocEntity = sibLocCard ? entities.get(sibLocCard.entityId) : undefined
   const locName      = sibLocEntity?.title?.trim().toUpperCase() ?? null
 
   if (locName) {

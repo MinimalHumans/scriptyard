@@ -1,2 +1,9 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+# Golden export files are compared byte for byte against builder output,
+# which always uses LF.
+brainboard/test/golden/** text eol=lf
+
+# The vendored SCF schema is checked against a published digest.
+brainboard/src/lib/scf/*.sql text eol=lf

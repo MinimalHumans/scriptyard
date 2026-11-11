@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<FinalDraft DocumentType="Script" Template="No" Version="6">
+  <Content>
+    <Paragraph Type="New Act">
+      <Text>ACT — ACT SEVEN : CLIMAX &amp; RESOLUTION</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>The protagonist makes a final push to resolve the conflict, leading to the climax. Afterward, the story concludes with a resolution that shows the outcome and lasting impact of the journey.</Text>
+    </Paragraph>
+    <Paragraph Type="New Act">
+      <Text>ACT — ACT ONE : THE HOOK</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>This opening act grabs attention and introduces the protagonist in their normal world. It sets tone and genre while hinting at the central conflict to come.</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Function: Narrative purpose of this act...]</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Dramatic Question: The Question this act proposes...]</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Shift: What changes by the end...]</Text>
+    </Paragraph>
+    <Paragraph Type="New Act">
+      <Text>ACT — ACT TWO : THE INCITING INCIDENT</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>A key event disrupts the protagonist’s life and presents a problem or opportunity. This is where the main story truly begins to take shape.</Text>
+    </Paragraph>
+    <Paragraph Type="New Act">
+      <Text>ACT — ACT THREE : THE FIRST PLOT POINT</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>The protagonist makes a decisive choice that commits them to the journey. They leave their comfort zone, and the stakes become clear.</Text>
+    </Paragraph>
+    <Paragraph Type="New Act">
+      <Text>ACT — ACT FOUR : RISING ACTION</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>The protagonist actively pursues their goal, encountering obstacles, allies, and enemies. Tension builds steadily as complications arise.</Text>
+    </Paragraph>
+    <Paragraph Type="New Act">
+      <Text>ACT — ACT FIVE : MIDPOINT</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>A major turning point shifts the story—often a revelation, reversal, or significant success/failure. It raises the stakes and changes the protagonist’s approach.</Text>
+    </Paragraph>
+    <Paragraph Type="New Act">
+      <Text>ACT — ACT SIX : CRISIS (OR LOW POINT)</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>Everything seems to fall apart. The protagonist faces their greatest setback or internal conflict, often questioning their ability to succeed.</Text>
+    </Paragraph>
+  </Content>
+  <TitlePage>
+    <Content>
+    <Paragraph Type="Action" Alignment="Center">
+      <Text>Seven Act Structure</Text>
+    </Paragraph>
+    </Content>
+  </TitlePage>
+</FinalDraft>

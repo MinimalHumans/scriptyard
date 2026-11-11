@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<FinalDraft DocumentType="Script" Template="No" Version="6">
+  <Content>
+    <Paragraph Type="New Act">
+      <Text>ACT — ACT ONE : SETUP</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>This act introduces the main characters, world, and central premise. It establishes the status quo and presents the inciting incident that disrupts it. By the end, the protagonist commits to a course of action, setting the main story in motion.</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Function: Narrative purpose of this act...]</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Dramatic Question: The Question this act proposes...]</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Shift: What changes by the end...]</Text>
+    </Paragraph>
+    <Paragraph Type="New Act">
+      <Text>ACT — ACT TWO : RISING ACTION</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>The protagonist begins pursuing their goal but encounters early obstacles and complications. Stakes start to build, and relationships and conflicts deepen. This act often ends with a turning point that raises the tension significantly.</Text>
+    </Paragraph>
+    <Paragraph Type="New Act">
+      <Text>ACT — ACT THREE : CLIMAX (MIDPOINT)</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>The story reaches a major turning point or revelation that changes the direction of the narrative. This could be a victory, defeat, or major discovery, but it reframes the protagonist’s understanding of the conflict and raises the stakes further.</Text>
+    </Paragraph>
+    <Paragraph Type="New Act">
+      <Text>ACT — ACT FOUR : COMPLICATIONS</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>Consequences of the midpoint unfold, and things begin to spiral or intensify toward a breaking point. The protagonist faces their greatest challenges, often leading to a low moment where success seems out of reach.</Text>
+    </Paragraph>
+    <Paragraph Type="New Act">
+      <Text>ACT — ACT FIVE : RESOLUTION</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>The protagonist confronts the central conflict in the climax and resolves it. The story then winds down, showing the aftermath and how the characters or world have changed.</Text>
+    </Paragraph>
+  </Content>
+  <TitlePage>
+    <Content>
+    <Paragraph Type="Action" Alignment="Center">
+      <Text>Five Act Structure</Text>
+    </Paragraph>
+    </Content>
+  </TitlePage>
+</FinalDraft>

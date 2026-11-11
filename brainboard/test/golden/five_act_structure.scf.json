@@ -1,0 +1,245 @@
+{
+  "schemaVersion": "2.25",
+  "meta": {
+    "schema_version": "2.25",
+    "editor_version": "Scriptyard test",
+    "updated_at": "2026-01-02T12:00:00.000Z"
+  },
+  "tables": {
+    "project": [
+      {
+        "id": 1,
+        "uuid": "00000000-0000-4000-8000-000000000001",
+        "values": {
+          "name": "Five Act Structure",
+          "external_id": "ty4Pe5IdVS-SrQUHXzix1",
+          "external_id_namespace": "scriptyard"
+        }
+      }
+    ],
+    "act": [
+      {
+        "id": 1,
+        "uuid": "00000000-0000-4000-8000-000000000002",
+        "values": {
+          "name": "Act One : Setup",
+          "act_number": 1,
+          "function": "Narrative purpose of this act...",
+          "dramatic_question": "The Question this act proposes...",
+          "shift": "What changes by the end...",
+          "summary": "This act introduces the main characters, world, and central premise. It establishes the status quo and presents the inciting incident that disrupts it. By the end, the protagonist commits to a course of action, setting the main story in motion.",
+          "external_id": "vV4zknMSLvZ6G2ZtZZdFb",
+          "external_id_namespace": "scriptyard"
+        }
+      },
+      {
+        "id": 2,
+        "uuid": "00000000-0000-4000-8000-000000000005",
+        "values": {
+          "name": "Act Two : Rising Action",
+          "act_number": 2,
+          "summary": "The protagonist begins pursuing their goal but encounters early obstacles and complications. Stakes start to build, and relationships and conflicts deepen. This act often ends with a turning point that raises the tension significantly.",
+          "external_id": "zmMIu3VOHXc6RUyU_PJi6",
+          "external_id_namespace": "scriptyard"
+        }
+      },
+      {
+        "id": 3,
+        "uuid": "00000000-0000-4000-8000-000000000008",
+        "values": {
+          "name": "Act Three : Climax (Midpoint)",
+          "act_number": 3,
+          "summary": "The story reaches a major turning point or revelation that changes the direction of the narrative. This could be a victory, defeat, or major discovery, but it reframes the protagonist’s understanding of the conflict and raises the stakes further.",
+          "external_id": "ndKkJ6mjf2jcQRtM2-VXh",
+          "external_id_namespace": "scriptyard"
+        }
+      },
+      {
+        "id": 4,
+        "uuid": "00000000-0000-4000-8000-000000000011",
+        "values": {
+          "name": "Act Four : Complications",
+          "act_number": 4,
+          "summary": "Consequences of the midpoint unfold, and things begin to spiral or intensify toward a breaking point. The protagonist faces their greatest challenges, often leading to a low moment where success seems out of reach.",
+          "external_id": "MRjOP30QsIXZ0x_U0xRY6",
+          "external_id_namespace": "scriptyard"
+        }
+      },
+      {
+        "id": 5,
+        "uuid": "00000000-0000-4000-8000-000000000014",
+        "values": {
+          "name": "Act Five : Resolution",
+          "act_number": 5,
+          "summary": "The protagonist confronts the central conflict in the climax and resolves it. The story then winds down, showing the aftermath and how the characters or world have changed.",
+          "external_id": "RSRFP78P4vCISYk1RzmZa",
+          "external_id_namespace": "scriptyard"
+        }
+      }
+    ]
+  },
+  "titlePage": [
+    {
+      "key": "Title",
+      "value": "Five Act Structure"
+    }
+  ],
+  "lines": [
+    {
+      "uuid": "00000000-0000-4000-8000-000000000003",
+      "lineType": "section",
+      "content": "# Act One : Setup",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": {
+        "section": {
+          "depth": 1,
+          "text": "Act One : Setup"
+        },
+        "structureRef": {
+          "kind": "act",
+          "uuid": "00000000-0000-4000-8000-000000000002"
+        }
+      }
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000004",
+      "lineType": "blank",
+      "content": "",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": null
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000006",
+      "lineType": "section",
+      "content": "# Act Two : Rising Action",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": {
+        "section": {
+          "depth": 1,
+          "text": "Act Two : Rising Action"
+        },
+        "structureRef": {
+          "kind": "act",
+          "uuid": "00000000-0000-4000-8000-000000000005"
+        }
+      }
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000007",
+      "lineType": "blank",
+      "content": "",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": null
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000009",
+      "lineType": "section",
+      "content": "# Act Three : Climax (Midpoint)",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": {
+        "section": {
+          "depth": 1,
+          "text": "Act Three : Climax (Midpoint)"
+        },
+        "structureRef": {
+          "kind": "act",
+          "uuid": "00000000-0000-4000-8000-000000000008"
+        }
+      }
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000010",
+      "lineType": "blank",
+      "content": "",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": null
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000012",
+      "lineType": "section",
+      "content": "# Act Four : Complications",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": {
+        "section": {
+          "depth": 1,
+          "text": "Act Four : Complications"
+        },
+        "structureRef": {
+          "kind": "act",
+          "uuid": "00000000-0000-4000-8000-000000000011"
+        }
+      }
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000013",
+      "lineType": "blank",
+      "content": "",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": null
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000015",
+      "lineType": "section",
+      "content": "# Act Five : Resolution",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": {
+        "section": {
+          "depth": 1,
+          "text": "Act Five : Resolution"
+        },
+        "structureRef": {
+          "kind": "act",
+          "uuid": "00000000-0000-4000-8000-000000000014"
+        }
+      }
+    }
+  ],
+  "report": {
+    "rows": {
+      "project": 1,
+      "act": 5
+    },
+    "lines": 9,
+    "items": [
+      {
+        "kind": "changed",
+        "subject": "Act \"Act One : Setup\"",
+        "where": null,
+        "detail": "It holds no scenes, so it is exported without a starting scene."
+      },
+      {
+        "kind": "changed",
+        "subject": "Act \"Act Two : Rising Action\"",
+        "where": null,
+        "detail": "It holds no scenes, so it is exported without a starting scene."
+      },
+      {
+        "kind": "changed",
+        "subject": "Act \"Act Three : Climax (Midpoint)\"",
+        "where": null,
+        "detail": "It holds no scenes, so it is exported without a starting scene."
+      },
+      {
+        "kind": "changed",
+        "subject": "Act \"Act Four : Complications\"",
+        "where": null,
+        "detail": "It holds no scenes, so it is exported without a starting scene."
+      },
+      {
+        "kind": "changed",
+        "subject": "Act \"Act Five : Resolution\"",
+        "where": null,
+        "detail": "It holds no scenes, so it is exported without a starting scene."
+      }
+    ]
+  }
+}

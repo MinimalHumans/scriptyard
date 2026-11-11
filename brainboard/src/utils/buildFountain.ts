@@ -21,20 +21,16 @@
  *   Orphan entity-library cards at root  → Loose Notes with full attributes
  */
 
-import type { Board, Card, Entity, Backdrop } from '@/types/board'
+import type { Board, Card, Backdrop } from '@/types/board'
 import { ATTRIBUTE_SCHEMAS } from '@/config/attributeSchemas'
+import { rowSort } from './screenplayCommon'
 import {
-  buildBackdropParentMap,
-  buildCardParentMap,
-  cardsInBackdrop,
-  backdropsInBackdrop,
-  rootBackdrops,
-  rootCards,
-  rowSort,
-  liveContent,
-  assembleSceneHeadingFromBackdrop,
-  assembleSceneHeadingFromCard,
-} from './screenplayCommon'
+  walkBoard,
+  type BeatVisit,
+  type SceneBackdropVisit,
+  type SceneCardVisit,
+  type StructureVisit,
+} from './boardWalk'
 
 // ─── Attribute helpers ────────────────────────────────────────────────────────
 
@@ -60,14 +56,11 @@ function strAttrs(
 // ─── Main export ─────────────────────────────────────────────────────────────
 
 export function buildFountain(board: Board): string {
-  const { entities, name, projectInfo } = board
-  const eMap       = new Map<string, Entity>(entities.map(e => [e.id, e]))
-  // Cut material never reaches the script — dropped before the parent maps are
-  // built, so ordering and first-occurrence bookkeeping only ever see what is
-  // actually in the film. See liveContent() in screenplayCommon.ts.
-  const { cards, backdrops } = liveContent(board.cards, board.backdrops, eMap)
-  const bdParent   = buildBackdropParentMap(backdrops)
-  const cardParent = buildCardParentMap(cards, backdrops)
+  const { name, projectInfo } = board
+  // What is visited, and in what order, is decided once in walkBoard() and
+  // shared with the other exporters. This file only decides how it reads.
+  const walk = walkBoard(board)
+  const { eMap } = walk
   const out: string[] = []
 
   // ── Title page ─────────────────────────────────────────────────────────────
@@ -85,7 +78,7 @@ export function buildFountain(board: Board): string {
   out.push('')
 
   // ── Project context boneyard ───────────────────────────────────────────────
-  const roots        = rootCards(cards, cardParent)
+  const roots        = walk.rootCards
   const rootThemes   = rowSort(roots.filter(c => c.type === 'Theme'))
   const rootArcs     = rowSort(roots.filter(c => c.type === 'Arc'))
   const rootThoughts = rowSort(roots.filter(c => c.type === 'Thought'))
@@ -182,7 +175,8 @@ export function buildFountain(board: Board): string {
 
       // Characters
       if (charCards.length > 0) {
-        const names = charCards.map(c => (eMap.get(c.entityId)?.title ?? c.title).toUpperCase())
+        // A character placed twice in one scope is still one name.
+        const names = [...new Set(charCards.map(c => (eMap.get(c.entityId)?.title ?? c.title).toUpperCase()))]
         out.push(`Characters: ${names.join(', ')}`)
       }
 
@@ -248,9 +242,9 @@ export function buildFountain(board: Board): string {
 
   // ── Scene backdrop emitter ────────────────────────────────────────────────
 
-  function emitSceneBackdrop(bd: Backdrop) {
-    const heading = assembleSceneHeadingFromBackdrop(bd, cards, eMap, cardParent)
-    out.push(heading.raw)
+  function emitSceneBackdrop(v: SceneBackdropVisit) {
+    const { bd } = v
+    out.push(v.heading.raw)
     out.push('')
 
     if (bd.note?.trim()) {
@@ -264,17 +258,14 @@ export function buildFountain(board: Board): string {
       outcome:  attr(bd.attributes, 'outcome'),
     }
 
-    const contained     = cardsInBackdrop(bd.id, cards, cardParent)
-    const beatBackdrops = backdropsInBackdrop(bd.id, backdrops, bdParent).filter(b => b.type === 'Beat')
-    emitSceneSidecar(contained, beatBackdrops, sceneAttrs)
+    emitSceneSidecar(v.cards, v.beats, sceneAttrs)
   }
 
   // ── Standalone Scene card emitter ─────────────────────────────────────────
 
-  function emitSceneCard(card: Card) {
-    const entity  = eMap.get(card.entityId)
-    const heading = assembleSceneHeadingFromCard(card, entity, cards, eMap, cardParent)
-    out.push(heading.raw)
+  function emitSceneCard(v: SceneCardVisit) {
+    const { card, entity } = v
+    out.push(v.heading.raw)
     out.push('')
 
     const note = (entity?.noteRaw ?? card.noteRaw)?.trim()
@@ -316,7 +307,8 @@ export function buildFountain(board: Board): string {
     const contextLines = [...attrLines]
 
     if (charCards.length > 0) {
-      const names = charCards.map(c => (eMap.get(c.entityId)?.title ?? c.title).toUpperCase())
+      // A character placed twice in one scope is still one name.
+      const names = [...new Set(charCards.map(c => (eMap.get(c.entityId)?.title ?? c.title).toUpperCase()))]
       contextLines.push(`Characters: ${names.join(', ')}`)
     }
 
@@ -367,178 +359,122 @@ export function buildFountain(board: Board): string {
     return shotCards
   }
 
-  // ── Recursive structural traversal ────────────────────────────────────────
+  // ── Structural emitters ───────────────────────────────────────────────────
+  // One per visit kind. None of them recurse: child backdrops and Scene cards
+  // arrive as their own visits, already in script order.
 
-  /**
-   * @param beatDepth How many Beat backdrops enclose this one. Drives the
-   *                  Fountain section level so nested Beats read as sub-beats.
-   */
-  function emitBackdrop(bd: Backdrop, beatDepth = 0) {
-    switch (bd.type) {
+  function emitAct(v: StructureVisit) {
+    const { bd } = v
+    out.push(`# ${bd.title}`)
+    if (bd.note?.trim()) out.push(`= ${bd.note.trim()}`)
+    out.push('')
 
-      case 'Act': {
-        out.push(`# ${bd.title}`)
-        if (bd.note?.trim()) out.push(`= ${bd.note.trim()}`)
+    // Act structural attributes
+    const actAttrs: string[] = []
+    const fn = attr(bd.attributes, 'function')
+    const dq = attr(bd.attributes, 'dramatic_question')
+    const sh = attr(bd.attributes, 'shift')
+    if (fn) actAttrs.push(`Function: ${fn}`)
+    if (dq) actAttrs.push(`Dramatic Question: ${dq}`)
+    if (sh) actAttrs.push(`Shift: ${sh}`)
+
+    // Emit context block (attrs + the Act's own non-Shot cards); get Shot cards back
+    const directShots = emitStructuralContext('Act context', actAttrs, v.cards)
+
+    // Shot cards at Act level (e.g., a shot list before any scenes)
+    for (const c of directShots) out.push(formatShot(c))
+    if (directShots.length > 0) out.push('')
+  }
+
+  function emitSequence(v: StructureVisit) {
+    const { bd } = v
+    out.push(`## ${bd.title}`)
+    if (bd.note?.trim()) out.push(`= ${bd.note.trim()}`)
+    out.push('')
+
+    // Sequence structural attributes
+    const seqAttrs: string[] = []
+    const goal     = attr(bd.attributes, 'goal')
+    const conflict = attr(bd.attributes, 'conflict')
+    const outcome  = attr(bd.attributes, 'outcome')
+    if (goal)     seqAttrs.push(`Goal: ${goal}`)
+    if (conflict) seqAttrs.push(`Conflict: ${conflict}`)
+    if (outcome)  seqAttrs.push(`Outcome: ${outcome}`)
+
+    const directShots = emitStructuralContext('Sequence context', seqAttrs, v.cards)
+
+    for (const c of directShots) out.push(formatShot(c))
+    if (directShots.length > 0) out.push('')
+  }
+
+  function emitBeat(v: BeatVisit) {
+    const { bd } = v
+    /*
+     * Structural Beat (not nested inside a Scene backdrop).
+     *
+     * Beat nesting depth drives the section level so that a Beat inside a
+     * Beat reads as a sub-beat rather than flattening to a sibling.
+     * Fountain has no section-depth ceiling, but past `######` navigators
+     * stop indenting, so the level is clamped.
+     */
+    const level = Math.min(3 + v.depth, 6)
+    out.push(`${'#'.repeat(level)} ${bd.title}`)
+    if (bd.note?.trim()) out.push(`= ${bd.note.trim()}`)
+    out.push('')
+
+    const beatAttrs: string[] = []
+    const desc = attr(bd.attributes, 'description')
+    if (desc) beatAttrs.push(`Description: ${desc}`)
+
+    const directCards = v.cards
+
+    /*
+     * Beat cards are pulled out and emitted as their own sub-beat sections
+     * below, rather than folded into the context block the way they are at
+     * Act and Sequence level. A Beat card inside a Beat backdrop is
+     * structure — it is the thing the writer wants to see in the
+     * navigator — whereas at Act level it is supporting material.
+     */
+    const subBeatCards = rowSort(directCards.filter(c => c.type === 'Beat'))
+    const contextCards = directCards.filter(c => c.type !== 'Beat')
+
+    const directShots = emitStructuralContext('Beat context', beatAttrs, contextCards)
+
+    for (const c of directShots) out.push(formatShot(c))
+    if (directShots.length > 0) out.push('')
+
+    // Sub-beat cards, one section level deeper than this Beat.
+    const subLevel = Math.min(level + 1, 6)
+    for (const c of subBeatCards) {
+      const e     = eMap.get(c.entityId)
+      const title = e?.title ?? c.title
+      out.push(`${'#'.repeat(subLevel)} ${title}`)
+
+      const note = (e?.noteRaw ?? c.noteRaw)?.trim()
+      if (note) out.push(`= ${note}`)
+      out.push('')
+
+      const sub = attr(strAttrs(e?.attributes ?? {}), 'description')
+      if (sub) {
+        out.push('[[')
+        out.push('Beat context')
+        out.push(`Description: ${sub}`)
+        out.push(']]')
         out.push('')
-
-        // Act structural attributes
-        const actAttrs: string[] = []
-        const fn = attr(bd.attributes, 'function')
-        const dq = attr(bd.attributes, 'dramatic_question')
-        const sh = attr(bd.attributes, 'shift')
-        if (fn) actAttrs.push(`Function: ${fn}`)
-        if (dq) actAttrs.push(`Dramatic Question: ${dq}`)
-        if (sh) actAttrs.push(`Shift: ${sh}`)
-
-        // Direct-child cards (immediate parent = this Act, not inside a child backdrop)
-        const directCards    = cardsInBackdrop(bd.id, cards, cardParent)
-        const directNonScene = directCards.filter(c => c.type !== 'Scene')
-
-        // Emit context block (attrs + non-Shot non-Scene cards); get Shot cards back
-        const directShots = emitStructuralContext('Act context', actAttrs, directNonScene)
-
-        // Shot cards at Act level (e.g., a shot list before any scenes)
-        for (const c of directShots) out.push(formatShot(c))
-        if (directShots.length > 0) out.push('')
-
-        // Recurse into child backdrops (Sequences, Scenes, Beats)
-        for (const child of backdropsInBackdrop(bd.id, backdrops, bdParent)) {
-          emitBackdrop(child, beatDepth)
-        }
-
-        // Scene entity cards directly inside this Act (unusual but possible)
-        for (const c of directCards.filter(c => c.type === 'Scene')) {
-          emitSceneCard(c)
-        }
-        break
       }
-
-      case 'Sequence': {
-        out.push(`## ${bd.title}`)
-        if (bd.note?.trim()) out.push(`= ${bd.note.trim()}`)
-        out.push('')
-
-        // Sequence structural attributes
-        const seqAttrs: string[] = []
-        const goal     = attr(bd.attributes, 'goal')
-        const conflict = attr(bd.attributes, 'conflict')
-        const outcome  = attr(bd.attributes, 'outcome')
-        if (goal)     seqAttrs.push(`Goal: ${goal}`)
-        if (conflict) seqAttrs.push(`Conflict: ${conflict}`)
-        if (outcome)  seqAttrs.push(`Outcome: ${outcome}`)
-
-        const directCards    = cardsInBackdrop(bd.id, cards, cardParent)
-        const directNonScene = directCards.filter(c => c.type !== 'Scene')
-
-        const directShots = emitStructuralContext('Sequence context', seqAttrs, directNonScene)
-
-        for (const c of directShots) out.push(formatShot(c))
-        if (directShots.length > 0) out.push('')
-
-        for (const child of backdropsInBackdrop(bd.id, backdrops, bdParent)) {
-          emitBackdrop(child, beatDepth)
-        }
-
-        for (const c of directCards.filter(c => c.type === 'Scene')) {
-          emitSceneCard(c)
-        }
-        break
-      }
-
-      case 'Beat': {
-        /*
-         * Structural Beat (not nested inside a Scene backdrop).
-         *
-         * This case previously recursed into child *backdrops* only and never
-         * called cardsInBackdrop, so every card sitting inside a Beat backdrop
-         * was silently dropped from both screenplay exports — Beat cards, but
-         * also Characters, Props, Shots and Scene cards. The Outline export
-         * uses a generic renderer that always walks cards, which is why the
-         * same board exported correctly there and came out empty here.
-         *
-         * Beat nesting depth drives the section level so that a Beat inside a
-         * Beat reads as a sub-beat rather than flattening to a sibling: every
-         * Beat backdrop used to emit `###` regardless of how deep it sat.
-         * Fountain has no section-depth ceiling, but past `######` navigators
-         * stop indenting, so the level is clamped.
-         */
-        const level = Math.min(3 + beatDepth, 6)
-        out.push(`${'#'.repeat(level)} ${bd.title}`)
-        if (bd.note?.trim()) out.push(`= ${bd.note.trim()}`)
-        out.push('')
-
-        const beatAttrs: string[] = []
-        const desc = attr(bd.attributes, 'description')
-        if (desc) beatAttrs.push(`Description: ${desc}`)
-
-        const directCards = cardsInBackdrop(bd.id, cards, cardParent)
-
-        /*
-         * Beat cards are pulled out and emitted as their own sub-beat sections
-         * below, rather than folded into the context block the way they are at
-         * Act and Sequence level. A Beat card inside a Beat backdrop is
-         * structure — it is the thing the writer wants to see in the
-         * navigator — whereas at Act level it is supporting material.
-         */
-        const subBeatCards = rowSort(directCards.filter(c => c.type === 'Beat'))
-        const contextCards = directCards.filter(c => c.type !== 'Beat' && c.type !== 'Scene')
-
-        const directShots = emitStructuralContext('Beat context', beatAttrs, contextCards)
-
-        for (const c of directShots) out.push(formatShot(c))
-        if (directShots.length > 0) out.push('')
-
-        // Sub-beat cards, one section level deeper than this Beat.
-        const subLevel = Math.min(level + 1, 6)
-        for (const c of subBeatCards) {
-          const e     = eMap.get(c.entityId)
-          const title = e?.title ?? c.title
-          out.push(`${'#'.repeat(subLevel)} ${title}`)
-
-          const note = (e?.noteRaw ?? c.noteRaw)?.trim()
-          if (note) out.push(`= ${note}`)
-          out.push('')
-
-          const sub = attr(strAttrs(e?.attributes ?? {}), 'description')
-          if (sub) {
-            out.push('[[')
-            out.push('Beat context')
-            out.push(`Description: ${sub}`)
-            out.push(']]')
-            out.push('')
-          }
-        }
-
-        // Child backdrops inherit the incremented depth.
-        for (const child of backdropsInBackdrop(bd.id, backdrops, bdParent)) {
-          emitBackdrop(child, beatDepth + 1)
-        }
-
-        // Scene cards sitting directly inside a Beat backdrop.
-        for (const c of rowSort(directCards.filter(c => c.type === 'Scene'))) {
-          emitSceneCard(c)
-        }
-        break
-      }
-
-      case 'Scene':
-        emitSceneBackdrop(bd)
-        break
-
-      // 'Custom' is transparent — its children are promoted by the parent map
     }
   }
 
-  // ── Root traversal ────────────────────────────────────────────────────────
+  // ── Script body ───────────────────────────────────────────────────────────
 
-  for (const bd of rootBackdrops(backdrops, bdParent)) {
-    emitBackdrop(bd)
-  }
-
-  // Standalone Scene cards at root level (not inside any backdrop)
-  const rootSceneCards = rowSort(rootCards(cards, cardParent).filter(c => c.type === 'Scene'))
-  for (const c of rootSceneCards) {
-    emitSceneCard(c)
+  for (const v of walk.visits) {
+    switch (v.kind) {
+      case 'act':           emitAct(v);           break
+      case 'sequence':      emitSequence(v);      break
+      case 'beat':          emitBeat(v);          break
+      case 'sceneBackdrop': emitSceneBackdrop(v); break
+      case 'sceneCard':     emitSceneCard(v);     break
+    }
   }
 
   // ── Loose Notes ───────────────────────────────────────────────────────────
@@ -548,7 +484,7 @@ export function buildFountain(board: Board): string {
   const handledAtRoot = new Set(['Scene', 'Theme', 'Arc', 'Thought'])
   const seenEntityIds = new Set<string>()
   const orphans = rowSort(
-    rootCards(cards, cardParent).filter(c => !handledAtRoot.has(c.type))
+    walk.rootCards.filter(c => !handledAtRoot.has(c.type))
   )
 
   if (orphans.length > 0) {

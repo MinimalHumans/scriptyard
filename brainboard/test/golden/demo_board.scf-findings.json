@@ -1,0 +1,14 @@
+[
+  {
+    "code": "structure.scenes_before_first_act",
+    "severity": "info",
+    "table": "scene",
+    "count": 3,
+    "rowIds": [
+      1,
+      2,
+      3
+    ],
+    "message": "3 scene(s) come before the first act begins."
+  }
+]

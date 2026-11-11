@@ -23,20 +23,16 @@
  * - Every text value is XML-escaped through esc(). Apply once per value.
  */
 
-import type { Board, Card, Entity, Backdrop } from '@/types/board'
+import type { Board, Card, Backdrop } from '@/types/board'
 import { ATTRIBUTE_SCHEMAS } from '@/config/attributeSchemas'
+import { rowSort } from './screenplayCommon'
 import {
-  buildBackdropParentMap,
-  buildCardParentMap,
-  cardsInBackdrop,
-  backdropsInBackdrop,
-  rootBackdrops,
-  rootCards,
-  rowSort,
-  liveContent,
-  assembleSceneHeadingFromBackdrop,
-  assembleSceneHeadingFromCard,
-} from './screenplayCommon'
+  walkBoard,
+  type BeatVisit,
+  type SceneBackdropVisit,
+  type SceneCardVisit,
+  type StructureVisit,
+} from './boardWalk'
 
 // ─── XML helpers ─────────────────────────────────────────────────────────────
 
@@ -101,12 +97,11 @@ function strAttrs(
 // ─── Main export ──────────────────────────────────────────────────────────────
 
 export function buildFDX(board: Board): string {
-  const { entities, name, projectInfo } = board
-  const eMap       = new Map<string, Entity>(entities.map(e => [e.id, e]))
-  // Cut material never reaches the script — see buildFountain / liveContent().
-  const { cards, backdrops } = liveContent(board.cards, board.backdrops, eMap)
-  const bdParent   = buildBackdropParentMap(backdrops)
-  const cardParent = buildCardParentMap(cards, backdrops)
+  const { name, projectInfo } = board
+  // What is visited, and in what order, is decided once in walkBoard() and
+  // shared with the other exporters. This file only decides how it reads.
+  const walk = walkBoard(board)
+  const { eMap } = walk
   const content: string[] = []
 
   // ── Shot paragraph helper ─────────────────────────────────────────────────
@@ -160,7 +155,8 @@ export function buildFDX(board: Board): string {
 
     // Characters
     if (charCards.length > 0) {
-      const names = charCards.map(c => (eMap.get(c.entityId)?.title ?? c.title).toUpperCase())
+      // A character placed twice in one scope is still one name.
+      const names = [...new Set(charCards.map(c => (eMap.get(c.entityId)?.title ?? c.title).toUpperCase()))]
       const p = para('Action', `[Characters: ${names.join(', ')}]`)
       if (p) content.push(p)
     }
@@ -232,8 +228,8 @@ export function buildFDX(board: Board): string {
 
   // ── Scene backdrop ─────────────────────────────────────────────────────────
 
-  function emitSceneBackdrop(bd: Backdrop) {
-    const heading  = assembleSceneHeadingFromBackdrop(bd, cards, eMap, cardParent)
+  function emitSceneBackdrop(v: SceneBackdropVisit) {
+    const { bd, heading } = v
     // Goal → FDX Synopsis (appears in Final Draft's navigator panel)
     const goal     = attr(bd.attributes, 'goal')
     const synopsis = bd.note?.trim() || goal
@@ -245,16 +241,13 @@ export function buildFDX(board: Board): string {
       outcome:  attr(bd.attributes, 'outcome'),
     }
 
-    const contained     = cardsInBackdrop(bd.id, cards, cardParent)
-    const beatBackdrops = backdropsInBackdrop(bd.id, backdrops, bdParent).filter(b => b.type === 'Beat')
-    emitSceneSidecar(contained, beatBackdrops, sceneAttrs)
+    emitSceneSidecar(v.cards, v.beats, sceneAttrs)
   }
 
   // ── Standalone Scene card ─────────────────────────────────────────────────
 
-  function emitSceneCard(card: Card) {
-    const entity   = eMap.get(card.entityId)
-    const heading  = assembleSceneHeadingFromCard(card, entity, cards, eMap, cardParent)
+  function emitSceneCard(v: SceneCardVisit) {
+    const { card, entity, heading } = v
     const note     = (entity?.noteRaw ?? card.noteRaw)?.trim() || ''
     const goal     = attr(strAttrs(entity?.attributes ?? {}), 'goal')
     const synopsis = note || goal
@@ -292,7 +285,8 @@ export function buildFDX(board: Board): string {
 
     // Characters
     if (charCards.length > 0) {
-      const names = charCards.map(c => (eMap.get(c.entityId)?.title ?? c.title).toUpperCase())
+      // A character placed twice in one scope is still one name.
+      const names = [...new Set(charCards.map(c => (eMap.get(c.entityId)?.title ?? c.title).toUpperCase()))]
       const p = para('Action', `[Characters: ${names.join(', ')}]`)
       if (p) content.push(p)
     }
@@ -350,166 +344,117 @@ export function buildFDX(board: Board): string {
     return shotCards
   }
 
-  // ── Recursive structural traversal ─────────────────────────────────────────
+  // ── Structural emitters ───────────────────────────────────────────────────
+  // One per visit kind. None of them recurse: child backdrops and Scene cards
+  // arrive as their own visits, already in script order.
 
-  /**
-   * @param beatDepth How many Beat backdrops enclose this one.
-   */
-  function emitBackdrop(bd: Backdrop, beatDepth = 0) {
-    switch (bd.type) {
+  function emitAct(v: StructureVisit) {
+    const { bd } = v
+    const actPara = para('New Act', `ACT — ${bd.title.toUpperCase()}`)
+    if (actPara) content.push(actPara)
+    if (bd.note?.trim()) {
+      const np = para('Action', bd.note.trim())
+      if (np) content.push(np)
+    }
 
-      case 'Act': {
-        const actPara = para('New Act', `ACT — ${bd.title.toUpperCase()}`)
-        if (actPara) content.push(actPara)
-        if (bd.note?.trim()) {
-          const np = para('Action', bd.note.trim())
-          if (np) content.push(np)
-        }
+    // Act structural attribute paragraphs
+    const actAttrParas: string[] = []
+    const fn = attr(bd.attributes, 'function')
+    const dq = attr(bd.attributes, 'dramatic_question')
+    const sh = attr(bd.attributes, 'shift')
+    if (fn) actAttrParas.push(para('Action', `[Function: ${fn}]`))
+    if (dq) actAttrParas.push(para('Action', `[Dramatic Question: ${dq}]`))
+    if (sh) actAttrParas.push(para('Action', `[Shift: ${sh}]`))
 
-        // Act structural attribute paragraphs
-        const actAttrParas: string[] = []
-        const fn = attr(bd.attributes, 'function')
-        const dq = attr(bd.attributes, 'dramatic_question')
-        const sh = attr(bd.attributes, 'shift')
-        if (fn) actAttrParas.push(para('Action', `[Function: ${fn}]`))
-        if (dq) actAttrParas.push(para('Action', `[Dramatic Question: ${dq}]`))
-        if (sh) actAttrParas.push(para('Action', `[Shift: ${sh}]`))
+    const directShots = emitStructuralContext(actAttrParas, v.cards)
+    for (const c of directShots) emitShot(c)
+  }
 
-        // Direct-child cards
-        const directCards    = cardsInBackdrop(bd.id, cards, cardParent)
-        const directNonScene = directCards.filter(c => c.type !== 'Scene')
+  function emitSequence(v: StructureVisit) {
+    const { bd } = v
+    const seqPara = para('General', `SEQUENCE: ${bd.title.toUpperCase()}`)
+    if (seqPara) content.push(seqPara)
+    if (bd.note?.trim()) {
+      const np = para('Action', bd.note.trim())
+      if (np) content.push(np)
+    }
 
-        const directShots = emitStructuralContext(actAttrParas, directNonScene)
-        for (const c of directShots) emitShot(c)
+    // Sequence structural attribute paragraphs
+    const seqAttrParas: string[] = []
+    const goal     = attr(bd.attributes, 'goal')
+    const conflict = attr(bd.attributes, 'conflict')
+    const outcome  = attr(bd.attributes, 'outcome')
+    if (goal)     seqAttrParas.push(para('Action', `[Goal: ${goal}]`))
+    if (conflict) seqAttrParas.push(para('Action', `[Conflict: ${conflict}]`))
+    if (outcome)  seqAttrParas.push(para('Action', `[Outcome: ${outcome}]`))
 
-        // Recurse into child backdrops
-        for (const child of backdropsInBackdrop(bd.id, backdrops, bdParent)) {
-          emitBackdrop(child, beatDepth)
-        }
+    const directShots = emitStructuralContext(seqAttrParas, v.cards)
+    for (const c of directShots) emitShot(c)
+  }
 
-        // Scene entity cards directly inside this Act
-        for (const c of directCards.filter(c => c.type === 'Scene')) {
-          emitSceneCard(c)
-        }
-        break
+  function emitBeat(v: BeatVisit) {
+    const { bd } = v
+    /*
+     * FDX has no section hierarchy — Final Draft models Acts and Scenes,
+     * not arbitrary depth — so nesting is carried in the label instead:
+     * a Beat inside a Beat reads as SUB-BEAT, with the em-dash rule
+     * widening by depth so the levels stay visually distinct in the
+     * script body.
+     */
+    const label  = v.depth === 0 ? 'BEAT' : 'SUB-BEAT'
+    const rule   = '—'.repeat(v.depth + 1)
+    const p = para('Action', `${rule} ${label}: ${bd.title} ${rule}`)
+    if (p) content.push(p)
+    if (bd.note?.trim()) {
+      const np = para('Action', bd.note.trim())
+      if (np) content.push(np)
+    }
+
+    const beatAttrParas: string[] = []
+    const desc = attr(bd.attributes, 'description')
+    if (desc) beatAttrParas.push(para('Action', `[Description: ${desc}]`))
+
+    const directCards = v.cards
+
+    // Beat cards become sub-beats in their own right; everything else
+    // (Characters, Props, Themes, Arcs, Thoughts) goes to the context
+    // block, and Shots come back as action lines.
+    const subBeatCards = rowSort(directCards.filter(c => c.type === 'Beat'))
+    const contextCards = directCards.filter(c => c.type !== 'Beat')
+
+    const directShots = emitStructuralContext(beatAttrParas, contextCards)
+    for (const c of directShots) emitShot(c)
+
+    const subRule = '—'.repeat(v.depth + 2)
+    for (const c of subBeatCards) {
+      const e     = eMap.get(c.entityId)
+      const title = e?.title ?? c.title
+      const sp = para('Action', `${subRule} SUB-BEAT: ${title} ${subRule}`)
+      if (sp) content.push(sp)
+
+      const note = (e?.noteRaw ?? c.noteRaw)?.trim()
+      if (note) {
+        const np = para('Action', note)
+        if (np) content.push(np)
       }
-
-      case 'Sequence': {
-        const seqPara = para('General', `SEQUENCE: ${bd.title.toUpperCase()}`)
-        if (seqPara) content.push(seqPara)
-        if (bd.note?.trim()) {
-          const np = para('Action', bd.note.trim())
-          if (np) content.push(np)
-        }
-
-        // Sequence structural attribute paragraphs
-        const seqAttrParas: string[] = []
-        const goal     = attr(bd.attributes, 'goal')
-        const conflict = attr(bd.attributes, 'conflict')
-        const outcome  = attr(bd.attributes, 'outcome')
-        if (goal)     seqAttrParas.push(para('Action', `[Goal: ${goal}]`))
-        if (conflict) seqAttrParas.push(para('Action', `[Conflict: ${conflict}]`))
-        if (outcome)  seqAttrParas.push(para('Action', `[Outcome: ${outcome}]`))
-
-        const directCards    = cardsInBackdrop(bd.id, cards, cardParent)
-        const directNonScene = directCards.filter(c => c.type !== 'Scene')
-
-        const directShots = emitStructuralContext(seqAttrParas, directNonScene)
-        for (const c of directShots) emitShot(c)
-
-        for (const child of backdropsInBackdrop(bd.id, backdrops, bdParent)) {
-          emitBackdrop(child, beatDepth)
-        }
-
-        for (const c of directCards.filter(c => c.type === 'Scene')) {
-          emitSceneCard(c)
-        }
-        break
+      const sub = attr(strAttrs(e?.attributes ?? {}), 'description')
+      if (sub) {
+        const dp = para('Action', `[Description: ${sub}]`)
+        if (dp) content.push(dp)
       }
-
-      case 'Beat': {
-        /*
-         * See the matching note in buildFountain.ts: this case used to recurse
-         * into child backdrops only, never calling cardsInBackdrop, so every
-         * card inside a Beat backdrop was dropped from the export.
-         *
-         * FDX has no section hierarchy — Final Draft models Acts and Scenes,
-         * not arbitrary depth — so nesting is carried in the label instead:
-         * a Beat inside a Beat reads as SUB-BEAT, with the em-dash rule
-         * widening by depth so the levels stay visually distinct in the
-         * script body.
-         */
-        const label  = beatDepth === 0 ? 'BEAT' : 'SUB-BEAT'
-        const rule   = '—'.repeat(beatDepth + 1)
-        const p = para('Action', `${rule} ${label}: ${bd.title} ${rule}`)
-        if (p) content.push(p)
-        if (bd.note?.trim()) {
-          const np = para('Action', bd.note.trim())
-          if (np) content.push(np)
-        }
-
-        const beatAttrParas: string[] = []
-        const desc = attr(bd.attributes, 'description')
-        if (desc) beatAttrParas.push(para('Action', `[Description: ${desc}]`))
-
-        const directCards = cardsInBackdrop(bd.id, cards, cardParent)
-
-        // Beat cards become sub-beats in their own right; everything else
-        // (Characters, Props, Themes, Arcs, Thoughts) goes to the context
-        // block, and Shots come back as action lines.
-        const subBeatCards = rowSort(directCards.filter(c => c.type === 'Beat'))
-        const contextCards = directCards.filter(c => c.type !== 'Beat' && c.type !== 'Scene')
-
-        const directShots = emitStructuralContext(beatAttrParas, contextCards)
-        for (const c of directShots) emitShot(c)
-
-        const subRule = '—'.repeat(beatDepth + 2)
-        for (const c of subBeatCards) {
-          const e     = eMap.get(c.entityId)
-          const title = e?.title ?? c.title
-          const sp = para('Action', `${subRule} SUB-BEAT: ${title} ${subRule}`)
-          if (sp) content.push(sp)
-
-          const note = (e?.noteRaw ?? c.noteRaw)?.trim()
-          if (note) {
-            const np = para('Action', note)
-            if (np) content.push(np)
-          }
-          const sub = attr(strAttrs(e?.attributes ?? {}), 'description')
-          if (sub) {
-            const dp = para('Action', `[Description: ${sub}]`)
-            if (dp) content.push(dp)
-          }
-        }
-
-        for (const child of backdropsInBackdrop(bd.id, backdrops, bdParent)) {
-          emitBackdrop(child, beatDepth + 1)
-        }
-
-        for (const c of rowSort(directCards.filter(c => c.type === 'Scene'))) {
-          emitSceneCard(c)
-        }
-        break
-      }
-
-      case 'Scene':
-        emitSceneBackdrop(bd)
-        break
-
-      // 'Custom' is transparent — its children are promoted by the parent map
     }
   }
 
-  // ── Root traversal ────────────────────────────────────────────────────────
+  // ── Script body ───────────────────────────────────────────────────────────
 
-  for (const bd of rootBackdrops(backdrops, bdParent)) {
-    emitBackdrop(bd)
-  }
-
-  // Standalone Scene cards at root level
-  const rootSceneCards = rowSort(rootCards(cards, cardParent).filter(c => c.type === 'Scene'))
-  for (const c of rootSceneCards) {
-    emitSceneCard(c)
+  for (const v of walk.visits) {
+    switch (v.kind) {
+      case 'act':           emitAct(v);           break
+      case 'sequence':      emitSequence(v);      break
+      case 'beat':          emitBeat(v);          break
+      case 'sceneBackdrop': emitSceneBackdrop(v); break
+      case 'sceneCard':     emitSceneCard(v);     break
+    }
   }
 
   // ── Loose Notes ───────────────────────────────────────────────────────────
@@ -518,7 +463,7 @@ export function buildFDX(board: Board): string {
   // by entityId — multiple card instances share one entity.
   const handledAtRoot = new Set(['Scene'])
   const seenEntityIds = new Set<string>()
-  const orphans = rowSort(rootCards(cards, cardParent).filter(c => !handledAtRoot.has(c.type)))
+  const orphans = rowSort(walk.rootCards.filter(c => !handledAtRoot.has(c.type)))
 
   if (orphans.length > 0) {
     const headerP = para('General', 'LOOSE NOTES')

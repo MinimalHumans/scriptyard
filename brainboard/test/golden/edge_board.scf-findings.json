@@ -1,0 +1,12 @@
+[
+  {
+    "code": "structure.boundary_absent",
+    "severity": "warning",
+    "table": "act",
+    "count": 1,
+    "rowIds": [
+      2
+    ],
+    "message": "Act Two has no start scene, so it appears nowhere in the structure."
+  }
+]

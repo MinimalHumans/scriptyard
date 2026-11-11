@@ -1,0 +1,656 @@
+{
+  "schemaVersion": "2.25",
+  "meta": {
+    "schema_version": "2.25",
+    "editor_version": "Scriptyard test",
+    "updated_at": "2026-01-02T12:00:00.000Z"
+  },
+  "tables": {
+    "project": [
+      {
+        "id": 1,
+        "uuid": "00000000-0000-4000-8000-000000000001",
+        "values": {
+          "name": "Hero Journey",
+          "external_id": "d1wfWuOdzDfFl0g7wIhXN",
+          "external_id_namespace": "scriptyard"
+        }
+      }
+    ],
+    "act": [
+      {
+        "id": 1,
+        "uuid": "00000000-0000-4000-8000-000000000002",
+        "values": {
+          "name": "Act One (Departure)",
+          "act_number": 1,
+          "summary": "This act establishes the hero and pushes them out of their comfort zone. It ends when they fully commit and enter the new world.",
+          "external_id": "kxOJpNyk0-QF3fD-JeipS",
+          "external_id_namespace": "scriptyard"
+        }
+      },
+      {
+        "id": 2,
+        "uuid": "00000000-0000-4000-8000-000000000025",
+        "values": {
+          "name": "Act Two – Part A (Initiation: Learning the Rules)",
+          "act_number": 2,
+          "summary": "The hero is tested and shaped by the new world, culminating in a major confrontation that begins their transformation.",
+          "external_id": "qmmZ5WsyMBiMN84YfPEJD",
+          "external_id_namespace": "scriptyard"
+        }
+      },
+      {
+        "id": 3,
+        "uuid": "00000000-0000-4000-8000-000000000040",
+        "values": {
+          "name": "Act Two – Part B (Initiation: Consequences and Growth)",
+          "act_number": 3,
+          "summary": "After the ordeal, the hero gains something but must deal with its consequences. The journey shifts toward resolution.",
+          "external_id": "xzf5AGsrNvyhMtxs__r4d",
+          "external_id_namespace": "scriptyard"
+        }
+      },
+      {
+        "id": 4,
+        "uuid": "00000000-0000-4000-8000-000000000051",
+        "values": {
+          "name": "Act Three (Return)",
+          "act_number": 4,
+          "summary": "The hero faces a final test and returns home changed, completing their arc and resolving the story.",
+          "external_id": "rH5pI5khstjik-xXUXPdB",
+          "external_id_namespace": "scriptyard"
+        }
+      }
+    ]
+  },
+  "titlePage": [
+    {
+      "key": "Title",
+      "value": "Hero Journey"
+    }
+  ],
+  "lines": [
+    {
+      "uuid": "00000000-0000-4000-8000-000000000003",
+      "lineType": "section",
+      "content": "# Act One (Departure)",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": {
+        "section": {
+          "depth": 1,
+          "text": "Act One (Departure)"
+        },
+        "structureRef": {
+          "kind": "act",
+          "uuid": "00000000-0000-4000-8000-000000000002"
+        }
+      }
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000004",
+      "lineType": "blank",
+      "content": "",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": null
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000005",
+      "lineType": "action",
+      "content": "BEAT: 1. Ordinary World",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": null
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000006",
+      "lineType": "blank",
+      "content": "",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": null
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000007",
+      "lineType": "action",
+      "content": "We see the hero in their normal life before the adventure begins. This establishes their baseline, including their limitations, flaws, and unfulfilled desires. Its purpose is to ground the story and give the audience a clear sense of what will change",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": null
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000008",
+      "lineType": "blank",
+      "content": "",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": null
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000009",
+      "lineType": "action",
+      "content": "BEAT: 2. Call to Adventure",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": null
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000010",
+      "lineType": "blank",
+      "content": "",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": null
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000011",
+      "lineType": "action",
+      "content": "A challenge, threat, or opportunity presents itself, inviting the hero into a new world. This moment introduces the central conflict and sets the story in motion.",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": null
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000012",
+      "lineType": "blank",
+      "content": "",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": null
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000013",
+      "lineType": "action",
+      "content": "BEAT: 3. Refusal of the Call",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": null
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000014",
+      "lineType": "blank",
+      "content": "",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": null
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000015",
+      "lineType": "action",
+      "content": "The hero hesitates or rejects the call due to fear, doubt, obligation, or insecurity. This beat humanizes the hero and emphasizes the risk involved in the journey.",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": null
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000016",
+      "lineType": "blank",
+      "content": "",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": null
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000017",
+      "lineType": "action",
+      "content": "BEAT: 4. Meeting the Mentor",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": null
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000018",
+      "lineType": "blank",
+      "content": "",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": null
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000019",
+      "lineType": "action",
+      "content": "The hero encounters someone who provides guidance, tools, training, or encouragement. The mentor helps prepare the hero for what lies ahead, often giving them confidence or a key resource.",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": null
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000020",
+      "lineType": "blank",
+      "content": "",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": null
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000021",
+      "lineType": "action",
+      "content": "BEAT: 5. Crossing the First Threshold",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": null
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000022",
+      "lineType": "blank",
+      "content": "",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": null
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000023",
+      "lineType": "action",
+      "content": "The hero commits to the journey and enters the “special world,” leaving the familiar behind. This is a point of no return and marks the true beginning of the adventure.",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": null
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000024",
+      "lineType": "blank",
+      "content": "",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": null
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000026",
+      "lineType": "section",
+      "content": "# Act Two – Part A (Initiation: Learning the Rules)",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": {
+        "section": {
+          "depth": 1,
+          "text": "Act Two – Part A (Initiation: Learning the Rules)"
+        },
+        "structureRef": {
+          "kind": "act",
+          "uuid": "00000000-0000-4000-8000-000000000025"
+        }
+      }
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000027",
+      "lineType": "blank",
+      "content": "",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": null
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000028",
+      "lineType": "action",
+      "content": "BEAT: 6. Tests, Allies, and Enemies",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": null
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000029",
+      "lineType": "blank",
+      "content": "",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": null
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000030",
+      "lineType": "action",
+      "content": "The hero faces challenges, makes friends, and encounters adversaries. Through these trials, they begin to understand the rules of the new world. This stage builds skills, relationships, and tension.",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": null
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000031",
+      "lineType": "blank",
+      "content": "",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": null
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000032",
+      "lineType": "action",
+      "content": "BEAT: 7. Approach to the Inmost Cave",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": null
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000033",
+      "lineType": "blank",
+      "content": "",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": null
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000034",
+      "lineType": "action",
+      "content": "The hero prepares for a major challenge, often venturing into a dangerous or symbolic location. This is a moment of planning, tension, and introspection before the central ordeal.",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": null
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000035",
+      "lineType": "blank",
+      "content": "",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": null
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000036",
+      "lineType": "action",
+      "content": "BEAT: 8. The Ordeal",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": null
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000037",
+      "lineType": "blank",
+      "content": "",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": null
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000038",
+      "lineType": "action",
+      "content": "The hero faces a major crisis—often a life-or-death moment or their greatest fear. This is the emotional and narrative core of the story where transformation begins.",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": null
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000039",
+      "lineType": "blank",
+      "content": "",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": null
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000041",
+      "lineType": "section",
+      "content": "# Act Two – Part B (Initiation: Consequences and Growth)",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": {
+        "section": {
+          "depth": 1,
+          "text": "Act Two – Part B (Initiation: Consequences and Growth)"
+        },
+        "structureRef": {
+          "kind": "act",
+          "uuid": "00000000-0000-4000-8000-000000000040"
+        }
+      }
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000042",
+      "lineType": "blank",
+      "content": "",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": null
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000043",
+      "lineType": "action",
+      "content": "BEAT: 9. Reward (Seizing the Sword)",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": null
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000044",
+      "lineType": "blank",
+      "content": "",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": null
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000045",
+      "lineType": "action",
+      "content": "Having survived the ordeal, the hero gains something of value—an object, knowledge, power, or insight. This reward represents progress but does not yet resolve the story.",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": null
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000046",
+      "lineType": "blank",
+      "content": "",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": null
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000047",
+      "lineType": "action",
+      "content": "BEAT: 10. The Road Back",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": null
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000048",
+      "lineType": "blank",
+      "content": "",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": null
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000049",
+      "lineType": "action",
+      "content": "The hero begins the journey back to the ordinary world, but consequences arise. The stakes are often raised again, and the hero may be pursued or tested further.",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": null
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000050",
+      "lineType": "blank",
+      "content": "",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": null
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000052",
+      "lineType": "section",
+      "content": "# Act Three (Return)",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": {
+        "section": {
+          "depth": 1,
+          "text": "Act Three (Return)"
+        },
+        "structureRef": {
+          "kind": "act",
+          "uuid": "00000000-0000-4000-8000-000000000051"
+        }
+      }
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000053",
+      "lineType": "blank",
+      "content": "",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": null
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000054",
+      "lineType": "action",
+      "content": "BEAT: 11. The Resurrection",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": null
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000055",
+      "lineType": "blank",
+      "content": "",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": null
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000056",
+      "lineType": "action",
+      "content": "A final, climactic test forces the hero to apply everything they’ve learned. This is a moment of rebirth where the hero proves they’ve truly changed.",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": null
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000057",
+      "lineType": "blank",
+      "content": "",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": null
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000058",
+      "lineType": "action",
+      "content": "BEAT: 12. Return with the Elixir",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": null
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000059",
+      "lineType": "blank",
+      "content": "",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": null
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000060",
+      "lineType": "action",
+      "content": "The hero returns home transformed, bringing something back that benefits others (knowledge, healing, power, etc.). This resolves both the external conflict and the internal arc.",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": null
+    }
+  ],
+  "report": {
+    "rows": {
+      "project": 1,
+      "act": 4
+    },
+    "lines": 55,
+    "items": [
+      {
+        "kind": "prose",
+        "subject": "Beat \"1. Ordinary World\"",
+        "where": null,
+        "detail": "A beat belongs to a scene in SCF, and this one is not in a scene."
+      },
+      {
+        "kind": "prose",
+        "subject": "Beat \"2. Call to Adventure\"",
+        "where": null,
+        "detail": "A beat belongs to a scene in SCF, and this one is not in a scene."
+      },
+      {
+        "kind": "prose",
+        "subject": "Beat \"3. Refusal of the Call\"",
+        "where": null,
+        "detail": "A beat belongs to a scene in SCF, and this one is not in a scene."
+      },
+      {
+        "kind": "prose",
+        "subject": "Beat \"4. Meeting the Mentor\"",
+        "where": null,
+        "detail": "A beat belongs to a scene in SCF, and this one is not in a scene."
+      },
+      {
+        "kind": "prose",
+        "subject": "Beat \"5. Crossing the First Threshold\"",
+        "where": null,
+        "detail": "A beat belongs to a scene in SCF, and this one is not in a scene."
+      },
+      {
+        "kind": "prose",
+        "subject": "Beat \"6. Tests, Allies, and Enemies\"",
+        "where": null,
+        "detail": "A beat belongs to a scene in SCF, and this one is not in a scene."
+      },
+      {
+        "kind": "prose",
+        "subject": "Beat \"7. Approach to the Inmost Cave\"",
+        "where": null,
+        "detail": "A beat belongs to a scene in SCF, and this one is not in a scene."
+      },
+      {
+        "kind": "prose",
+        "subject": "Beat \"8. The Ordeal\"",
+        "where": null,
+        "detail": "A beat belongs to a scene in SCF, and this one is not in a scene."
+      },
+      {
+        "kind": "prose",
+        "subject": "Beat \"9. Reward (Seizing the Sword)\"",
+        "where": null,
+        "detail": "A beat belongs to a scene in SCF, and this one is not in a scene."
+      },
+      {
+        "kind": "prose",
+        "subject": "Beat \"10. The Road Back\"",
+        "where": null,
+        "detail": "A beat belongs to a scene in SCF, and this one is not in a scene."
+      },
+      {
+        "kind": "prose",
+        "subject": "Beat \"11. The Resurrection\"",
+        "where": null,
+        "detail": "A beat belongs to a scene in SCF, and this one is not in a scene."
+      },
+      {
+        "kind": "prose",
+        "subject": "Beat \"12. Return with the Elixir\"",
+        "where": null,
+        "detail": "A beat belongs to a scene in SCF, and this one is not in a scene."
+      },
+      {
+        "kind": "changed",
+        "subject": "Act \"Act One (Departure)\"",
+        "where": null,
+        "detail": "It holds no scenes, so it is exported without a starting scene."
+      },
+      {
+        "kind": "changed",
+        "subject": "Act \"Act Two – Part A (Initiation: Learning the Rules)\"",
+        "where": null,
+        "detail": "It holds no scenes, so it is exported without a starting scene."
+      },
+      {
+        "kind": "changed",
+        "subject": "Act \"Act Two – Part B (Initiation: Consequences and Growth)\"",
+        "where": null,
+        "detail": "It holds no scenes, so it is exported without a starting scene."
+      },
+      {
+        "kind": "changed",
+        "subject": "Act \"Act Three (Return)\"",
+        "where": null,
+        "detail": "It holds no scenes, so it is exported without a starting scene."
+      }
+    ]
+  }
+}

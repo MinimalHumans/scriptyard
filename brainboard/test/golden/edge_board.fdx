@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<FinalDraft DocumentType="Script" Template="No" Version="6">
+  <Content>
+    <Paragraph Type="New Act">
+      <Text>ACT — ACT ONE</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>Everything here is arrival.</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Function: Bring her home and take away the easy exit.]</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Dramatic Question: Will she sell?]</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Shift: She misses the last ferry out.]</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Characters: ADA]</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Prop: Knife]</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Beat: A promise is made — Paid off in the coda.]</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Theme: Grief — Grief unspoken hardens into blame.]</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Arc: Ada thaws — Ada: guarded → open]</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Note: Act one runs long &lt;trim&gt; it.]</Text>
+    </Paragraph>
+    <Paragraph Type="Shot">
+      <Text>WIDE: THE FERRY LANDING. Place us before anyone speaks.</Text>
+    </Paragraph>
+    <Paragraph Type="General">
+      <Text>SEQUENCE: THE RETURN</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>One long evening.</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Goal: Get the keys to the boat.]</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Conflict: Her brother has them.]</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Outcome: She gets the keys and a debt.]</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Characters: BO &amp; CO]</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Prop: Lantern — Brass, dented, still works.]</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Theme: Grief — Grief unspoken hardens into blame.]</Text>
+    </Paragraph>
+    <Paragraph Type="Scene Heading">
+      <SceneProperties Length="0" Page="0" Title="Kitchen confrontation" Synopsis="They talk about everything but the boat."/>
+      <Text>INT. KITCHEN - NIGHT</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Goal: Ask for the keys without asking.]</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Conflict: Bo wants an apology first.]</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Outcome: Neither gets what they came for.]</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Characters: ADA, BO &amp; CO]</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Beat: The turn — Bo stops joking.]</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Beat: Ada hesitates — She almost tells him.]</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Beat: The lantern gutters]</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Theme: Grief — Grief unspoken hardens into blame.]</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Arc: Ada thaws — Ada: guarded → open]</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Prop: Lantern — Brass, dented, still works.]</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Note: Keep the table between them.]</Text>
+    </Paragraph>
+    <Paragraph Type="Shot">
+      <Text>CU: ADA&apos;S HANDS.</Text>
+    </Paragraph>
+    <Paragraph Type="Shot">
+      <Text>OTS: OVER BO. Keep Ada small.</Text>
+    </Paragraph>
+    <Paragraph Type="Scene Heading">
+      <SceneProperties Length="0" Page="0" Title="EXT. RIDGE - DAY"/>
+      <Text>EXT. RIDGE - DAY</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Characters: ADA]</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Prop: Knife]</Text>
+    </Paragraph>
+    <Paragraph Type="Shot">
+      <Text>EXTREME WIDE: THE RIDGE.</Text>
+    </Paragraph>
+    <Paragraph Type="Shot">
+      <Text>DREAMY: SOMETHING DREAMY.</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>— BEAT: Meeting the Mentor —</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>Structural beat, not inside a scene.</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Description: An older pilot offers her a way out.]</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Characters: BO &amp; CO]</Text>
+    </Paragraph>
+    <Paragraph Type="Shot">
+      <Text>ANGLE ON: MENTOR AT THE DOOR.</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>—— SUB-BEAT: The offer ——</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>He names his price.</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>—— SUB-BEAT: Refusal ——</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Prop: Lantern — Brass, dented, still works.]</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Note: He should say no twice.]</Text>
+    </Paragraph>
+    <Paragraph Type="Scene Heading">
+      <SceneProperties Length="0" Page="0" Title="Flash of the accident"/>
+      <Text>FLASH OF THE ACCIDENT</Text>
+    </Paragraph>
+    <Paragraph Type="Scene Heading">
+      <SceneProperties Length="0" Page="0" Title="Aftermath"/>
+      <Text>EXT. BARN - CONTINUOUS</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Characters: BO &amp; CO]</Text>
+    </Paragraph>
+    <Paragraph Type="Scene Heading">
+      <SceneProperties Length="0" Page="0" Title="Montage of crossings" Synopsis="Six crossings, no dialogue."/>
+      <Text>EXT. MONTAGE OF CROSSINGS - DUSK</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Goal: Show the routine she is stuck in.]</Text>
+    </Paragraph>
+    <Paragraph Type="New Act">
+      <Text>ACT — ACT TWO</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Theme: Hope]</Text>
+    </Paragraph>
+    <Paragraph Type="General">
+      <Text>SEQUENCE: CODA</Text>
+    </Paragraph>
+    <Paragraph Type="Scene Heading">
+      <SceneProperties Length="0" Page="0" Title="Epilogue"/>
+      <Text>EXT. EPILOGUE - DAWN</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Characters: ADA]</Text>
+    </Paragraph>
+    <Paragraph Type="Scene Heading">
+      <SceneProperties Length="0" Page="0" Title="Teaser" Synopsis="Cold open."/>
+      <Text>INT. TEASER - MORNING</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Conflict: Nobody will meet her eye.]</Text>
+    </Paragraph>
+    <Paragraph Type="General">
+      <Text>LOOSE NOTES</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Character: Ada — Pronouns: she/her · Role: Protagonist · Occupation: Ferry pilot · Age: 34 · Character Summary: Came home to sell the boat and stayed.]</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Never says what she means the first time.]</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Character: Cy — Role: Minor]</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Library only, never placed.]</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Location: Kitchen — Type: Interior · Time Period: 1970s · Mood / Atmosphere: close, airless · Setting Description: Low ceiling, one window over the sink.]</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Shoot it smaller than it is.]</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Location: Barn — Type: Exterior]</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Prop: Lantern — Story Function: Practical · Description: Brass, dented, still works.]</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Ada&apos;s father&apos;s.]</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Prop: Knife — Story Function: MacGuffin]</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Theme: Grief — Statement: Grief unspoken hardens into blame. · Expression: Doors left open, meals left uneaten. · Opposition: Silence is also a kind of mercy.]</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Keep it out of the dialogue.]</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Theme: Hope — Expression: Light through water.]</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Arc: Ada thaws — Subject: Ada · Axis: guarded → open · Direction: Positive]</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Three stages at most.]</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Arc: The town forgets — Subject: The town itself · Axis: memory → rumour]</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Thought: Title idea]</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Call it &quot;Low Water&quot;.]</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Shot: Unplaced insert — Framing: ECU]</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Beat: Unplaced beat]</Text>
+    </Paragraph>
+  </Content>
+  <TitlePage>
+    <Content>
+    <Paragraph Type="Action" Alignment="Center">
+      <Text>Low Water</Text>
+    </Paragraph>
+    <Paragraph Type="Action" Alignment="Center">
+      <Text>Written by</Text>
+    </Paragraph>
+    <Paragraph Type="Action" Alignment="Center">
+      <Text>A. Writer &amp; B. Writer</Text>
+    </Paragraph>
+    <Paragraph Type="Action" Alignment="Center">
+      <Text>Based on a true story</Text>
+    </Paragraph>
+    <Paragraph Type="Action" Alignment="Center">
+      <Text>First draft</Text>
+    </Paragraph>
+    <Paragraph Type="Action" Alignment="Center">
+      <Text>A. Writer</Text>
+    </Paragraph>
+    <Paragraph Type="Action" Alignment="Center">
+      <Text>1 Harbour Road</Text>
+    </Paragraph>
+    <Paragraph Type="Action" Alignment="Center">
+      <Text>writer@example.com</Text>
+    </Paragraph>
+    <Paragraph Type="Action" Alignment="Center">
+      <Text>(c) 2026 A. Writer</Text>
+    </Paragraph>
+    </Content>
+  </TitlePage>
+</FinalDraft>

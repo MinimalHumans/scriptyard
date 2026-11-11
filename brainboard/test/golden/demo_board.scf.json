@@ -1,0 +1,579 @@
+{
+  "schemaVersion": "2.25",
+  "meta": {
+    "schema_version": "2.25",
+    "editor_version": "Scriptyard test",
+    "updated_at": "2026-01-02T12:00:00.000Z"
+  },
+  "tables": {
+    "project": [
+      {
+        "id": 1,
+        "uuid": "00000000-0000-4000-8000-000000000001",
+        "values": {
+          "name": "Demo Board",
+          "external_id": "9z0eht-AA98gYkvl0nVEH",
+          "external_id_namespace": "scriptyard"
+        }
+      }
+    ],
+    "character": [
+      {
+        "id": 1,
+        "uuid": "00000000-0000-4000-8000-000000000002",
+        "values": {
+          "name": "Character Name",
+          "role": "protagonist",
+          "age": "99",
+          "pronouns": "she/her",
+          "occupation": "Monkey Farmer",
+          "summary": "This is the description of a character in a simple way.",
+          "notes": "Additional Notes can go here",
+          "external_id": "lev-RAuPvVyyfl9kLIEK9",
+          "external_id_namespace": "scriptyard"
+        }
+      },
+      {
+        "id": 2,
+        "uuid": "00000000-0000-4000-8000-000000000003",
+        "values": {
+          "name": "Markdown Syntax Examples",
+          "notes": "**Bold**  text. \n*Italicized* text\n~~Strikethrough.~~",
+          "external_id": "gXOjXd49F14B90sLrtp7P",
+          "external_id_namespace": "scriptyard"
+        }
+      }
+    ],
+    "location": [
+      {
+        "id": 1,
+        "uuid": "00000000-0000-4000-8000-000000000004",
+        "values": {
+          "name": "Location Name",
+          "location_type": "interior",
+          "setting": "An abandoned mall.",
+          "time_period": "1993",
+          "notes": "Here's a note. You can also use\nMarkdown Syntax.",
+          "external_id": "mAtK1LPuQ7SXMwR3OJ0Us",
+          "external_id_namespace": "scriptyard"
+        }
+      }
+    ],
+    "location_design": [
+      {
+        "id": 1,
+        "uuid": "00000000-0000-4000-8000-000000000005",
+        "values": {
+          "location_id": 1,
+          "emotional_target": "Creepy"
+        }
+      }
+    ],
+    "prop": [
+      {
+        "id": 1,
+        "uuid": "00000000-0000-4000-8000-000000000006",
+        "values": {
+          "name": "Important Prop #99",
+          "description": "A big hammer.",
+          "story_function": "macguffin",
+          "notes": "A note about the hammer",
+          "external_id": "6IgqGGiVQwa8LEABjufu0",
+          "external_id_namespace": "scriptyard"
+        }
+      },
+      {
+        "id": 2,
+        "uuid": "00000000-0000-4000-8000-000000000007",
+        "values": {
+          "name": "Undefined Prop that the Hero Holds in every scene.",
+          "story_function": "symbol",
+          "external_id": "Tl5Fxb71GAzo24GRLd5hh",
+          "external_id_namespace": "scriptyard"
+        }
+      }
+    ],
+    "theme": [
+      {
+        "id": 1,
+        "uuid": "00000000-0000-4000-8000-000000000008",
+        "values": {
+          "name": "Themes - gotta have 'em",
+          "description": "How the theme manifests",
+          "statement": "The core thematic claim",
+          "opposition": "The counter-argument the story explores.",
+          "notes": "An extra note about themes. Tortured thoughts about good versus evil! Or evil versus good! Or Evil versus evil!",
+          "external_id": "yZuGsCXAz3XHx9h3Mcz-D",
+          "external_id_namespace": "scriptyard"
+        }
+      }
+    ],
+    "collaboration_note": [
+      {
+        "id": 1,
+        "uuid": "00000000-0000-4000-8000-000000000013",
+        "values": {
+          "name": "This is a thought card...",
+          "note_type": "general",
+          "content": "random unsorted thoughts would go here."
+        }
+      }
+    ],
+    "scene": [
+      {
+        "id": 1,
+        "uuid": "00000000-0000-4000-8000-000000000020",
+        "values": {
+          "name": "Scene 01",
+          "scene_number": "1",
+          "external_id": "KSOtRfjQjujlBDy-8kkmh",
+          "external_id_namespace": "scriptyard"
+        }
+      },
+      {
+        "id": 2,
+        "uuid": "00000000-0000-4000-8000-000000000024",
+        "values": {
+          "name": "Scene 02",
+          "scene_number": "2",
+          "external_id": "yIUxrJyX1ax_nxwg9Vmrk",
+          "external_id_namespace": "scriptyard"
+        }
+      },
+      {
+        "id": 3,
+        "uuid": "00000000-0000-4000-8000-000000000028",
+        "values": {
+          "name": "Scene 03",
+          "scene_number": "3",
+          "external_id": "occe_90dxXXH_wKTcZ08w",
+          "external_id_namespace": "scriptyard"
+        }
+      },
+      {
+        "id": 4,
+        "uuid": "00000000-0000-4000-8000-000000000038",
+        "values": {
+          "name": "Scene",
+          "scene_number": "4",
+          "summary": "Add a note",
+          "goal": "What must happen in this scene?",
+          "conflict": "What stands in the way?",
+          "outcome": "How does it resolve?",
+          "external_id": "KTYGDnYs_R7GPHVExZH2t",
+          "external_id_namespace": "scriptyard"
+        }
+      },
+      {
+        "id": 5,
+        "uuid": "00000000-0000-4000-8000-000000000043",
+        "values": {
+          "name": "Scenes can also be cards or backdrops.",
+          "scene_number": "5",
+          "summary": "A note about the scene.",
+          "goal": "What must happen / what's at stake?",
+          "conflict": "What stands in the way?",
+          "outcome": "How it resolves",
+          "external_id": "PCC2Fh8BHDdSE-ZDmO4h0",
+          "external_id_namespace": "scriptyard"
+        }
+      }
+    ],
+    "scene_prop": [
+      {
+        "id": 1,
+        "uuid": "00000000-0000-4000-8000-000000000023",
+        "values": {
+          "scene_id": 1,
+          "prop_id": 2
+        }
+      },
+      {
+        "id": 2,
+        "uuid": "00000000-0000-4000-8000-000000000027",
+        "values": {
+          "scene_id": 2,
+          "prop_id": 2
+        }
+      },
+      {
+        "id": 3,
+        "uuid": "00000000-0000-4000-8000-000000000031",
+        "values": {
+          "scene_id": 3,
+          "prop_id": 2
+        }
+      }
+    ],
+    "act": [
+      {
+        "id": 1,
+        "uuid": "00000000-0000-4000-8000-000000000032",
+        "values": {
+          "name": "Act",
+          "act_number": 1,
+          "function": "Narrative Purpose of this Act",
+          "dramatic_question": "The question this act poses...",
+          "shift": "What changes by the end?",
+          "summary": "A custom note for better describ the goals or content of this backdrop.",
+          "external_id": "YgEIDWTNIYdk9f2zocv1u",
+          "external_id_namespace": "scriptyard",
+          "start_scene_id": 4
+        }
+      }
+    ],
+    "sequence": [
+      {
+        "id": 1,
+        "uuid": "00000000-0000-4000-8000-000000000035",
+        "values": {
+          "name": "Sequence",
+          "sequence_number": 1,
+          "summary": "Add a note for fun and firendship.",
+          "goal": "What must happen in this sequence?",
+          "conflict": "What stands in the way?",
+          "outcome": "How does it resolve?",
+          "external_id": "ejpLYKKwZtf1UiTnOQw2p",
+          "external_id_namespace": "scriptyard",
+          "start_scene_id": 4
+        }
+      }
+    ],
+    "story_beat": [
+      {
+        "id": 1,
+        "uuid": "00000000-0000-4000-8000-000000000041",
+        "values": {
+          "name": "Beat",
+          "scene_id": 4,
+          "beat_order": 1,
+          "description": "What happens in this beat?",
+          "notes": "Add a super special note if you like!",
+          "external_id": "1NsR6puYJLqT6-WDJ1rHO",
+          "external_id_namespace": "scriptyard"
+        }
+      }
+    ],
+    "shot": [
+      {
+        "id": 1,
+        "uuid": "00000000-0000-4000-8000-000000000042",
+        "values": {
+          "name": "Shot 23",
+          "scene_id": 4,
+          "shot_order": 1,
+          "story_beat_id": 1,
+          "shot_size": "extreme close-up",
+          "description": "What does this shot accomplish narratively?\nSubject: What or who is the subject of this scene?",
+          "notes": "An extra note space.",
+          "external_id": "DvKpQnFxCP2YwAlfNN0HL",
+          "external_id_namespace": "scriptyard"
+        }
+      }
+    ]
+  },
+  "titlePage": [
+    {
+      "key": "Title",
+      "value": "Demo Board"
+    }
+  ],
+  "lines": [
+    {
+      "uuid": "00000000-0000-4000-8000-000000000009",
+      "lineType": "action",
+      "content": "ARC: This is for working out Arcs — Who is changing?: in what dimension is this change (suspicious>trusting, weak>strong) (Direction, positive of negative)",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": null
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000010",
+      "lineType": "blank",
+      "content": "",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": null
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000011",
+      "lineType": "action",
+      "content": "Additioanl notes about an Arc could go here.",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": null
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000012",
+      "lineType": "blank",
+      "content": "",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": null
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000046",
+      "lineType": "action",
+      "content": "BEAT: Beats can be simple cards or Backdrops with other cards. — This is where you would describe what happens in a specific story or emotional beat.",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": null
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000047",
+      "lineType": "blank",
+      "content": "",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": null
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000048",
+      "lineType": "action",
+      "content": "EXTREME CLOSEUP (ECU): SHOT 23. What does this shot accomplish narratively?",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": null
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000049",
+      "lineType": "blank",
+      "content": "",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": null
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000014",
+      "lineType": "action",
+      "content": "BEAT: Instancing — A demonstration about how instanced cards work.",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": null
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000015",
+      "lineType": "blank",
+      "content": "",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": null
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000016",
+      "lineType": "action",
+      "content": "It's pretty cool! Can't do that with Notecards!",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": null
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000017",
+      "lineType": "blank",
+      "content": "",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": null
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000018",
+      "lineType": "action",
+      "content": "PROP: Undefined Prop that the Hero Holds in every scene.",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": null
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000019",
+      "lineType": "blank",
+      "content": "",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": null
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000021",
+      "lineType": "heading",
+      "content": ".SCENE 01",
+      "sceneId": 1,
+      "locationId": null,
+      "metadata": null
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000022",
+      "lineType": "blank",
+      "content": "",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": null
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000025",
+      "lineType": "heading",
+      "content": ".SCENE 02",
+      "sceneId": 2,
+      "locationId": null,
+      "metadata": null
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000026",
+      "lineType": "blank",
+      "content": "",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": null
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000029",
+      "lineType": "heading",
+      "content": ".SCENE 03",
+      "sceneId": 3,
+      "locationId": null,
+      "metadata": null
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000030",
+      "lineType": "blank",
+      "content": "",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": null
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000033",
+      "lineType": "section",
+      "content": "# Act",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": {
+        "section": {
+          "depth": 1,
+          "text": "Act"
+        },
+        "structureRef": {
+          "kind": "act",
+          "uuid": "00000000-0000-4000-8000-000000000032"
+        }
+      }
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000034",
+      "lineType": "blank",
+      "content": "",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": null
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000036",
+      "lineType": "section",
+      "content": "## Sequence",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": {
+        "section": {
+          "depth": 2,
+          "text": "Sequence"
+        },
+        "structureRef": {
+          "kind": "sequence",
+          "uuid": "00000000-0000-4000-8000-000000000035"
+        }
+      }
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000037",
+      "lineType": "blank",
+      "content": "",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": null
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000039",
+      "lineType": "heading",
+      "content": ".SCENE",
+      "sceneId": 4,
+      "locationId": null,
+      "metadata": null
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000040",
+      "lineType": "blank",
+      "content": "",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": null
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000044",
+      "lineType": "heading",
+      "content": ".SCENES CAN ALSO BE CARDS OR BACKDROPS.",
+      "sceneId": 5,
+      "locationId": null,
+      "metadata": null
+    }
+  ],
+  "report": {
+    "rows": {
+      "project": 1,
+      "character": 2,
+      "location": 1,
+      "location_design": 1,
+      "prop": 2,
+      "theme": 1,
+      "collaboration_note": 1,
+      "scene": 5,
+      "scene_prop": 3,
+      "act": 1,
+      "sequence": 1,
+      "story_beat": 1,
+      "shot": 1
+    },
+    "lines": 27,
+    "items": [
+      {
+        "kind": "prose",
+        "subject": "Arc \"This is for working out Arcs\"",
+        "where": null,
+        "detail": "Its subject, \"Who is changing?\", is not the name of a character on the board, so it is written at the top of the script."
+      },
+      {
+        "kind": "prose",
+        "subject": "Beat \"Instancing\"",
+        "where": null,
+        "detail": "A beat belongs to a scene in SCF, and this one is not in a scene."
+      },
+      {
+        "kind": "prose",
+        "subject": "Prop \"Undefined Prop that the Hero Holds in every scene.\"",
+        "where": "Beat \"Instancing\"",
+        "detail": "It sits in a beat that is not in a scene, so there is no scene to link the prop to."
+      },
+      {
+        "kind": "prose",
+        "subject": "Beat \"Beats can be simple cards or Backdrops with other cards.\"",
+        "where": "no backdrop",
+        "detail": "A beat belongs to a scene in SCF, and this one is not in a scene. It is written at the top of the script."
+      },
+      {
+        "kind": "prose",
+        "subject": "Shot \"Shot 23\"",
+        "where": "no backdrop",
+        "detail": "A shot belongs to a scene in SCF, and this one is not in a scene. It is written at the top of the script."
+      },
+      {
+        "kind": "changed",
+        "subject": "Scene \"Scenes can also be cards or backdrops.\"",
+        "where": null,
+        "detail": "On the board it is in no act. In SCF an act runs until the next one starts, so the scene falls in act \"Act\"."
+      },
+      {
+        "kind": "changed",
+        "subject": "Scene \"Scenes can also be cards or backdrops.\"",
+        "where": null,
+        "detail": "On the board it is in no sequence. In SCF a sequence runs until the next one starts, so the scene falls in sequence \"Sequence\"."
+      }
+    ]
+  }
+}

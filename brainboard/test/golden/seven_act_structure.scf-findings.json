@@ -1,0 +1,18 @@
+[
+  {
+    "code": "structure.boundary_absent",
+    "severity": "warning",
+    "table": "act",
+    "count": 7,
+    "rowIds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "message": "Act Seven : Climax & Resolution has no start scene, so it appears nowhere in the structure. And 6 more like it."
+  }
+]

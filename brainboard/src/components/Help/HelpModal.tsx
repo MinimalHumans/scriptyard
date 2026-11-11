@@ -308,6 +308,7 @@ function ToolbarHelp() {
       <P><strong>Board Data (.json)</strong> — the full Scriptyard format. Use this to archive or reimport your board.</P>
       <P><strong>Fountain (.fountain)</strong> — a screenplay skeleton for Highland, Slugline, Final Draft, or any Fountain-aware tool. Structural data (Act/Sequence/Scene attributes, beats, characters, shots) is emitted as Fountain boneyard blocks and action lines.</P>
       <P><strong>Final Draft (.fdx)</strong> — a screenplay skeleton for Final Draft 10+. Scene headings carry title and synopsis metadata for Final Draft's navigator panel.</P>
+      <P><strong>SCF (.scf)</strong> — a Story Context Framework file. Acts, sequences, scenes, beats, cast and the links between them are written as structured data. Anything SCF has no place for becomes a line in the script, and the report shown after the export lists each one.</P>
 
       <H3>Templates</H3>
       <P>Opens the template browser. Each template can be loaded as a new board (replacing current content) or merged into the existing board (content is appended and offset to avoid overlap).</P>

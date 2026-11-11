@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<FinalDraft DocumentType="Script" Template="No" Version="6">
+  <Content>
+    <Paragraph Type="Action">
+      <Text>— BEAT: Instancing —</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>It&apos;s pretty cool! Can&apos;t do that with Notecards!</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Description: A demonstration about how instanced cards work.]</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Prop: Undefined Prop that the Hero Holds in every scene.]</Text>
+    </Paragraph>
+    <Paragraph Type="Scene Heading">
+      <SceneProperties Length="0" Page="0" Title="Scene 01"/>
+      <Text>SCENE 01</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Prop: Undefined Prop that the Hero Holds in every scene.]</Text>
+    </Paragraph>
+    <Paragraph Type="Scene Heading">
+      <SceneProperties Length="0" Page="0" Title="Scene 02"/>
+      <Text>SCENE 02</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Prop: Undefined Prop that the Hero Holds in every scene.]</Text>
+    </Paragraph>
+    <Paragraph Type="Scene Heading">
+      <SceneProperties Length="0" Page="0" Title="Scene 03"/>
+      <Text>SCENE 03</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Prop: Undefined Prop that the Hero Holds in every scene.]</Text>
+    </Paragraph>
+    <Paragraph Type="New Act">
+      <Text>ACT — ACT</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>A custom note for better describ the goals or content of this backdrop.</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Function: Narrative Purpose of this Act]</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Dramatic Question: The question this act poses...]</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Shift: What changes by the end?]</Text>
+    </Paragraph>
+    <Paragraph Type="General">
+      <Text>SEQUENCE: SEQUENCE</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>Add a note for fun and firendship.</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Goal: What must happen in this sequence?]</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Conflict: What stands in the way?]</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Outcome: How does it resolve?]</Text>
+    </Paragraph>
+    <Paragraph Type="Scene Heading">
+      <SceneProperties Length="0" Page="0" Title="Scene" Synopsis="Add a note"/>
+      <Text>SCENE</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Goal: What must happen in this scene?]</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Conflict: What stands in the way?]</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Outcome: How does it resolve?]</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Beat: Beat — What happens in this beat?]</Text>
+    </Paragraph>
+    <Paragraph Type="Shot">
+      <Text>EXTREME CLOSEUP (ECU): SHOT 23. What does this shot accomplish narratively?</Text>
+    </Paragraph>
+    <Paragraph Type="Scene Heading">
+      <SceneProperties Length="0" Page="0" Title="Scenes can also be cards or backdrops." Synopsis="A note about the scene."/>
+      <Text>SCENES CAN ALSO BE CARDS OR BACKDROPS.</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Goal: What must happen / what&apos;s at stake?]</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Conflict: What stands in the way?]</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Outcome: How it resolves]</Text>
+    </Paragraph>
+    <Paragraph Type="General">
+      <Text>LOOSE NOTES</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Thought: This is a thought card...]</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[random unsorted thoughts would go here.]</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Arc: This is for working out Arcs — Subject: Who is changing? · Axis: in what dimension is this change (suspicious&gt;trusting, weak&gt;strong) · Direction: Direction, positive of negative]</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Additioanl notes about an Arc could go here.]</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Character: Character Name — Pronouns: she/her · Role: Protagonist · Occupation: Monkey Farmer · Age: 99 · Character Summary: This is the description of a character in a simple way.]</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Additional Notes can go here]</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Beat: Beats can be simple cards or Backdrops with other cards.]</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[This is where you would describe what happens in a specific story or emotional beat.]</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Location: Location Name — Type: Interior · Time Period: 1993 · Mood / Atmosphere: Creepy · Setting Description: An abandoned mall.]</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Here&apos;s a note. You can also use
+Markdown Syntax.]</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Prop: Important Prop #99 — Story Function: MacGuffin · Description: A big hammer.]</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[A note about the hammer]</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Theme: Themes - gotta have &apos;em — Statement: The core thematic claim · Expression: How the theme manifests · Opposition: The counter-argument the story explores.]</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[An extra note about themes. Tortured thoughts about good versus evil! Or evil versus good! Or Evil versus evil!]</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Shot: Shot 23 — Subject: What or who is the subject of this scene? · Framing: Extreme CloseUp (ECU) · Purpose: What does this shot accomplish narratively?]</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[An extra note space.]</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[Thought: Markdown Syntax Examples]</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>[**Bold**  text. 
+*Italicized* text
+~~Strikethrough.~~]</Text>
+    </Paragraph>
+  </Content>
+  <TitlePage>
+    <Content>
+    <Paragraph Type="Action" Alignment="Center">
+      <Text>Demo Board</Text>
+    </Paragraph>
+    </Content>
+  </TitlePage>
+</FinalDraft>

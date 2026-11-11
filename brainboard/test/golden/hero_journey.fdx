@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<FinalDraft DocumentType="Script" Template="No" Version="6">
+  <Content>
+    <Paragraph Type="New Act">
+      <Text>ACT — ACT ONE (DEPARTURE)</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>This act establishes the hero and pushes them out of their comfort zone. It ends when they fully commit and enter the new world.</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>— BEAT: 1. Ordinary World —</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>We see the hero in their normal life before the adventure begins. This establishes their baseline, including their limitations, flaws, and unfulfilled desires. Its purpose is to ground the story and give the audience a clear sense of what will change</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>— BEAT: 2. Call to Adventure —</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>A challenge, threat, or opportunity presents itself, inviting the hero into a new world. This moment introduces the central conflict and sets the story in motion.</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>— BEAT: 3. Refusal of the Call —</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>The hero hesitates or rejects the call due to fear, doubt, obligation, or insecurity. This beat humanizes the hero and emphasizes the risk involved in the journey.</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>— BEAT: 4. Meeting the Mentor —</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>The hero encounters someone who provides guidance, tools, training, or encouragement. The mentor helps prepare the hero for what lies ahead, often giving them confidence or a key resource.</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>— BEAT: 5. Crossing the First Threshold —</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>The hero commits to the journey and enters the “special world,” leaving the familiar behind. This is a point of no return and marks the true beginning of the adventure.</Text>
+    </Paragraph>
+    <Paragraph Type="New Act">
+      <Text>ACT — ACT TWO – PART A (INITIATION: LEARNING THE RULES)</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>The hero is tested and shaped by the new world, culminating in a major confrontation that begins their transformation.</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>— BEAT: 6. Tests, Allies, and Enemies —</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>The hero faces challenges, makes friends, and encounters adversaries. Through these trials, they begin to understand the rules of the new world. This stage builds skills, relationships, and tension.</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>— BEAT: 7. Approach to the Inmost Cave —</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>The hero prepares for a major challenge, often venturing into a dangerous or symbolic location. This is a moment of planning, tension, and introspection before the central ordeal.</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>— BEAT: 8. The Ordeal —</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>The hero faces a major crisis—often a life-or-death moment or their greatest fear. This is the emotional and narrative core of the story where transformation begins.</Text>
+    </Paragraph>
+    <Paragraph Type="New Act">
+      <Text>ACT — ACT TWO – PART B (INITIATION: CONSEQUENCES AND GROWTH)</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>After the ordeal, the hero gains something but must deal with its consequences. The journey shifts toward resolution.</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>— BEAT: 9. Reward (Seizing the Sword) —</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>Having survived the ordeal, the hero gains something of value—an object, knowledge, power, or insight. This reward represents progress but does not yet resolve the story.</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>— BEAT: 10. The Road Back —</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>The hero begins the journey back to the ordinary world, but consequences arise. The stakes are often raised again, and the hero may be pursued or tested further.</Text>
+    </Paragraph>
+    <Paragraph Type="New Act">
+      <Text>ACT — ACT THREE (RETURN)</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>The hero faces a final test and returns home changed, completing their arc and resolving the story.</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>— BEAT: 11. The Resurrection —</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>A final, climactic test forces the hero to apply everything they’ve learned. This is a moment of rebirth where the hero proves they’ve truly changed.</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>— BEAT: 12. Return with the Elixir —</Text>
+    </Paragraph>
+    <Paragraph Type="Action">
+      <Text>The hero returns home transformed, bringing something back that benefits others (knowledge, healing, power, etc.). This resolves both the external conflict and the internal arc.</Text>
+    </Paragraph>
+  </Content>
+  <TitlePage>
+    <Content>
+    <Paragraph Type="Action" Alignment="Center">
+      <Text>Hero Journey</Text>
+    </Paragraph>
+    </Content>
+  </TitlePage>
+</FinalDraft>

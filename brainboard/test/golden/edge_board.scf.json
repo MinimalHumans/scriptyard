@@ -1,0 +1,1302 @@
+{
+  "schemaVersion": "2.25",
+  "meta": {
+    "schema_version": "2.25",
+    "editor_version": "Scriptyard test",
+    "updated_at": "2026-01-02T12:00:00.000Z"
+  },
+  "tables": {
+    "project": [
+      {
+        "id": 1,
+        "uuid": "00000000-0000-4000-8000-000000000001",
+        "values": {
+          "name": "Low Water",
+          "external_id": "edge-board",
+          "external_id_namespace": "scriptyard"
+        }
+      }
+    ],
+    "character": [
+      {
+        "id": 1,
+        "uuid": "00000000-0000-4000-8000-000000000002",
+        "values": {
+          "name": "Ada",
+          "role": "protagonist",
+          "age": "34",
+          "pronouns": "she/her",
+          "occupation": "Ferry pilot",
+          "summary": "Came home to sell the boat and stayed.",
+          "notes": "Never says what she means the first time.",
+          "external_id": "e-ada",
+          "external_id_namespace": "scriptyard"
+        }
+      },
+      {
+        "id": 2,
+        "uuid": "00000000-0000-4000-8000-000000000003",
+        "values": {
+          "name": "Bo & Co",
+          "role": "supporting",
+          "external_id": "e-bo",
+          "external_id_namespace": "scriptyard"
+        }
+      },
+      {
+        "id": 3,
+        "uuid": "00000000-0000-4000-8000-000000000004",
+        "values": {
+          "name": "Cy",
+          "role": "minor",
+          "notes": "Library only, never placed.",
+          "external_id": "e-cy",
+          "external_id_namespace": "scriptyard"
+        }
+      }
+    ],
+    "location": [
+      {
+        "id": 1,
+        "uuid": "00000000-0000-4000-8000-000000000005",
+        "values": {
+          "name": "Kitchen",
+          "location_type": "interior",
+          "setting": "Low ceiling, one window over the sink.",
+          "time_period": "1970s",
+          "notes": "Shoot it smaller than it is.",
+          "external_id": "e-kitchen",
+          "external_id_namespace": "scriptyard"
+        }
+      },
+      {
+        "id": 2,
+        "uuid": "00000000-0000-4000-8000-000000000007",
+        "values": {
+          "name": "Barn",
+          "location_type": "exterior",
+          "external_id": "e-barn",
+          "external_id_namespace": "scriptyard"
+        }
+      }
+    ],
+    "location_design": [
+      {
+        "id": 1,
+        "uuid": "00000000-0000-4000-8000-000000000006",
+        "values": {
+          "location_id": 1,
+          "emotional_target": "close, airless"
+        }
+      }
+    ],
+    "prop": [
+      {
+        "id": 1,
+        "uuid": "00000000-0000-4000-8000-000000000008",
+        "values": {
+          "name": "Lantern",
+          "description": "Brass, dented, still works.",
+          "story_function": "functional",
+          "notes": "Ada's father's.",
+          "external_id": "e-lantern",
+          "external_id_namespace": "scriptyard"
+        }
+      },
+      {
+        "id": 2,
+        "uuid": "00000000-0000-4000-8000-000000000009",
+        "values": {
+          "name": "Knife",
+          "story_function": "macguffin",
+          "external_id": "e-knife",
+          "external_id_namespace": "scriptyard"
+        }
+      }
+    ],
+    "theme": [
+      {
+        "id": 1,
+        "uuid": "00000000-0000-4000-8000-000000000010",
+        "values": {
+          "name": "Grief",
+          "description": "Doors left open, meals left uneaten.",
+          "statement": "Grief unspoken hardens into blame.",
+          "opposition": "Silence is also a kind of mercy.",
+          "notes": "Keep it out of the dialogue.",
+          "external_id": "e-grief",
+          "external_id_namespace": "scriptyard"
+        }
+      },
+      {
+        "id": 2,
+        "uuid": "00000000-0000-4000-8000-000000000011",
+        "values": {
+          "name": "Hope",
+          "description": "Light through water.",
+          "external_id": "e-hope",
+          "external_id_namespace": "scriptyard"
+        }
+      }
+    ],
+    "character_arc": [
+      {
+        "id": 1,
+        "uuid": "00000000-0000-4000-8000-000000000012",
+        "values": {
+          "name": "Ada thaws",
+          "character_id": 1,
+          "axis": "guarded → open",
+          "direction": "positive",
+          "notes": "Three stages at most.",
+          "external_id": "e-arc-ada",
+          "external_id_namespace": "scriptyard"
+        }
+      }
+    ],
+    "collaboration_note": [
+      {
+        "id": 1,
+        "uuid": "00000000-0000-4000-8000-000000000015",
+        "values": {
+          "name": "Pacing",
+          "note_type": "general",
+          "content": "Act one runs long <trim> it.",
+          "affected_entities": "[\"act:00000000-0000-4000-8000-000000000019\"]"
+        }
+      },
+      {
+        "id": 2,
+        "uuid": "00000000-0000-4000-8000-000000000016",
+        "values": {
+          "name": "Blocking",
+          "note_type": "general",
+          "content": "Keep the table between them.",
+          "affected_entities": "[\"scene:00000000-0000-4000-8000-000000000041\"]"
+        }
+      },
+      {
+        "id": 3,
+        "uuid": "00000000-0000-4000-8000-000000000017",
+        "values": {
+          "name": "Refusal note",
+          "note_type": "general",
+          "content": "He should say no twice.",
+          "affected_entities": "[\"act:00000000-0000-4000-8000-000000000019\"]"
+        }
+      },
+      {
+        "id": 4,
+        "uuid": "00000000-0000-4000-8000-000000000018",
+        "values": {
+          "name": "Title idea",
+          "note_type": "general",
+          "content": "Call it \"Low Water\"."
+        }
+      }
+    ],
+    "act": [
+      {
+        "id": 1,
+        "uuid": "00000000-0000-4000-8000-000000000019",
+        "values": {
+          "name": "Act One",
+          "act_number": 1,
+          "function": "Bring her home and take away the easy exit.",
+          "dramatic_question": "Will she sell?",
+          "shift": "She misses the last ferry out.",
+          "summary": "Everything here is arrival.",
+          "external_id": "bd-act1",
+          "external_id_namespace": "scriptyard",
+          "start_scene_id": 1
+        }
+      },
+      {
+        "id": 2,
+        "uuid": "00000000-0000-4000-8000-000000000088",
+        "values": {
+          "name": "Act Two",
+          "act_number": 2,
+          "external_id": "bd-act2",
+          "external_id_namespace": "scriptyard"
+        }
+      }
+    ],
+    "thematic_connection": [
+      {
+        "id": 1,
+        "uuid": "00000000-0000-4000-8000-000000000024",
+        "values": {
+          "theme_id": 1,
+          "entity_type": "act",
+          "entity_id": 1
+        }
+      },
+      {
+        "id": 2,
+        "uuid": "00000000-0000-4000-8000-000000000038",
+        "values": {
+          "theme_id": 1,
+          "entity_type": "sequence",
+          "entity_id": 1
+        }
+      },
+      {
+        "id": 3,
+        "uuid": "00000000-0000-4000-8000-000000000048",
+        "values": {
+          "theme_id": 1,
+          "entity_type": "scene",
+          "entity_id": 1,
+          "notes": "the empty chair"
+        }
+      },
+      {
+        "id": 4,
+        "uuid": "00000000-0000-4000-8000-000000000091",
+        "values": {
+          "theme_id": 2,
+          "entity_type": "act",
+          "entity_id": 2
+        }
+      }
+    ],
+    "sequence": [
+      {
+        "id": 1,
+        "uuid": "00000000-0000-4000-8000-000000000033",
+        "values": {
+          "name": "The Return",
+          "sequence_number": 1,
+          "summary": "One long evening.",
+          "goal": "Get the keys to the boat.",
+          "conflict": "Her brother has them.",
+          "outcome": "She gets the keys and a debt.",
+          "external_id": "bd-seqA",
+          "external_id_namespace": "scriptyard",
+          "start_scene_id": 1
+        }
+      },
+      {
+        "id": 2,
+        "uuid": "00000000-0000-4000-8000-000000000092",
+        "values": {
+          "name": "Coda",
+          "sequence_number": 2,
+          "external_id": "bd-seq-coda",
+          "external_id_namespace": "scriptyard",
+          "start_scene_id": 6
+        }
+      }
+    ],
+    "scene": [
+      {
+        "id": 1,
+        "uuid": "00000000-0000-4000-8000-000000000041",
+        "values": {
+          "name": "Kitchen confrontation",
+          "scene_number": "1",
+          "int_ext": "interior",
+          "location_id": 1,
+          "time_of_day": "night",
+          "summary": "They talk about everything but the boat.",
+          "goal": "Ask for the keys without asking.",
+          "conflict": "Bo wants an apology first.",
+          "outcome": "Neither gets what they came for.",
+          "external_id": "bd-scene1",
+          "external_id_namespace": "scriptyard"
+        }
+      },
+      {
+        "id": 2,
+        "uuid": "00000000-0000-4000-8000-000000000057",
+        "values": {
+          "name": "EXT. RIDGE - DAY",
+          "scene_number": "2",
+          "int_ext": "exterior",
+          "external_id": "bd-scene2",
+          "external_id_namespace": "scriptyard"
+        }
+      },
+      {
+        "id": 3,
+        "uuid": "00000000-0000-4000-8000-000000000078",
+        "values": {
+          "name": "Flash of the accident",
+          "scene_number": "3",
+          "time_of_day": "night",
+          "external_id": "e-scene-flash",
+          "external_id_namespace": "scriptyard"
+        }
+      },
+      {
+        "id": 4,
+        "uuid": "00000000-0000-4000-8000-000000000081",
+        "values": {
+          "name": "Aftermath",
+          "scene_number": "4",
+          "int_ext": "exterior",
+          "location_id": 2,
+          "external_id": "bd-scene3",
+          "external_id_namespace": "scriptyard"
+        }
+      },
+      {
+        "id": 5,
+        "uuid": "00000000-0000-4000-8000-000000000085",
+        "values": {
+          "name": "Montage of crossings",
+          "scene_number": "5",
+          "int_ext": "exterior",
+          "time_of_day": "dusk",
+          "summary": "Six crossings, no dialogue.",
+          "goal": "Show the routine she is stuck in.",
+          "external_id": "e-scene-montage",
+          "external_id_namespace": "scriptyard"
+        }
+      },
+      {
+        "id": 6,
+        "uuid": "00000000-0000-4000-8000-000000000095",
+        "values": {
+          "name": "Epilogue",
+          "scene_number": "6",
+          "int_ext": "exterior",
+          "time_of_day": "dawn",
+          "external_id": "bd-scene-epilogue",
+          "external_id_namespace": "scriptyard"
+        }
+      },
+      {
+        "id": 7,
+        "uuid": "00000000-0000-4000-8000-000000000099",
+        "values": {
+          "name": "Teaser",
+          "scene_number": "7",
+          "int_ext": "interior",
+          "time_of_day": "morning",
+          "summary": "Cold open.",
+          "conflict": "Nobody will meet her eye.",
+          "external_id": "e-scene-teaser",
+          "external_id_namespace": "scriptyard"
+        }
+      }
+    ],
+    "story_beat": [
+      {
+        "id": 1,
+        "uuid": "00000000-0000-4000-8000-000000000044",
+        "values": {
+          "name": "Ada hesitates",
+          "scene_id": 1,
+          "beat_order": 1,
+          "description": "She almost tells him.",
+          "external_id": "e-beat-hesitates",
+          "external_id_namespace": "scriptyard"
+        }
+      },
+      {
+        "id": 2,
+        "uuid": "00000000-0000-4000-8000-000000000045",
+        "values": {
+          "name": "The turn",
+          "scene_id": 1,
+          "beat_order": 2,
+          "description": "Bo stops joking.",
+          "notes": "The scene pivots here.",
+          "external_id": "bd-beat-in-scene",
+          "external_id_namespace": "scriptyard"
+        }
+      }
+    ],
+    "scene_character": [
+      {
+        "id": 1,
+        "uuid": "00000000-0000-4000-8000-000000000046",
+        "values": {
+          "scene_id": 1,
+          "character_id": 1,
+          "notes": "enters angry"
+        }
+      },
+      {
+        "id": 2,
+        "uuid": "00000000-0000-4000-8000-000000000053",
+        "values": {
+          "scene_id": 1,
+          "character_id": 2,
+          "notes": "by the stove"
+        }
+      },
+      {
+        "id": 3,
+        "uuid": "00000000-0000-4000-8000-000000000060",
+        "values": {
+          "scene_id": 2,
+          "character_id": 1,
+          "notes": "second placement"
+        }
+      },
+      {
+        "id": 4,
+        "uuid": "00000000-0000-4000-8000-000000000084",
+        "values": {
+          "scene_id": 4,
+          "character_id": 2
+        }
+      },
+      {
+        "id": 5,
+        "uuid": "00000000-0000-4000-8000-000000000098",
+        "values": {
+          "scene_id": 6,
+          "character_id": 1
+        }
+      }
+    ],
+    "scene_prop": [
+      {
+        "id": 1,
+        "uuid": "00000000-0000-4000-8000-000000000047",
+        "values": {
+          "scene_id": 1,
+          "prop_id": 1,
+          "usage_note": "lit, on the table"
+        }
+      },
+      {
+        "id": 2,
+        "uuid": "00000000-0000-4000-8000-000000000061",
+        "values": {
+          "scene_id": 2,
+          "prop_id": 2
+        }
+      }
+    ],
+    "character_arc_state": [
+      {
+        "id": 1,
+        "uuid": "00000000-0000-4000-8000-000000000049",
+        "values": {
+          "character_arc_id": 1,
+          "scene_id": 1,
+          "stage_label": "walls up"
+        }
+      }
+    ],
+    "shot": [
+      {
+        "id": 1,
+        "uuid": "00000000-0000-4000-8000-000000000050",
+        "values": {
+          "name": "Ada's hands",
+          "scene_id": 1,
+          "shot_order": 1,
+          "shot_size": "close-up",
+          "description": "Subject: Ada",
+          "external_id": "e-shot-cu",
+          "external_id_namespace": "scriptyard"
+        }
+      },
+      {
+        "id": 2,
+        "uuid": "00000000-0000-4000-8000-000000000054",
+        "values": {
+          "name": "Over Bo",
+          "scene_id": 1,
+          "shot_order": 2,
+          "story_beat_id": 2,
+          "description": "Keep Ada small.\nFraming: OTS",
+          "external_id": "e-shot-ots",
+          "external_id_namespace": "scriptyard"
+        }
+      },
+      {
+        "id": 3,
+        "uuid": "00000000-0000-4000-8000-000000000062",
+        "values": {
+          "name": "The ridge",
+          "scene_id": 2,
+          "shot_order": 1,
+          "shot_size": "extreme wide",
+          "external_id": "e-shot-wide",
+          "external_id_namespace": "scriptyard"
+        }
+      },
+      {
+        "id": 4,
+        "uuid": "00000000-0000-4000-8000-000000000063",
+        "values": {
+          "name": "Something dreamy",
+          "scene_id": 2,
+          "shot_order": 2,
+          "description": "Framing: dreamy",
+          "external_id": "e-shot-odd",
+          "external_id_namespace": "scriptyard"
+        }
+      }
+    ]
+  },
+  "titlePage": [
+    {
+      "key": "Title",
+      "value": "Low Water"
+    },
+    {
+      "key": "Credit",
+      "value": "Written by"
+    },
+    {
+      "key": "Author",
+      "value": "A. Writer & B. Writer"
+    },
+    {
+      "key": "Source",
+      "value": "Based on a true story"
+    },
+    {
+      "key": "Draft date",
+      "value": "First draft"
+    },
+    {
+      "key": "Contact",
+      "value": "A. Writer\n1 Harbour Road\nwriter@example.com"
+    },
+    {
+      "key": "Copyright",
+      "value": "(c) 2026 A. Writer"
+    }
+  ],
+  "lines": [
+    {
+      "uuid": "00000000-0000-4000-8000-000000000013",
+      "lineType": "action",
+      "content": "ARC: The town forgets — The town itself: memory → rumour",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": null
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000014",
+      "lineType": "blank",
+      "content": "",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": null
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000102",
+      "lineType": "action",
+      "content": "ECU: UNPLACED INSERT.",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": null
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000103",
+      "lineType": "blank",
+      "content": "",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": null
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000104",
+      "lineType": "action",
+      "content": "BEAT: Unplaced beat",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": null
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000105",
+      "lineType": "blank",
+      "content": "",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": null
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000020",
+      "lineType": "section",
+      "content": "# Act One",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": {
+        "section": {
+          "depth": 1,
+          "text": "Act One"
+        },
+        "structureRef": {
+          "kind": "act",
+          "uuid": "00000000-0000-4000-8000-000000000019"
+        }
+      }
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000021",
+      "lineType": "blank",
+      "content": "",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": null
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000022",
+      "lineType": "action",
+      "content": "CHARACTER: Ada",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": null
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000023",
+      "lineType": "blank",
+      "content": "",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": null
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000025",
+      "lineType": "action",
+      "content": "WIDE: THE FERRY LANDING. Place us before anyone speaks.",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": null
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000026",
+      "lineType": "blank",
+      "content": "",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": null
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000027",
+      "lineType": "action",
+      "content": "ARC: Ada thaws",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": null
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000028",
+      "lineType": "blank",
+      "content": "",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": null
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000029",
+      "lineType": "action",
+      "content": "BEAT: A promise is made — Paid off in the coda.",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": null
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000030",
+      "lineType": "blank",
+      "content": "",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": null
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000031",
+      "lineType": "action",
+      "content": "PROP: Knife",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": null
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000032",
+      "lineType": "blank",
+      "content": "",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": null
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000034",
+      "lineType": "section",
+      "content": "## The Return",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": {
+        "section": {
+          "depth": 2,
+          "text": "The Return"
+        },
+        "structureRef": {
+          "kind": "sequence",
+          "uuid": "00000000-0000-4000-8000-000000000033"
+        }
+      }
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000035",
+      "lineType": "blank",
+      "content": "",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": null
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000036",
+      "lineType": "action",
+      "content": "PROP: Lantern",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": null
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000037",
+      "lineType": "blank",
+      "content": "",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": null
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000039",
+      "lineType": "action",
+      "content": "CHARACTER: Bo & Co",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": null
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000040",
+      "lineType": "blank",
+      "content": "",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": null
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000042",
+      "lineType": "heading",
+      "content": "INT. KITCHEN - NIGHT",
+      "sceneId": 1,
+      "locationId": 1,
+      "metadata": null
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000043",
+      "lineType": "blank",
+      "content": "",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": null
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000051",
+      "lineType": "action",
+      "content": "LOCATION: Barn",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": null
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000052",
+      "lineType": "blank",
+      "content": "",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": null
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000055",
+      "lineType": "action",
+      "content": "BEAT: The lantern gutters",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": null
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000056",
+      "lineType": "blank",
+      "content": "",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": null
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000058",
+      "lineType": "heading",
+      "content": "EXT. RIDGE - DAY",
+      "sceneId": 2,
+      "locationId": null,
+      "metadata": null
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000059",
+      "lineType": "blank",
+      "content": "",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": null
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000064",
+      "lineType": "action",
+      "content": "BEAT: Meeting the Mentor — An older pilot offers her a way out.",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": null
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000065",
+      "lineType": "blank",
+      "content": "",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": null
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000066",
+      "lineType": "action",
+      "content": "Structural beat, not inside a scene.",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": null
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000067",
+      "lineType": "blank",
+      "content": "",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": null
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000068",
+      "lineType": "action",
+      "content": "BEAT: The offer — He names his price.",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": null
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000069",
+      "lineType": "blank",
+      "content": "",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": null
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000070",
+      "lineType": "action",
+      "content": "CHARACTER: Bo & Co",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": null
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000071",
+      "lineType": "blank",
+      "content": "",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": null
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000072",
+      "lineType": "action",
+      "content": "ANGLE ON: MENTOR AT THE DOOR.",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": null
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000073",
+      "lineType": "blank",
+      "content": "",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": null
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000074",
+      "lineType": "action",
+      "content": "BEAT: Refusal",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": null
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000075",
+      "lineType": "blank",
+      "content": "",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": null
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000076",
+      "lineType": "action",
+      "content": "PROP: Lantern",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": null
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000077",
+      "lineType": "blank",
+      "content": "",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": null
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000079",
+      "lineType": "heading",
+      "content": ".FLASH OF THE ACCIDENT",
+      "sceneId": 3,
+      "locationId": null,
+      "metadata": null
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000080",
+      "lineType": "blank",
+      "content": "",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": null
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000082",
+      "lineType": "heading",
+      "content": "EXT. BARN - CONTINUOUS",
+      "sceneId": 4,
+      "locationId": 2,
+      "metadata": null
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000083",
+      "lineType": "blank",
+      "content": "",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": null
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000086",
+      "lineType": "heading",
+      "content": "EXT. MONTAGE OF CROSSINGS - DUSK",
+      "sceneId": 5,
+      "locationId": null,
+      "metadata": null
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000087",
+      "lineType": "blank",
+      "content": "",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": null
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000089",
+      "lineType": "section",
+      "content": "# Act Two",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": {
+        "section": {
+          "depth": 1,
+          "text": "Act Two"
+        },
+        "structureRef": {
+          "kind": "act",
+          "uuid": "00000000-0000-4000-8000-000000000088"
+        }
+      }
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000090",
+      "lineType": "blank",
+      "content": "",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": null
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000093",
+      "lineType": "section",
+      "content": "## Coda",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": {
+        "section": {
+          "depth": 2,
+          "text": "Coda"
+        },
+        "structureRef": {
+          "kind": "sequence",
+          "uuid": "00000000-0000-4000-8000-000000000092"
+        }
+      }
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000094",
+      "lineType": "blank",
+      "content": "",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": null
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000096",
+      "lineType": "heading",
+      "content": "EXT. EPILOGUE - DAWN",
+      "sceneId": 6,
+      "locationId": null,
+      "metadata": null
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000097",
+      "lineType": "blank",
+      "content": "",
+      "sceneId": null,
+      "locationId": null,
+      "metadata": null
+    },
+    {
+      "uuid": "00000000-0000-4000-8000-000000000100",
+      "lineType": "heading",
+      "content": "INT. TEASER - MORNING",
+      "sceneId": 7,
+      "locationId": null,
+      "metadata": null
+    }
+  ],
+  "report": {
+    "rows": {
+      "project": 1,
+      "character": 3,
+      "location": 2,
+      "location_design": 1,
+      "prop": 2,
+      "theme": 2,
+      "character_arc": 1,
+      "collaboration_note": 4,
+      "act": 2,
+      "thematic_connection": 4,
+      "sequence": 2,
+      "scene": 7,
+      "story_beat": 2,
+      "scene_character": 5,
+      "scene_prop": 2,
+      "character_arc_state": 1,
+      "shot": 4
+    },
+    "lines": 59,
+    "items": [
+      {
+        "kind": "prose",
+        "subject": "Arc \"The town forgets\"",
+        "where": null,
+        "detail": "Its subject, \"The town itself\", is not the name of a character on the board, so it is written at the top of the script."
+      },
+      {
+        "kind": "prose",
+        "subject": "Character \"Ada\"",
+        "where": "Act \"Act One\"",
+        "detail": "SCF derives who and what is in an act or sequence from its scenes, so a character placed above scene level has no row."
+      },
+      {
+        "kind": "prose",
+        "subject": "Shot \"The ferry landing\"",
+        "where": "Act \"Act One\"",
+        "detail": "A shot belongs to a scene in SCF, and this one is not in a scene."
+      },
+      {
+        "kind": "prose",
+        "subject": "Arc \"Ada thaws\"",
+        "where": "Act \"Act One\"",
+        "detail": "An arc's stages are recorded at scenes in SCF, and this placement is not in a scene."
+      },
+      {
+        "kind": "prose",
+        "subject": "Beat \"A promise is made\"",
+        "where": "Act \"Act One\"",
+        "detail": "A beat belongs to a scene in SCF, and this one is not in a scene."
+      },
+      {
+        "kind": "prose",
+        "subject": "Prop \"Knife\"",
+        "where": "Act \"Act One\"",
+        "detail": "SCF derives who and what is in an act or sequence from its scenes, so a prop placed above scene level has no row."
+      },
+      {
+        "kind": "prose",
+        "subject": "Prop \"Lantern\"",
+        "where": "Sequence \"The Return\"",
+        "detail": "SCF derives who and what is in an act or sequence from its scenes, so a prop placed above scene level has no row."
+      },
+      {
+        "kind": "prose",
+        "subject": "Character \"Bo & Co\"",
+        "where": "Sequence \"The Return\"",
+        "detail": "SCF derives who and what is in an act or sequence from its scenes, so a character placed above scene level has no row."
+      },
+      {
+        "kind": "prose",
+        "subject": "Location \"Barn\"",
+        "where": "Scene \"Kitchen confrontation\"",
+        "detail": "A scene has one location in SCF. The first Location card in the scene is used; this one is written as a script line."
+      },
+      {
+        "kind": "changed",
+        "subject": "Shot \"Over Bo\"",
+        "where": "Scene \"Kitchen confrontation\"",
+        "detail": "Framing \"OTS\" is not a shot size SCF lists, so it is kept in the shot's description."
+      },
+      {
+        "kind": "prose",
+        "subject": "Beat \"The lantern gutters\"",
+        "where": "Scene \"Kitchen confrontation\"",
+        "detail": "It sits inside another beat. SCF keeps a scene's beats as a flat list, so the sub-beat is written as a script line."
+      },
+      {
+        "kind": "changed",
+        "subject": "Scene \"EXT. RIDGE - DAY\"",
+        "where": null,
+        "detail": "Time of day \"Later\" says when the scene follows the last one, not what the light is, so it stays in the heading text only."
+      },
+      {
+        "kind": "changed",
+        "subject": "Shot \"Something dreamy\"",
+        "where": "Scene \"EXT. RIDGE - DAY\"",
+        "detail": "Framing \"dreamy\" is not a shot size SCF lists, so it is kept in the shot's description."
+      },
+      {
+        "kind": "prose",
+        "subject": "Beat \"Meeting the Mentor\"",
+        "where": null,
+        "detail": "A beat belongs to a scene in SCF, and this one is not in a scene."
+      },
+      {
+        "kind": "prose",
+        "subject": "Beat \"The offer\"",
+        "where": "Beat \"Meeting the Mentor\"",
+        "detail": "A beat belongs to a scene in SCF, and this one is not in a scene."
+      },
+      {
+        "kind": "prose",
+        "subject": "Character \"Bo & Co\"",
+        "where": "Beat \"Meeting the Mentor\"",
+        "detail": "It sits in a beat that is not in a scene, so there is no scene to link the character to."
+      },
+      {
+        "kind": "prose",
+        "subject": "Shot \"Mentor at the door\"",
+        "where": "Beat \"Meeting the Mentor\"",
+        "detail": "A shot belongs to a scene in SCF, and this one is not in a scene."
+      },
+      {
+        "kind": "prose",
+        "subject": "Beat \"Refusal\"",
+        "where": null,
+        "detail": "A beat belongs to a scene in SCF, and this one is not in a scene."
+      },
+      {
+        "kind": "prose",
+        "subject": "Prop \"Lantern\"",
+        "where": "Beat \"Refusal\"",
+        "detail": "It sits in a beat that is not in a scene, so there is no scene to link the prop to."
+      },
+      {
+        "kind": "changed",
+        "subject": "Scene \"Aftermath\"",
+        "where": null,
+        "detail": "Time of day \"Continuous\" says when the scene follows the last one, not what the light is, so it stays in the heading text only."
+      },
+      {
+        "kind": "prose",
+        "subject": "Shot \"Unplaced insert\"",
+        "where": "no backdrop",
+        "detail": "A shot belongs to a scene in SCF, and this one is not in a scene. It is written at the top of the script."
+      },
+      {
+        "kind": "prose",
+        "subject": "Beat \"Unplaced beat\"",
+        "where": "no backdrop",
+        "detail": "A beat belongs to a scene in SCF, and this one is not in a scene. It is written at the top of the script."
+      },
+      {
+        "kind": "changed",
+        "subject": "Act \"Act Two\"",
+        "where": null,
+        "detail": "It holds no scenes, so it is exported without a starting scene."
+      },
+      {
+        "kind": "changed",
+        "subject": "Scene \"Epilogue\"",
+        "where": null,
+        "detail": "On the board it is in no act. In SCF an act runs until the next one starts, so the scene falls in act \"Act One\"."
+      },
+      {
+        "kind": "changed",
+        "subject": "Scene \"Teaser\"",
+        "where": null,
+        "detail": "On the board it is in no act. In SCF an act runs until the next one starts, so the scene falls in act \"Act One\"."
+      },
+      {
+        "kind": "changed",
+        "subject": "Scene \"Flash of the accident\"",
+        "where": null,
+        "detail": "On the board it is in no sequence. In SCF a sequence runs until the next one starts, so the scene falls in sequence \"The Return\"."
+      },
+      {
+        "kind": "changed",
+        "subject": "Scene \"Aftermath\"",
+        "where": null,
+        "detail": "On the board it is in no sequence. In SCF a sequence runs until the next one starts, so the scene falls in sequence \"The Return\"."
+      },
+      {
+        "kind": "changed",
+        "subject": "Scene \"Montage of crossings\"",
+        "where": null,
+        "detail": "On the board it is in no sequence. In SCF a sequence runs until the next one starts, so the scene falls in sequence \"The Return\"."
+      },
+      {
+        "kind": "changed",
+        "subject": "Scene \"Teaser\"",
+        "where": null,
+        "detail": "On the board it is in no sequence. In SCF a sequence runs until the next one starts, so the scene falls in sequence \"Coda\"."
+      },
+      {
+        "kind": "omitted",
+        "subject": "Scene \"Deleted dream\"",
+        "where": null,
+        "detail": "Marked Cut, so it and everything inside it is left out."
+      },
+      {
+        "kind": "omitted",
+        "subject": "Character \"Zed\"",
+        "where": null,
+        "detail": "Marked Cut, so it is left out everywhere it is placed."
+      },
+      {
+        "kind": "omitted",
+        "subject": "Prop \"Old map\"",
+        "where": null,
+        "detail": "Marked Cut, so it is left out everywhere it is placed."
+      },
+      {
+        "kind": "omitted",
+        "subject": "2 cards inside cut backdrops",
+        "where": null,
+        "detail": "Left out with the backdrop around them. Their entities are still exported if they are placed anywhere else."
+      }
+    ]
+  }
+}
